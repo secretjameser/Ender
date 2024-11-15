@@ -2456,3 +2456,6 @@ Error configuring printer
 No build file /home/secretjameser/klipper/klippy/../.config
 No build file /home/secretjameser/klipper/klippy/../out/klipper.dict
 No build file /home/secretjameser/klipper/klippy/../out/klipper.elf
+webhooks client 139886515859600: Disconnected
+webhooks client 139886516126224: New connection
+webhooks client 139886516126224: Client info {'program': 'Moonraker', 'version': 'v0.9.3-1-g4e00a07'}
