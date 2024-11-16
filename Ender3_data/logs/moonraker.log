@@ -1584,3 +1584,5 @@ Diverged: False
 Pinned Commit: None
 2024-11-15 18:21:18,998 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
 2024-11-15 18:21:18,998 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
+2024-11-15 18:24:29,586 [websockets.py:on_close()] - Websocket Closed: ID: 140060765249232 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.15
+2024-11-15 19:26:17,927 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.14
