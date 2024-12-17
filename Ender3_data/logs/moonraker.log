@@ -189,3 +189,5 @@ System Time: 1731723147.889351, Usage: 0.57%, Memory: 55876 kB
 System Time: 1731723148.891060, Usage: 0.37%, Memory: 55876 kB
 System Time: 1731723149.891519, Usage: 0.5%, Memory: 55876 kB
 System Time: 1734433495.132402, Usage: 0.13%, Memory: 55892 kB
+2024-12-17 06:05:04,120 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2024-12-17 06:05:04,121 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
