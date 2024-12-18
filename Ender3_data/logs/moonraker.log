@@ -648,3 +648,12 @@ Diverged: False
 Pinned Commit: None
 2024-12-17 22:02:40,950 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
 2024-12-17 22:02:40,950 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
+2024-12-17 22:03:36,020 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-12-17 22:03:36,020 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-12-17 22:03:36,022 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
