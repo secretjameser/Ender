@@ -534,3 +534,85 @@ Pinned Commit: None
 2024-12-17 22:02:35,851 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config branch --list --no-color) successfully finished
 2024-12-17 22:02:35,856 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config remote get-url origin) successfully finished
 2024-12-17 22:02:36,303 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config fetch origin --prune --progress) exited with return code 1
+2024-12-17 22:02:37,086 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config fetch origin --prune --progress) successfully finished
+2024-12-17 22:02:37,090 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-12-17 22:02:37,093 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse HEAD) successfully finished
+2024-12-17 22:02:37,097 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-12-17 22:02:37,099 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse origin/master) successfully finished
+2024-12-17 22:02:37,103 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-12-17 22:02:37,108 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-list HEAD..807175d72e3a00cdc6b5e249444a4630e1e03a55 --count) successfully finished
+2024-12-17 22:02:37,113 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config log ce48c5854e9ca3ca72b63d0327069fac20e94c7c..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-12-17 22:02:37,117 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-12-17 22:02:37,117 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 1
+Diverged: False
+Pinned Commit: None
+2024-12-17 22:02:37,117 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
+2024-12-17 22:02:37,117 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
+2024-12-17 22:02:37,380 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.30.6
+Remote Version: v1.31.2
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.2/fluidd.zip
+Download Size: 3837528
+Content Type: application/zip
+Rollback Version: v1.30.5
+Rollback Repo: fluidd-core/fluidd
+2024-12-17 22:02:38,000 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2024-12-17 22:02:38,005 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2024-12-17 22:02:38,011 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2024-12-17 22:02:38,502 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) successfully finished
+2024-12-17 22:02:38,507 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-12-17 22:02:38,510 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging rev-parse HEAD) successfully finished
+2024-12-17 22:02:38,597 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-12-17 22:02:38,601 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging rev-parse origin/main) successfully finished
+2024-12-17 22:02:38,608 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-12-17 22:02:38,613 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/Klipper-Adaptive-Meshing-Purging rev-list HEAD..b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0 --count) successfully finished
+2024-12-17 22:02:38,613 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/secretjameser/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Upstream Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Current Version: v1.1.2-13-gb0dad8ec
+Upstream Version: v1.1.2-13-gb0dad8ec
+Rollback Commit: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Rollback Branch: main
+Rollback Version: v1.1.2-13-gb0dad8ec
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-12-17 22:02:38,613 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Channel: dev
+2024-12-17 22:02:38,613 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Validity check for git repo passed
+2024-12-17 22:02:39,336 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup status --porcelain -b) successfully finished
+2024-12-17 22:02:39,341 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup branch --list --no-color) successfully finished
+2024-12-17 22:02:39,348 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup remote get-url origin) successfully finished
