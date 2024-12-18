@@ -284,3 +284,143 @@ CORS Domains:
 .*://app\.fluidd\.xyz
 2024-12-17 22:02:16,766 [server.py:load_component()] - Component (authorization) loaded
 2024-12-17 22:02:16,786 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-12-17 22:02:18,679 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Sep 14 2024, 03:00:30) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 5859492
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.1.0-28-amd64
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-12-17 22:02:18,731 [server.py:load_component()] - Component (shell_command) loaded
+2024-12-17 22:02:18,732 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-12-17 22:02:18,778 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-12-17 22:02:18,778 [server.py:load_component()] - Component (machine) loaded
+2024-12-17 22:02:18,814 [server.py:load_component()] - Component (data_store) loaded
+2024-12-17 22:02:18,876 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2024-12-17 22:02:18,877 [server.py:load_component()] - Component (proc_stats) loaded
+2024-12-17 22:02:18,881 [server.py:load_component()] - Component (job_state) loaded
+2024-12-17 22:02:18,903 [server.py:load_component()] - Component (job_queue) loaded
+2024-12-17 22:02:18,939 [database.py:register_table()] - Found registered table job_history
+2024-12-17 22:02:18,939 [database.py:register_table()] - Found registered table job_totals
+2024-12-17 22:02:18,941 [server.py:load_component()] - Component (history) loaded
+2024-12-17 22:02:19,155 [server.py:load_component()] - Component (http_client) loaded
+2024-12-17 22:02:19,211 [server.py:load_component()] - Component (announcements) loaded
+2024-12-17 22:02:19,255 [server.py:load_component()] - Component (webcam) loaded
+2024-12-17 22:02:19,299 [server.py:load_component()] - Component (extensions) loaded
+2024-12-17 22:02:19,327 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-12-17 22:02:19,718 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/secretjameser/moonraker-env
+2024-12-17 22:02:19,721 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/secretjameser/klippy-env
+2024-12-17 22:02:19,726 [server.py:load_component()] - Component (update_manager) loaded
+2024-12-17 22:02:19,727 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-12-17 22:02:20,275 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-12-17 22:02:20,284 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-12-17 22:02:20,286 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-12-17 22:02:20,288 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-12-17 22:02:20,289 [machine.py:validation_init()] - Installation version in database up to date
+2024-12-17 22:02:20,494 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-12-17 22:02:20,528 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2024-12-17 22:02:20,529 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2024-12-17 22:02:20,543 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3Pro.service
+2024-12-17 22:02:20,552 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3Pro.service:
+unit_name: moonraker-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice', 'network-online.target']
+**After=['sysinit.target', '-.mount', 'basic.target', 'network-online.target', 'systemd-journald.socket', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3Pro.service
+**Description=API Server for Klipper SV1 Ender3Pro
+**User=secretjameser
+2024-12-17 22:02:20,553 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-12-17 22:02:20,553 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-12-17 22:02:20,557 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-12-17 22:02:20,562 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-12-17 22:02:20,562 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2024-12-17 22:02:20,565 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-12-17 22:02:20,565 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['sysinit.target', '-.mount', 'network-online.target', 'system.slice', 'basic.target', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2024-12-17 22:02:20,565 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-12-17 22:02:20,817 [filelock.py:acquire()] - File lock /tmp/.moonraker_instance_ids.lock is currently acquired by another process, waiting for release.
+2024-12-17 22:02:20,817 [update_manager.py:set_instance_id()] - Attempt to acquire lock '/tmp/.moonraker_instance_ids.lock' timed out
+2024-12-17 22:02:21,771 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-12-17 22:02:22,014 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3Pro_data/comms/moonraker.sock'
+2024-12-17 22:02:22,014 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: debian
+2024-12-17 22:02:22,014 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-12-17 22:02:22,266 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-12-17 22:02:22,288 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
+2024-12-17 22:02:22,296 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['sysinit.target', 'network-online.target', 'system.slice', '-.mount', 'basic.target', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2024-12-17 22:02:22,548 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
