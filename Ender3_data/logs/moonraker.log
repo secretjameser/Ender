@@ -436,3 +436,24 @@ Properties:
 **User=secretjameser
 2024-12-17 22:02:20,563 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
 2024-12-17 22:02:21,771 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-12-17 22:02:22,025 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3_data/comms/moonraker.sock'
+2024-12-17 22:02:22,025 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7126), Hostname: debian
+2024-12-17 22:02:22,026 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-12-17 22:02:22,277 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-12-17 22:02:22,299 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-12-17 22:02:22,307 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['basic.target', 'network-online.target', 'system.slice', '-.mount', 'systemd-journald.socket', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2024-12-17 22:02:22,559 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
