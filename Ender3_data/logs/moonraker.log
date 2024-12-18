@@ -616,3 +616,35 @@ Pinned Commit: None
 2024-12-17 22:02:39,336 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup status --porcelain -b) successfully finished
 2024-12-17 22:02:39,341 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup branch --list --no-color) successfully finished
 2024-12-17 22:02:39,348 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup remote get-url origin) successfully finished
+2024-12-17 22:02:40,915 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup fetch origin --prune --progress) successfully finished
+2024-12-17 22:02:40,918 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-12-17 22:02:40,921 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-parse HEAD) successfully finished
+2024-12-17 22:02:40,928 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-12-17 22:02:40,931 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-parse origin/main) successfully finished
+2024-12-17 22:02:40,935 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-12-17 22:02:40,939 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-list HEAD..1ccd26ad624ce5e50b8554b7ac9ebbae3d922712 --count) successfully finished
+2024-12-17 22:02:40,943 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup log 95fb874ce69d11cf1df4b0209f89b4f1ce427553..origin/main --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-12-17 22:02:40,949 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-12-17 22:02:40,950 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/secretjameser/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: 95fb874ce69d11cf1df4b0209f89b4f1ce427553
+Upstream Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Current Version: v1.3.1-19-g95fb874c
+Upstream Version: v1.3.2-0-g1ccd26ad
+Rollback Commit: 95fb874ce69d11cf1df4b0209f89b4f1ce427553
+Rollback Branch: main
+Rollback Version: v1.3.1-19-g95fb874c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 2
+Diverged: False
+Pinned Commit: None
+2024-12-17 22:02:40,950 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
+2024-12-17 22:02:40,950 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
