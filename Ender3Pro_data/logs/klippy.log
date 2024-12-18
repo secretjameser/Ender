@@ -270,3 +270,4 @@ mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
