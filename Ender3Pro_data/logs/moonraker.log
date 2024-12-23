@@ -166,3 +166,4 @@ System Time: 1734496237.259963, Usage: 0.47%, Memory: 55572 kB
 System Time: 1734496238.262559, Usage: 0.61%, Memory: 55572 kB
 System Time: 1734496239.263299, Usage: 0.54%, Memory: 55572 kB
 System Time: 1734918972.736294, Usage: 0.08%, Memory: 55576 kB
+2024-12-22 20:56:19,746 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
