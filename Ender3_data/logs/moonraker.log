@@ -482,3 +482,39 @@ libwebkitgtk-6.0-4
 2025-01-03 16:46:30,643 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
 2025-01-03 16:46:30,647 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
 2025-01-03 16:46:30,654 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
+2025-01-03 16:46:31,713 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) exited with return code 1
+2025-01-03 16:46:32,536 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
+2025-01-03 16:46:32,541 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-03 16:46:32,544 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse HEAD) successfully finished
+2025-01-03 16:46:32,549 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-03 16:46:32,552 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse origin/master) successfully finished
+2025-01-03 16:46:32,556 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-03 16:46:32,560 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-list HEAD..a4604e3380a0ca1bbf6b5428a88a63e9b28b47e5 --count) successfully finished
+2025-01-03 16:46:32,564 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker log 4e00a0760e756872b2fbb23a82b88dbceb383cf4..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2025-01-03 16:46:32,595 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2025-01-03 16:46:32,595 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 4e00a0760e756872b2fbb23a82b88dbceb383cf4
+Upstream Commit SHA: a4604e3380a0ca1bbf6b5428a88a63e9b28b47e5
+Current Version: v0.9.3-1-g4e00a076
+Upstream Version: v0.9.3-4-ga4604e33
+Rollback Commit: 71f9e677b81afcc6b99dd5002f595025c38edc7b
+Rollback Branch: master
+Rollback Version: v0.9.3-0-g71f9e677
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 3
+Diverged: False
+Pinned Commit: None
+2025-01-03 16:46:32,595 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2025-01-03 16:46:32,595 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2025-01-03 16:46:32,610 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper status --porcelain -b) successfully finished
+2025-01-03 16:46:32,614 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper branch --list --no-color) successfully finished
+2025-01-03 16:46:32,620 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper remote get-url origin) successfully finished
