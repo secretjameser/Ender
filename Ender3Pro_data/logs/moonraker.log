@@ -361,3 +361,71 @@ System Info:
 2025-01-03 16:46:13,775 [server.py:load_component()] - Component (update_manager) loaded
 2025-01-03 16:46:13,778 [server.py:load_component()] - Component (octoprint_compat) loaded
 2025-01-03 16:46:13,779 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2025-01-03 16:46:14,284 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-01-03 16:46:14,297 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2025-01-03 16:46:14,299 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-01-03 16:46:14,301 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-01-03 16:46:14,302 [machine.py:validation_init()] - Installation version in database up to date
+2025-01-03 16:46:14,512 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-01-03 16:46:14,551 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-03 16:46:14,552 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-03 16:46:14,574 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3Pro.service
+2025-01-03 16:46:14,582 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3Pro.service:
+unit_name: moonraker-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['network-online.target', '-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'network-online.target', 'sysinit.target', 'systemd-journald.socket', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3Pro.service
+**Description=API Server for Klipper SV1 Ender3Pro
+**User=secretjameser
+2025-01-03 16:46:14,582 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-01-03 16:46:14,582 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-01-03 16:46:14,585 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-01-03 16:46:14,588 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-01-03 16:46:14,589 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-03 16:46:14,594 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-01-03 16:46:14,594 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['sysinit.target', 'network-online.target', 'system.slice', '-.mount', 'basic.target', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-03 16:46:14,594 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-01-03 16:46:15,439 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-01-03 16:46:15,493 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3Pro_data/comms/moonraker.sock'
+2025-01-03 16:46:15,494 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: debian
+2025-01-03 16:46:15,494 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-01-03 16:46:15,746 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-03 16:46:15,776 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
+2025-01-03 16:46:15,787 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['systemd-journald.socket', 'network-online.target', 'basic.target', 'system.slice', '-.mount', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-03 16:46:16,039 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
