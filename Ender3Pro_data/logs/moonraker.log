@@ -429,3 +429,20 @@ Properties:
 **Description=Klipper 3D Printer Firmware SV1
 **User=secretjameser
 2025-01-03 16:46:16,039 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
+2025-01-03 16:46:29,938 [base_deploy.py:log_info()] - PackageKit: Detected 13 package updates:
+code
+gir1.2-javascriptcoregtk-4.0
+gir1.2-javascriptcoregtk-4.1
+gir1.2-webkit2-4.0
+gir1.2-webkit2-4.1
+gstreamer1.0-gtk3
+gstreamer1.0-plugins-good
+libjavascriptcoregtk-4.0-18
+libjavascriptcoregtk-4.1-0
+libjavascriptcoregtk-6.0-1
+libwebkit2gtk-4.0-37
+libwebkit2gtk-4.1-0
+libwebkitgtk-6.0-4
+2025-01-03 16:46:30,193 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
+2025-01-03 16:46:30,198 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
+2025-01-03 16:46:30,204 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
