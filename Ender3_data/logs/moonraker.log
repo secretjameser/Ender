@@ -707,3 +707,4 @@ System Time: 1735943210.776423, Usage: 0.1%, Memory: 57600 kB
 2025-01-03 19:46:39,406 [websockets.py:_handle_identify()] - Websocket 140370311224208 Client Identified - Name: fluidd, Version: 1.30.6-894aa23, Type: web
 2025-01-03 19:46:39,406 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-03 19:46:56,616 [websockets.py:on_close()] - Websocket Closed: ID: 140370311224208 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.21
+2025-01-03 20:51:39,285 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.106
