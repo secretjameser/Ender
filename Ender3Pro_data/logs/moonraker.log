@@ -510,3 +510,49 @@ Pinned Commit: None
 2025-01-11 21:24:26,170 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config status --porcelain -b) successfully finished
 2025-01-11 21:24:26,173 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config branch --list --no-color) successfully finished
 2025-01-11 21:24:26,179 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config remote get-url origin) successfully finished
+2025-01-11 21:24:26,757 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config fetch origin --prune --progress) successfully finished
+2025-01-11 21:24:26,761 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-11 21:24:26,765 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse HEAD) successfully finished
+2025-01-11 21:24:26,769 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-11 21:24:26,772 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse origin/master) successfully finished
+2025-01-11 21:24:26,776 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-11 21:24:26,780 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-list HEAD..807175d72e3a00cdc6b5e249444a4630e1e03a55 --count) successfully finished
+2025-01-11 21:24:26,784 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config log ce48c5854e9ca3ca72b63d0327069fac20e94c7c..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2025-01-11 21:24:26,788 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2025-01-11 21:24:26,788 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 1
+Diverged: False
+Pinned Commit: None
+2025-01-11 21:24:26,788 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
+2025-01-11 21:24:26,788 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
+2025-01-11 21:24:27,078 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.30.6
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.5
+Rollback Repo: fluidd-core/fluidd
