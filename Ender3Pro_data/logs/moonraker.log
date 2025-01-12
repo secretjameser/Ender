@@ -413,3 +413,25 @@ Properties:
 2025-01-11 21:24:12,683 [server.py:add_log_rollover_item()] - Multiple instances of Moonraker have the update manager enabled.
 moonraker-Ender3:f48e99d6eb394be794d7d750ca9f2811:786
 moonraker-Ender3Pro:f5a595eb585d48de9e462abc9c33a19b:787
+2025-01-11 21:24:15,750 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-01-11 21:24:15,842 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3Pro_data/comms/moonraker.sock'
+2025-01-11 21:24:15,843 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: debian
+2025-01-11 21:24:15,843 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-01-11 21:24:16,095 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-11 21:24:16,125 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
+2025-01-11 21:24:16,141 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['sysinit.target', 'network-online.target', 'system.slice', 'systemd-journald.socket', '-.mount', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-11 21:24:16,393 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
