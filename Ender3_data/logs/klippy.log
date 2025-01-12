@@ -783,3 +783,4 @@ mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
