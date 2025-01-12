@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Jan 12 01:45:20 2025 --------------------
+-------------------- Log Start | Tue Jan  7 03:51:30 2025 --------------------
 platform: Linux-6.1.0-28-amd64-x86_64-with-glibc2.36
 data_path: /home/secretjameser/Ender3_data
 is_default_data_path: False
@@ -182,14 +182,14 @@ Git Repo fluidd-config: No warnings detected
 Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Klipper Version: v0.12.0-377-g9bd0d4757
-2025-01-11 20:45:19,760 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.0 seconds, total blocked count: 5
-2025-01-11 20:45:20,601 [proc_stats.py:log_last_stats()] - 
-System Time: 1736223564.987428, Usage: 0.79%, Memory: 37572 kB
-System Time: 1736223565.989767, Usage: 0.46%, Memory: 37572 kB
-System Time: 1736223566.990705, Usage: 0.44%, Memory: 37572 kB
-System Time: 1736223567.991072, Usage: 0.36%, Memory: 37572 kB
-System Time: 1736223568.993574, Usage: 0.4%, Memory: 37572 kB
-2025-01-11 20:45:23,781 [machine.py:_find_public_ip()] - Failed to detect local IP address
-2025-01-11 20:45:23,782 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
-2025-01-11 20:45:33,793 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
-2025-01-11 20:45:33,793 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-06 22:51:30,730 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.48 seconds, total blocked count: 4
+2025-01-06 22:51:30,930 [proc_stats.py:log_last_stats()] - 
+System Time: 1736045220.259666, Usage: 0.43%, Memory: 50540 kB
+System Time: 1736045221.261792, Usage: 0.46%, Memory: 50540 kB
+System Time: 1736045222.262378, Usage: 0.52%, Memory: 50540 kB
+System Time: 1736045223.262394, Usage: 0.68%, Memory: 50540 kB
+System Time: 1736221890.765319, Usage: 0.08%, Memory: 50544 kB
+2025-01-06 22:51:31,738 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2025-01-06 22:51:31,739 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2025-01-06 22:51:41,749 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-06 22:51:41,750 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
