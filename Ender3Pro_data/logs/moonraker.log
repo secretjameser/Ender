@@ -440,3 +440,73 @@ Properties:
 2025-01-11 21:24:21,870 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
 2025-01-11 21:24:21,874 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
 2025-01-11 21:24:21,881 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
+2025-01-11 21:24:22,370 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
+2025-01-11 21:24:22,376 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-11 21:24:22,380 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse HEAD) successfully finished
+2025-01-11 21:24:22,386 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-11 21:24:22,391 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse origin/master) successfully finished
+2025-01-11 21:24:22,396 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-11 21:24:22,401 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-list HEAD..a4604e3380a0ca1bbf6b5428a88a63e9b28b47e5 --count) successfully finished
+2025-01-11 21:24:22,406 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker log 4e00a0760e756872b2fbb23a82b88dbceb383cf4..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2025-01-11 21:24:22,714 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2025-01-11 21:24:22,714 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 4e00a0760e756872b2fbb23a82b88dbceb383cf4
+Upstream Commit SHA: a4604e3380a0ca1bbf6b5428a88a63e9b28b47e5
+Current Version: v0.9.3-1-g4e00a076
+Upstream Version: v0.9.3-4-ga4604e33
+Rollback Commit: 71f9e677b81afcc6b99dd5002f595025c38edc7b
+Rollback Branch: master
+Rollback Version: v0.9.3-0-g71f9e677
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 3
+Diverged: False
+Pinned Commit: None
+2025-01-11 21:24:22,714 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2025-01-11 21:24:22,714 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2025-01-11 21:24:23,177 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper status --porcelain -b) successfully finished
+2025-01-11 21:24:23,184 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper branch --list --no-color) successfully finished
+2025-01-11 21:24:23,192 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper remote get-url origin) successfully finished
+2025-01-11 21:24:25,224 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper fetch origin --prune --progress) successfully finished
+2025-01-11 21:24:25,229 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-11 21:24:25,233 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse HEAD) successfully finished
+2025-01-11 21:24:25,291 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-11 21:24:25,295 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse origin/master) successfully finished
+2025-01-11 21:24:25,357 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-11 21:24:25,362 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-list HEAD..cf3b0475daa0d7154d2f986f94d8c184c7cf39c1 --count) successfully finished
+2025-01-11 21:24:25,367 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper log 9bd0d4757696375e946a1410fcc8036d2670ae30..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2025-01-11 21:24:25,425 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2025-01-11 21:24:25,425 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/secretjameser/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 9bd0d4757696375e946a1410fcc8036d2670ae30
+Upstream Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Current Version: v0.12.0-377-g9bd0d475
+Upstream Version: v0.12.0-410-gcf3b0475
+Rollback Commit: b89d552387da9734292a182c7040c418996ca350
+Rollback Branch: master
+Rollback Version: v0.12.0-317-gb89d5523
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 33
+Diverged: False
+Pinned Commit: None
+2025-01-11 21:24:25,425 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2025-01-11 21:24:25,425 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2025-01-11 21:24:26,170 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config status --porcelain -b) successfully finished
+2025-01-11 21:24:26,173 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config branch --list --no-color) successfully finished
+2025-01-11 21:24:26,179 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config remote get-url origin) successfully finished
