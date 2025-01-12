@@ -193,3 +193,22 @@ System Time: 1736223568.993574, Usage: 0.4%, Memory: 37572 kB
 2025-01-11 20:45:23,782 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
 2025-01-11 20:45:33,793 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
 2025-01-11 20:45:33,793 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-11 21:10:16,600 [server.py:_handle_term_signal()] - Exiting with signal SIGTERM
+2025-01-11 21:10:17,055 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 27.66 seconds, total blocked count: 6
+2025-01-11 21:10:28,629 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-11 21:10:29,417 [proc_stats.py:log_last_stats()] - 
+System Time: 1736647786.440097, Usage: 0.4%, Memory: 36028 kB
+System Time: 1736647787.443192, Usage: 0.67%, Memory: 36028 kB
+System Time: 1736647788.442705, Usage: 0.61%, Memory: 36028 kB
+System Time: 1736647789.443659, Usage: 0.4%, Memory: 36028 kB
+System Time: 1736647829.417176, Usage: 0.29%, Memory: 36584 kB
+2025-01-11 21:10:29,417 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.36 seconds, total blocked count: 7
+2025-01-11 21:10:31,553 [proc_stats.py:log_last_stats()] - 
+System Time: 1736647786.440097, Usage: 0.4%, Memory: 36028 kB
+System Time: 1736647787.443192, Usage: 0.67%, Memory: 36028 kB
+System Time: 1736647788.442705, Usage: 0.61%, Memory: 36028 kB
+System Time: 1736647789.443659, Usage: 0.4%, Memory: 36028 kB
+System Time: 1736647829.417176, Usage: 0.29%, Memory: 36584 kB
+2025-01-11 21:10:41,645 [filelock.py:acquire()] - File lock /tmp/.moonraker_instance_ids.lock is currently acquired by another process, waiting for release.
+2025-01-11 21:10:41,849 [update_manager.py:close()] - Attempt to acquire lock '/tmp/.moonraker_instance_ids.lock' timed out
+2025-01-11 21:10:44,497 [server.py:main()] - Server Shutdown

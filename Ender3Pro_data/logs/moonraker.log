@@ -171,3 +171,20 @@ System Time: 1736223568.822778, Usage: 0.48%, Memory: 35520 kB
 2025-01-11 20:45:30,788 [machine.py:_find_public_ip()] - Failed to detect local IP address
 2025-01-11 20:45:40,796 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
 2025-01-11 20:45:40,797 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-11 21:10:16,604 [server.py:_handle_term_signal()] - Exiting with signal SIGTERM
+2025-01-11 21:10:17,814 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 28.37 seconds, total blocked count: 6
+2025-01-11 21:10:25,269 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-11 21:10:27,233 [proc_stats.py:log_last_stats()] - 
+System Time: 1736647786.490931, Usage: 0.37%, Memory: 34884 kB
+System Time: 1736647787.491294, Usage: 0.42%, Memory: 34884 kB
+System Time: 1736647788.492927, Usage: 0.38%, Memory: 34884 kB
+System Time: 1736647789.494025, Usage: 0.41%, Memory: 34884 kB
+System Time: 1736647826.210813, Usage: 0.27%, Memory: 35412 kB
+2025-01-11 21:10:27,233 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.42 seconds, total blocked count: 7
+2025-01-11 21:10:30,606 [proc_stats.py:log_last_stats()] - 
+System Time: 1736647786.490931, Usage: 0.37%, Memory: 34884 kB
+System Time: 1736647787.491294, Usage: 0.42%, Memory: 34884 kB
+System Time: 1736647788.492927, Usage: 0.38%, Memory: 34884 kB
+System Time: 1736647789.494025, Usage: 0.41%, Memory: 34884 kB
+System Time: 1736647826.210813, Usage: 0.27%, Memory: 35412 kB
+2025-01-11 21:10:44,314 [server.py:main()] - Server Shutdown
