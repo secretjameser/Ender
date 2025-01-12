@@ -435,3 +435,8 @@ Properties:
 **Description=Klipper 3D Printer Firmware SV1
 **User=secretjameser
 2025-01-11 21:24:16,393 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-377-g9bd0d4757
+2025-01-11 21:24:21,360 [base_deploy.py:log_info()] - PackageKit: Detected 0 package updates:
+
+2025-01-11 21:24:21,870 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
+2025-01-11 21:24:21,874 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
+2025-01-11 21:24:21,881 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
