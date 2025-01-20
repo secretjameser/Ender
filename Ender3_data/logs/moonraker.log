@@ -817,3 +817,5 @@ Properties:
 2025-01-20 11:59:48,206 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
 2025-01-20 11:59:48,456 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-20 11:59:48,711 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 11:59:49,183 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2025-01-20 11:59:49,208 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
