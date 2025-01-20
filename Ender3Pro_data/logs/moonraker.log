@@ -477,3 +477,5 @@ CPU Temperature: 46.0
 2025-01-20 11:33:31,967 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-20 11:33:32,223 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 11:33:32,719 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 11:33:49,880 [klippy_apis.py:start_print()] - Requesting Job Start, filename = red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 11:33:50,023 [job_state.py:_status_update()] - Job Started: red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
