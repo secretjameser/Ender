@@ -295,3 +295,6 @@ Error configuring printer
 2025-01-20 10:22:05,293 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-20 10:22:05,543 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 10:22:06,044 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 10:24:27,735 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 10:24:28,093 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 10:24:28,202 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
