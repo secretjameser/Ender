@@ -208,3 +208,67 @@ System Time: 1737332307.115070, Usage: 0.08%, Memory: 52784 kB
 2025-01-19 19:20:44,249 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-19 19:20:44,501 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-19 19:20:45,000 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-19 19:20:56,231 [base_deploy.py:log_info()] - PackageKit: Detected 28 package updates:
+code
+fonts-opensymbol
+libreoffice-base-core
+libreoffice-calc
+libreoffice-common
+libreoffice-core
+libreoffice-draw
+libreoffice-gnome
+libreoffice-gtk3
+libreoffice-help-common
+libreoffice-help-en-us
+libreoffice-impress
+libreoffice-math
+libreoffice-style-colibre
+libreoffice-style-elementary
+libreoffice-writer
+libuno-cppu3
+libuno-cppuhelpergcc3-3
+libuno-purpenvhelpergcc3-3
+libuno-sal3
+libuno-salhelpergcc3-3
+linux-image-amd64
+linux-libc-dev
+python3-uno
+rsync
+uno-libs-private
+ure
+linux-image-6.1.0-30-amd64
+2025-01-19 19:20:56,709 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
+2025-01-19 19:20:56,748 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
+2025-01-19 19:20:56,755 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
+2025-01-19 19:20:57,560 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
+2025-01-19 19:20:57,566 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:20:57,570 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse HEAD) successfully finished
+2025-01-19 19:20:57,576 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:20:57,580 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse origin/master) successfully finished
+2025-01-19 19:20:57,585 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:20:57,590 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-list HEAD..72ed175c520e3b9e3054e9ad7d27157577300df1 --count) successfully finished
+2025-01-19 19:20:57,595 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker log 4e00a0760e756872b2fbb23a82b88dbceb383cf4..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2025-01-19 19:20:57,626 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2025-01-19 19:20:57,626 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 4e00a0760e756872b2fbb23a82b88dbceb383cf4
+Upstream Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Current Version: v0.9.3-1-g4e00a076
+Upstream Version: v0.9.3-16-g72ed175c
+Rollback Commit: 71f9e677b81afcc6b99dd5002f595025c38edc7b
+Rollback Branch: master
+Rollback Version: v0.9.3-0-g71f9e677
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 15
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:20:57,626 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2025-01-19 19:20:57,626 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
