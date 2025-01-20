@@ -2092,3 +2092,16 @@ Once the underlying issue is corrected, use the
 config, and restart the host software.
 Error configuring printer
 
+2025-01-20 15:02:07,674 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.153
+2025-01-20 15:02:07,951 [application.py:log_request()] - 101 GET /websocket?token=B5NRQ33XGM52FEQRM5PCOG4DBFL5F4G2 (192.168.1.153) [_TRUSTED_USER_] 1.15ms
+2025-01-20 15:02:07,951 [websockets.py:open()] - Websocket Opened: ID: 140637722672272, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:02:07,962 [websockets.py:on_close()] - Websocket Closed: ID: 140637722672272 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.01
+2025-01-20 15:02:08,941 [application.py:log_request()] - 101 GET /websocket?token=KKTNGLASNYPZADU6VRJMCW7QIYM6BN6B (192.168.1.153) [_TRUSTED_USER_] 0.82ms
+2025-01-20 15:02:08,941 [websockets.py:open()] - Websocket Opened: ID: 140637722658512, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:02:08,955 [websockets.py:_handle_identify()] - Websocket 140637722658512 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:02:08,955 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:02:10,868 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 15:02:11,060 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 15:02:11,210 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 15:02:12,123 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 15:02:12,139 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
