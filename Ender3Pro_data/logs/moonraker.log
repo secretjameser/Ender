@@ -1161,3 +1161,47 @@ Properties:
 2025-01-20 12:06:42,454 [websockets.py:open()] - Websocket Opened: ID: 140188914667664, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
 2025-01-20 12:06:42,464 [websockets.py:_handle_identify()] - Websocket 140188914667664 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 12:06:42,464 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:07:41,090 [websockets.py:on_close()] - Websocket Closed: ID: 140188914667664 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.63
+2025-01-20 12:08:03,739 [application.py:log_request()] - 101 GET /websocket?token=P3ZPPKZPUD5DA32ZUORPKTDTEMMPGS4I (192.168.1.153) [_TRUSTED_USER_] 0.86ms
+2025-01-20 12:08:03,739 [websockets.py:open()] - Websocket Opened: ID: 140188905395600, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:08:03,749 [websockets.py:_handle_identify()] - Websocket 140188905395600 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:08:03,749 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:08:20,144 [websockets.py:on_close()] - Websocket Closed: ID: 140188905395600 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.40
+2025-01-20 12:08:29,328 [application.py:log_request()] - 101 GET /websocket?token=YCXSU4L4KYVE6WR4AMH3N4FGEJGPYCMF (192.168.1.153) [_TRUSTED_USER_] 0.85ms
+2025-01-20 12:08:29,328 [websockets.py:open()] - Websocket Opened: ID: 140188914747088, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:08:29,337 [websockets.py:_handle_identify()] - Websocket 140188914747088 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:08:29,337 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:09:23,611 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 12:09:23,615 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737392933.652795, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392934.653345, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392935.654132, Usage: 0.73%, Memory: 55588 kB
+System Time: 1737392936.654523, Usage: 0.9%, Memory: 55588 kB
+System Time: 1737392937.655460, Usage: 0.69%, Memory: 55588 kB
+System Time: 1737392938.655751, Usage: 0.69%, Memory: 55588 kB
+System Time: 1737392939.657730, Usage: 0.75%, Memory: 55588 kB
+System Time: 1737392940.658567, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392941.658731, Usage: 0.69%, Memory: 55588 kB
+System Time: 1737392942.660102, Usage: 0.65%, Memory: 55588 kB
+System Time: 1737392943.660678, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392944.660924, Usage: 0.65%, Memory: 55588 kB
+System Time: 1737392945.661191, Usage: 0.73%, Memory: 55588 kB
+System Time: 1737392946.661729, Usage: 0.92%, Memory: 55588 kB
+System Time: 1737392947.662533, Usage: 0.73%, Memory: 55588 kB
+System Time: 1737392948.663194, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392949.663737, Usage: 0.8%, Memory: 55588 kB
+System Time: 1737392950.664037, Usage: 0.72%, Memory: 55588 kB
+System Time: 1737392951.664598, Usage: 0.72%, Memory: 55588 kB
+System Time: 1737392952.665280, Usage: 0.7%, Memory: 55588 kB
+System Time: 1737392953.666626, Usage: 0.71%, Memory: 55588 kB
+System Time: 1737392954.668497, Usage: 0.68%, Memory: 55588 kB
+System Time: 1737392955.669737, Usage: 0.7%, Memory: 55588 kB
+System Time: 1737392956.671128, Usage: 0.91%, Memory: 55588 kB
+System Time: 1737392957.672962, Usage: 0.69%, Memory: 55588 kB
+System Time: 1737392958.674915, Usage: 0.69%, Memory: 55588 kB
+System Time: 1737392959.675693, Usage: 0.77%, Memory: 55588 kB
+System Time: 1737392960.677117, Usage: 0.83%, Memory: 55588 kB
+System Time: 1737392961.679218, Usage: 0.67%, Memory: 55588 kB
+System Time: 1737392962.681279, Usage: 0.66%, Memory: 55588 kB
+CPU Temperature: 48.0
