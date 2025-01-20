@@ -1015,3 +1015,4 @@ System Time: 1737400342.988548, Usage: 0.74%, Memory: 58556 kB
 System Time: 1737400343.989122, Usage: 0.83%, Memory: 58556 kB
 CPU Temperature: 48.0
 2025-01-20 14:12:52,747 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884447720976
+2025-01-20 14:12:57,580 [websockets.py:on_close()] - Websocket Closed: ID: 139884447720976 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.76
