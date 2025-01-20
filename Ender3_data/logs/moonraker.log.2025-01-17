@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Jan 20 00:18:27 2025 --------------------
+-------------------- Log Start | Fri Jan 17 20:44:57 2025 --------------------
 platform: Linux-6.1.0-29-amd64-x86_64-with-glibc2.36
 data_path: /home/secretjameser/Ender3_data
 is_default_data_path: False
@@ -182,10 +182,23 @@ Git Repo fluidd-config: No warnings detected
 Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Klipper Version: v0.12.0-377-g9bd0d4757
-2025-01-19 19:18:27,103 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.41 seconds, total blocked count: 4
-2025-01-19 19:18:27,304 [proc_stats.py:log_last_stats()] - 
-System Time: 1737172684.557948, Usage: 0.45%, Memory: 52784 kB
-System Time: 1737172685.562164, Usage: 0.7%, Memory: 52784 kB
-System Time: 1737172686.560413, Usage: 0.65%, Memory: 52784 kB
-System Time: 1737172687.561234, Usage: 0.95%, Memory: 52784 kB
-System Time: 1737332307.115070, Usage: 0.08%, Memory: 52784 kB
+2025-01-17 15:44:57,377 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.56 seconds, total blocked count: 2
+2025-01-17 15:44:57,580 [proc_stats.py:log_last_stats()] - 
+System Time: 1737089725.617916, Usage: 0.34%, Memory: 53204 kB
+System Time: 1737089726.619236, Usage: 0.5%, Memory: 53204 kB
+System Time: 1737089727.620277, Usage: 0.5%, Memory: 53204 kB
+System Time: 1737089748.014801, Usage: 0.02%, Memory: 53204 kB
+System Time: 1737146697.387966, Usage: 0.12%, Memory: 53216 kB
+2025-01-17 15:45:06,393 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-17 15:45:06,393 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-17 21:30:26,098 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.39 seconds, total blocked count: 3
+2025-01-17 21:30:26,299 [proc_stats.py:log_last_stats()] - 
+System Time: 1737150476.584587, Usage: 0.37%, Memory: 52800 kB
+System Time: 1737150477.585489, Usage: 0.57%, Memory: 52800 kB
+System Time: 1737150478.586294, Usage: 0.47%, Memory: 52800 kB
+System Time: 1737150479.586022, Usage: 0.96%, Memory: 52800 kB
+System Time: 1737167426.121876, Usage: 0.05%, Memory: 52800 kB
+2025-01-17 21:30:28,111 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2025-01-17 21:30:28,111 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2025-01-17 21:30:38,122 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-17 21:30:38,122 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
