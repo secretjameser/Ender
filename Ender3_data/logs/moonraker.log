@@ -189,3 +189,9 @@ System Time: 1737172685.562164, Usage: 0.7%, Memory: 52784 kB
 System Time: 1737172686.560413, Usage: 0.65%, Memory: 52784 kB
 System Time: 1737172687.561234, Usage: 0.95%, Memory: 52784 kB
 System Time: 1737332307.115070, Usage: 0.08%, Memory: 52784 kB
+2025-01-19 19:19:01,287 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.38
+2025-01-19 19:19:01,818 [application.py:log_request()] - 101 GET /websocket?token=Q62MHDIVGPTGJGCRFF3N6U3J2FXEUVXH (192.168.1.38) [_TRUSTED_USER_] 1.28ms
+2025-01-19 19:19:01,819 [websockets.py:open()] - Websocket Opened: ID: 140426106207440, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.1.38
+2025-01-19 19:19:01,862 [websockets.py:_handle_identify()] - Websocket 140426106207440 Client Identified - Name: fluidd, Version: 1.30.6-894aa23, Type: web
+2025-01-19 19:19:01,863 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 19:19:33,203 [websockets.py:on_close()] - Websocket Closed: ID: 140426106207440 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.38

@@ -1,13 +1,13 @@
-=============== Log rollover at Thu Nov 14 22:12:57 2024 ===============
+=============== Log rollover at Thu Jan 16 23:30:48 2025 ===============
 Starting Klippy...
 Args: ['/home/secretjameser/klipper/klippy/klippy.py', '/home/secretjameser/Ender3Pro_data/config/printer.cfg', '-I', '/home/secretjameser/Ender3Pro_data/comms/klippy.serial', '-l', '/home/secretjameser/Ender3Pro_data/logs/klippy.log', '-a', '/home/secretjameser/Ender3Pro_data/comms/klippy.sock']
-Git version: 'v0.12.0-325-gfe89c19ac'
+Git version: 'v0.12.0-377-g9bd0d4757'
 Branch: master
 Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
-Python: '3.11.2 (main, Sep 14 2024, 03:00:30) [GCC 12.2.0]'
-Start printer at Thu Nov 14 22:13:05 2024 (1731640385.1 64.1)
+Python: '3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]'
+Start printer at Thu Jan 16 23:30:56 2025 (1737088256.9 76.1)
 ===== Config file =====
 [virtual_sdcard]
 path = /home/secretjameser/Ender3Pro_data/gcodes
@@ -260,8 +260,8 @@ mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
-webhooks client 140588590196624: New connection
-webhooks client 140588590196624: Client info {'program': 'Moonraker', 'version': 'v0.9.3-1-g4e00a07'}
+webhooks client 140512574397072: New connection
+webhooks client 140512574397072: Client info {'program': 'Moonraker', 'version': 'v0.9.3-1-g4e00a07'}
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/<your-mcu-id>: [Errno 2] No such file or directory: '/dev/serial/by-id/<your-mcu-id>'
