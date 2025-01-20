@@ -544,3 +544,22 @@ Pinned Commit: None
 2025-01-19 19:29:29,773 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
 2025-01-19 19:29:29,773 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
 2025-01-19 19:29:29,802 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-19 19:29:32,072 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-19 19:29:32,112 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-19 19:29:32,136 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['network-online.target', 'basic.target', 'system.slice', 'sysinit.target', 'systemd-journald.socket', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-19 19:29:34,835 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-19 19:29:35,391 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
