@@ -980,3 +980,37 @@ Error configuring printer
 2025-01-20 14:11:22,596 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 14:12:08,644 [klippy_apis.py:start_print()] - Requesting Job Start, filename = yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
 2025-01-20 14:12:08,883 [job_state.py:_status_update()] - Job Started: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 14:12:24,674 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 14:12:24,677 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737400314.966173, Usage: 0.66%, Memory: 58556 kB
+System Time: 1737400315.967162, Usage: 0.62%, Memory: 58556 kB
+System Time: 1737400316.968033, Usage: 0.65%, Memory: 58556 kB
+System Time: 1737400317.969006, Usage: 0.66%, Memory: 58556 kB
+System Time: 1737400318.969782, Usage: 0.66%, Memory: 58556 kB
+System Time: 1737400319.970724, Usage: 0.61%, Memory: 58556 kB
+System Time: 1737400320.971533, Usage: 0.66%, Memory: 58556 kB
+System Time: 1737400321.972546, Usage: 0.65%, Memory: 58556 kB
+System Time: 1737400322.972498, Usage: 1.23%, Memory: 58556 kB
+System Time: 1737400323.973991, Usage: 0.82%, Memory: 58556 kB
+System Time: 1737400324.974344, Usage: 0.68%, Memory: 58556 kB
+System Time: 1737400325.975788, Usage: 0.55%, Memory: 58556 kB
+System Time: 1737400326.976410, Usage: 0.79%, Memory: 58556 kB
+System Time: 1737400327.978389, Usage: 0.6%, Memory: 58556 kB
+System Time: 1737400328.979503, Usage: 1.21%, Memory: 58556 kB
+System Time: 1737400329.979699, Usage: 1.24%, Memory: 58556 kB
+System Time: 1737400330.980753, Usage: 0.7%, Memory: 58556 kB
+System Time: 1737400331.980160, Usage: 0.65%, Memory: 58556 kB
+System Time: 1737400332.981317, Usage: 0.71%, Memory: 58556 kB
+System Time: 1737400333.982815, Usage: 0.86%, Memory: 58556 kB
+System Time: 1737400334.983511, Usage: 0.72%, Memory: 58556 kB
+System Time: 1737400335.984055, Usage: 0.67%, Memory: 58556 kB
+System Time: 1737400336.984652, Usage: 0.75%, Memory: 58556 kB
+System Time: 1737400337.983766, Usage: 0.65%, Memory: 58556 kB
+System Time: 1737400338.985420, Usage: 0.55%, Memory: 58556 kB
+System Time: 1737400339.986881, Usage: 0.58%, Memory: 58556 kB
+System Time: 1737400340.986907, Usage: 0.68%, Memory: 58556 kB
+System Time: 1737400341.988558, Usage: 0.67%, Memory: 58556 kB
+System Time: 1737400342.988548, Usage: 0.74%, Memory: 58556 kB
+System Time: 1737400343.989122, Usage: 0.83%, Memory: 58556 kB
+CPU Temperature: 48.0
