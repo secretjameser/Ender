@@ -2110,3 +2110,14 @@ Error configuring printer
 2025-01-20 15:02:34,820 [klippy_connection.py:_do_connect()] - Klippy Connection Established
 2025-01-20 15:02:34,834 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
 2025-01-20 15:02:48,252 [websockets.py:on_close()] - Websocket Closed: ID: 140637722658512 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.84
+2025-01-20 15:03:37,318 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 15:03:37,319 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 15:03:37,569 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 15:03:37,826 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 15:03:38,322 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 15:03:44,372 [application.py:log_request()] - 101 GET /websocket?token=UU2XXXBEWEC2WMIIBS6S6QI7PP63G3VD (192.168.1.153) [_TRUSTED_USER_] 0.93ms
+2025-01-20 15:03:44,372 [websockets.py:open()] - Websocket Opened: ID: 140637724269008, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:03:44,622 [websockets.py:_handle_identify()] - Websocket 140637724269008 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:03:44,622 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:03:53,190 [klippy_apis.py:start_print()] - Requesting Job Start, filename = yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 15:03:53,366 [job_state.py:_status_update()] - Job Started: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
