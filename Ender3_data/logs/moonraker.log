@@ -627,3 +627,40 @@ System Info:
 2025-01-20 11:59:44,684 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
 2025-01-20 11:59:44,685 [machine.py:validation_init()] - Installation version in database up to date
 2025-01-20 11:59:44,826 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-01-20 11:59:45,144 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3.service
+2025-01-20 11:59:45,151 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', 'network-online.target', '-.mount']
+**After=['system.slice', '-.mount', 'sysinit.target', 'systemd-journald.socket', 'basic.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=secretjameser
+2025-01-20 11:59:45,151 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-01-20 11:59:45,151 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-01-20 11:59:45,154 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-01-20 11:59:45,156 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-01-20 11:59:45,158 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-01-20 11:59:45,158 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'basic.target', 'network-online.target', '-.mount', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-20 11:59:45,158 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
