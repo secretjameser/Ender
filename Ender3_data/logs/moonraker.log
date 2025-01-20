@@ -424,3 +424,38 @@ Diverged: False
 Pinned Commit: None
 2025-01-19 19:21:04,390 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
 2025-01-19 19:21:04,390 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
+2025-01-19 19:29:24,395 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config fetch origin --prune --progress) successfully finished
+2025-01-19 19:29:24,402 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:29:25,017 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config pull --progress) successfully finished
+2025-01-19 19:29:25,035 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config status --porcelain -b) successfully finished
+2025-01-19 19:29:25,043 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config branch --list --no-color) successfully finished
+2025-01-19 19:29:25,079 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config remote get-url origin) successfully finished
+2025-01-19 19:29:25,091 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:29:25,099 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse HEAD) successfully finished
+2025-01-19 19:29:25,118 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:29:25,133 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse origin/master) successfully finished
+2025-01-19 19:29:25,151 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:29:25,161 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-list HEAD..807175d72e3a00cdc6b5e249444a4630e1e03a55 --count) successfully finished
+2025-01-19 19:29:25,161 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.1-0-g807175d7
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:29:25,161 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
+2025-01-19 19:29:25,161 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
