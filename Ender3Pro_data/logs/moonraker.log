@@ -377,3 +377,37 @@ Content-Type: multipart/form-data; boundary=------------------------1970ff7c8c7c
 2025-01-20 11:04:28,367 [websockets.py:_handle_identify()] - Websocket 140519401024912 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 11:04:28,376 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 11:05:58,537 [websockets.py:on_close()] - Websocket Closed: ID: 140519401024912 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.19
+2025-01-20 11:11:58,574 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 11:11:58,578 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737389489.012724, Usage: 0.51%, Memory: 60676 kB
+System Time: 1737389490.013774, Usage: 0.57%, Memory: 60676 kB
+System Time: 1737389491.014414, Usage: 0.52%, Memory: 60676 kB
+System Time: 1737389492.015105, Usage: 0.54%, Memory: 60676 kB
+System Time: 1737389493.015891, Usage: 0.76%, Memory: 60676 kB
+System Time: 1737389494.016580, Usage: 0.54%, Memory: 60676 kB
+System Time: 1737389495.018540, Usage: 0.54%, Memory: 60676 kB
+System Time: 1737389496.019542, Usage: 0.54%, Memory: 60676 kB
+System Time: 1737389497.020109, Usage: 0.55%, Memory: 60676 kB
+System Time: 1737389498.021282, Usage: 0.49%, Memory: 60676 kB
+System Time: 1737389499.022449, Usage: 0.53%, Memory: 60676 kB
+System Time: 1737389500.023789, Usage: 0.56%, Memory: 60676 kB
+System Time: 1737389501.024703, Usage: 0.55%, Memory: 60676 kB
+System Time: 1737389502.025457, Usage: 0.55%, Memory: 60676 kB
+System Time: 1737389503.026658, Usage: 0.77%, Memory: 60676 kB
+System Time: 1737389504.027143, Usage: 0.56%, Memory: 60676 kB
+System Time: 1737389505.027677, Usage: 0.56%, Memory: 60676 kB
+System Time: 1737389506.027371, Usage: 0.55%, Memory: 60676 kB
+System Time: 1737389507.029304, Usage: 0.45%, Memory: 60676 kB
+System Time: 1737389508.030156, Usage: 0.55%, Memory: 60676 kB
+System Time: 1737389509.030643, Usage: 0.52%, Memory: 60676 kB
+System Time: 1737389510.032296, Usage: 0.57%, Memory: 60676 kB
+System Time: 1737389511.032585, Usage: 0.53%, Memory: 60676 kB
+System Time: 1737389512.033085, Usage: 0.53%, Memory: 60676 kB
+System Time: 1737389513.033731, Usage: 0.76%, Memory: 60676 kB
+System Time: 1737389514.034442, Usage: 0.54%, Memory: 60676 kB
+System Time: 1737389515.035052, Usage: 0.49%, Memory: 60676 kB
+System Time: 1737389516.036576, Usage: 0.51%, Memory: 60676 kB
+System Time: 1737389517.037245, Usage: 0.63%, Memory: 60676 kB
+System Time: 1737389518.038500, Usage: 0.56%, Memory: 60676 kB
+CPU Temperature: 46.0
