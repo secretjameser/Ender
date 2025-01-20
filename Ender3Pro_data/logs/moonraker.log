@@ -175,3 +175,9 @@ Content-Type:
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryP2gDY56SeTQFqWxG
 2025-01-20 10:15:58,246 [application.py:post()] - Processing Uploaded File: KAMP_Settings.cfg
 2025-01-20 10:15:58,250 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 15.48ms
+2025-01-20 10:16:34,924 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: 
+2025-01-20 10:16:34,934 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryMYVrhnbJhQqSSiSn
+2025-01-20 10:16:34,965 [application.py:post()] - Processing Uploaded File: printer.cfg
+2025-01-20 10:16:34,968 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 34.15ms
