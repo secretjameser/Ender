@@ -964,3 +964,63 @@ System Info:
 2025-01-20 11:59:42,667 [server.py:load_component()] - Component (data_store) loaded
 2025-01-20 11:59:42,697 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
 2025-01-20 11:59:42,698 [server.py:load_component()] - Component (proc_stats) loaded
+2025-01-20 11:59:42,730 [server.py:load_component()] - Component (job_state) loaded
+2025-01-20 11:59:42,754 [server.py:load_component()] - Component (job_queue) loaded
+2025-01-20 11:59:42,782 [database.py:register_table()] - Found registered table job_history
+2025-01-20 11:59:42,782 [database.py:register_table()] - Found registered table job_totals
+2025-01-20 11:59:42,783 [server.py:load_component()] - Component (history) loaded
+2025-01-20 11:59:42,896 [server.py:load_component()] - Component (http_client) loaded
+2025-01-20 11:59:42,921 [server.py:load_component()] - Component (announcements) loaded
+2025-01-20 11:59:42,953 [server.py:load_component()] - Component (webcam) loaded
+2025-01-20 11:59:42,976 [server.py:load_component()] - Component (extensions) loaded
+2025-01-20 11:59:43,723 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/secretjameser/moonraker-env
+2025-01-20 11:59:43,726 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/secretjameser/klippy-env
+2025-01-20 11:59:43,733 [server.py:load_component()] - Component (update_manager) loaded
+2025-01-20 11:59:43,737 [server.py:load_component()] - Component (octoprint_compat) loaded
+2025-01-20 11:59:43,738 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2025-01-20 11:59:44,851 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-01-20 11:59:44,857 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2025-01-20 11:59:44,859 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-01-20 11:59:44,860 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-01-20 11:59:44,861 [machine.py:validation_init()] - Installation version in database up to date
+2025-01-20 11:59:44,991 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-01-20 11:59:45,144 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3Pro.service
+2025-01-20 11:59:45,150 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3Pro.service:
+unit_name: moonraker-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount', 'network-online.target']
+**After=['systemd-journald.socket', 'network-online.target', 'basic.target', '-.mount', 'sysinit.target', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3Pro.service
+**Description=API Server for Klipper SV1 Ender3Pro
+**User=secretjameser
+2025-01-20 11:59:45,150 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-01-20 11:59:45,150 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-01-20 11:59:45,154 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-01-20 11:59:45,161 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-01-20 11:59:45,164 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-01-20 11:59:45,164 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['-.mount', 'network-online.target', 'sysinit.target', 'systemd-journald.socket', 'basic.target', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-20 11:59:45,164 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-01-20 11:59:45,168 [server.py:add_log_rollover_item()] - Multiple instances of Moonraker have the update manager enabled.
+moonraker-Ender3:f48e99d6eb394be794d7d750ca9f2811:805
+moonraker-Ender3Pro:f5a595eb585d48de9e462abc9c33a19b:811
