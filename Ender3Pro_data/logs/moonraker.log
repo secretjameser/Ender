@@ -605,3 +605,8 @@ config, and restart the host software.
 Error configuring printer
 
 2025-01-19 20:12:27,698 [websockets.py:on_close()] - Websocket Closed: ID: 140519399617680 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.53
+2025-01-19 20:14:48,385 [application.py:log_request()] - 101 GET /websocket?token=ULHBRC7BLFPCXRDE4R73HULGE2QOUYMR (192.168.1.153) [_TRUSTED_USER_] 0.86ms
+2025-01-19 20:14:48,385 [websockets.py:open()] - Websocket Opened: ID: 140519400350160, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-19 20:14:48,471 [websockets.py:_handle_identify()] - Websocket 140519400350160 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-19 20:14:48,471 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 20:14:50,506 [websockets.py:on_close()] - Websocket Closed: ID: 140519400350160 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.12

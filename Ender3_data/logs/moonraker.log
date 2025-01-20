@@ -1593,3 +1593,13 @@ Error configuring printer
 2025-01-19 20:12:46,781 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-19 20:13:32,250 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
 2025-01-19 20:13:32,405 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:14:48,173 [websockets.py:on_close()] - Websocket Closed: ID: 139950890822416 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.19
+2025-01-19 20:14:50,579 [application.py:log_request()] - 101 GET /websocket?token=W2EWNNAXWSO3RISKV25YDJZHAI43XTJN (192.168.1.153) [_TRUSTED_USER_] 0.80ms
+2025-01-19 20:14:50,579 [websockets.py:open()] - Websocket Opened: ID: 139950891779344, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-19 20:14:50,591 [websockets.py:_handle_identify()] - Websocket 139950891779344 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-19 20:14:50,592 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 20:16:03,710 [websockets.py:on_close()] - Websocket Closed: ID: 139950891779344 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 12.90
+2025-01-19 20:16:07,674 [application.py:log_request()] - 101 GET /websocket?token=ELU6FQ2NQKDCNOSN2IYTI4XINGPPKAFW (192.168.1.153) [_TRUSTED_USER_] 0.91ms
+2025-01-19 20:16:07,674 [websockets.py:open()] - Websocket Opened: ID: 139950891766416, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-19 20:16:07,755 [websockets.py:_handle_identify()] - Websocket 139950891766416 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-19 20:16:07,756 [file_manager.py:get_file_list()] - Updating File List <config>...
