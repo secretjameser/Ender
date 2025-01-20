@@ -305,3 +305,4 @@ Error configuring printer
 2025-01-20 10:24:31,601 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-20 10:24:31,854 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 10:24:32,355 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 10:25:31,046 [websockets.py:write_to_socket()] - Websocket closed while writing: 140519401641872
