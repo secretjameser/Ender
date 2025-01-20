@@ -1633,3 +1633,11 @@ Index |  Tool Adjusted  |   Probe
   97  | (102.8, 218.9)  | (57.8, 214.9)
   98  | (83.9, 218.9)   | (38.9, 214.9)
   99  | (65.0, 218.9)   | (20.0, 214.9)
+Starting heater checks for extruder
+Stats 10765.1: gcodein=0  mcu: mcu_awake=0.000 mcu_task_avg=0.000000 mcu_task_stddev=0.000000 bytes_write=1372 bytes_read=4366 bytes_retransmit=0 bytes_invalid=0 send_seq=130 receive_seq=127 retransmit_seq=0 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=19 upcoming_bytes=2390 freq=72003609  heater_bed: target=0 temp=0.0 pwm=0.000 sysload=2.73 cputime=8.584 memavail=3262120 print_time=115.247 buffer_time=0.247 print_stall=0 extruder: target=0 temp=0.0 pwm=0.000
+webhooks: registering remote method 'shutdown_machine' for connection id: 140563073037776
+webhooks: registering remote method 'reboot_machine' for connection id: 140563073037776
+webhooks: registering remote method 'pause_job_queue' for connection id: 140563073037776
+webhooks: registering remote method 'start_job_queue' for connection id: 140563073037776
+Stats 10766.1: gcodein=0  mcu: mcu_awake=0.005 mcu_task_avg=0.000031 mcu_task_stddev=0.000049 bytes_write=4064 bytes_read=4767 bytes_retransmit=0 bytes_invalid=0 send_seq=182 receive_seq=182 retransmit_seq=0 srtt=0.004 rttvar=0.001 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001703  heater_bed: target=0 temp=20.3 pwm=0.000 sysload=2.73 cputime=8.606 memavail=3252724 print_time=115.247 buffer_time=0.000 print_stall=0 extruder: target=0 temp=20.3 pwm=0.000
+Stats 10767.1: gcodein=0  mcu: mcu_awake=0.005 mcu_task_avg=0.000031 mcu_task_stddev=0.000049 bytes_write=4070 bytes_read=4903 bytes_retransmit=0 bytes_invalid=0 send_seq=183 receive_seq=183 retransmit_seq=0 srtt=0.004 rttvar=0.001 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001072  heater_bed: target=0 temp=20.3 pwm=0.000 sysload=2.73 cputime=8.621 memavail=3248220 print_time=115.247 buffer_time=0.000 print_stall=0 extruder: target=0 temp=20.3 pwm=0.000
