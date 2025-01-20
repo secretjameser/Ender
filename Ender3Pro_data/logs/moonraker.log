@@ -326,3 +326,4 @@ Error configuring printer
 2025-01-20 10:41:52,323 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.01 seconds
 2025-01-20 10:42:52,324 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 840.01 seconds
 2025-01-20 10:43:52,326 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 900.02 seconds
+2025-01-20 10:44:52,326 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 960.02 seconds
