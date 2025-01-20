@@ -642,3 +642,5 @@ CPU Temperature: 47.0
 2025-01-20 11:46:37,138 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.01 seconds
 2025-01-20 11:46:44,362 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.02 seconds
 2025-01-20 11:46:44,999 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.01 seconds
+2025-01-20 11:46:47,259 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.01 seconds
+2025-01-20 11:46:51,034 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.01 seconds
