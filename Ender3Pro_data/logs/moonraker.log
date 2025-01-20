@@ -1206,3 +1206,12 @@ System Time: 1737392961.679218, Usage: 0.67%, Memory: 55588 kB
 System Time: 1737392962.681279, Usage: 0.66%, Memory: 55588 kB
 CPU Temperature: 48.0
 2025-01-20 12:09:46,457 [websockets.py:on_close()] - Websocket Closed: ID: 140188914747088 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.12
+2025-01-20 12:11:08,269 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-20 12:11:08,605 [application.py:log_request()] - 101 GET /websocket?token=6HJXM5N2XY7H534DZQ7QGDTYBJWN2BKJ (192.168.1.14) [_TRUSTED_USER_] 0.81ms
+2025-01-20 12:11:08,605 [websockets.py:open()] - Websocket Opened: ID: 140188903455440, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 12:11:08,616 [websockets.py:_handle_identify()] - Websocket 140188903455440 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:11:08,616 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:11:13,103 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 12:11:13,214 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 12:11:14,359 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 12:11:14,375 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
