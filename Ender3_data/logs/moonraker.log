@@ -330,3 +330,8 @@ Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb2
 
 2025-01-20 10:57:33,423 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "yellow_33m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
 2025-01-20 10:57:33,426 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 302.09ms
+2025-01-20 11:01:00,071 [application.py:log_request()] - 101 GET /websocket?token=EOT6BGJEQJ647XCC77A4EE33ABG43YES (192.168.1.14) [_TRUSTED_USER_] 0.73ms
+2025-01-20 11:01:00,071 [websockets.py:open()] - Websocket Opened: ID: 139950890846480, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:01:00,081 [websockets.py:_handle_identify()] - Websocket 139950890846480 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:01:00,082 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:03:20,489 [websockets.py:on_close()] - Websocket Closed: ID: 139950890846480 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.41
