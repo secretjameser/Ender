@@ -194,3 +194,10 @@ Klipper Version: v0.12.0-410-gcf3b0475d
 2025-01-20 10:01:33,478 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 10:01:33,978 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-20 10:01:57,046 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950901710928
+2025-01-20 10:02:01,806 [websockets.py:on_close()] - Websocket Closed: ID: 139950901710928 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-01-20 10:13:10,974 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-20 10:13:11,179 [application.py:log_request()] - 101 GET /websocket?token=7M2W4B5EF7T6PRFZOEZPL7NZBVFOBXHO (192.168.1.14) [_TRUSTED_USER_] 1.01ms
+2025-01-20 10:13:11,179 [websockets.py:open()] - Websocket Opened: ID: 139950863198736, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 10:13:11,188 [websockets.py:_handle_identify()] - Websocket 139950863198736 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 10:13:11,188 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 10:13:20,794 [websockets.py:on_close()] - Websocket Closed: ID: 139950863198736 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.62
