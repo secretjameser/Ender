@@ -957,3 +957,7 @@ Error configuring printer
 2025-01-20 14:06:56,697 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
 2025-01-20 14:06:57,731 [klippy_connection.py:_do_connect()] - Klippy Connection Established
 2025-01-20 14:06:57,756 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 14:07:12,920 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 14:07:13,069 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 14:07:14,176 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 14:07:14,191 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
