@@ -446,3 +446,27 @@ CPU Temperature: 46.0
 2025-01-20 11:22:10,094 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-20 11:22:10,347 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 11:22:10,847 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 11:22:47,158 [application.py:log_request()] - 101 GET /websocket?token=3WX7WXLICYL2U2ONVTH3BSTOUROKFMCZ (192.168.1.153) [_TRUSTED_USER_] 0.88ms
+2025-01-20 11:22:47,158 [websockets.py:open()] - Websocket Opened: ID: 140519389668816, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:22:47,180 [websockets.py:_handle_identify()] - Websocket 140519389668816 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:22:47,180 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:24:17,212 [websockets.py:write_to_socket()] - Websocket closed while writing: 140519389668816
+2025-01-20 11:24:22,161 [websockets.py:on_close()] - Websocket Closed: ID: 140519389668816 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.85
+2025-01-20 11:24:32,822 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-01-20 11:25:32,823 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2025-01-20 11:26:32,825 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2025-01-20 11:26:39,848 [application.py:log_request()] - 101 GET /websocket?token=M4AF2YDUADN3GK4EVOG2NGO44JPGJC6D (192.168.1.153) [_TRUSTED_USER_] 1.00ms
+2025-01-20 11:26:39,849 [websockets.py:open()] - Websocket Opened: ID: 140519389432976, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:26:39,931 [websockets.py:_handle_identify()] - Websocket 140519389432976 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:26:39,932 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:27:29,919 [websockets.py:write_to_socket()] - Websocket closed while writing: 140519389432976
+2025-01-20 11:27:32,827 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2025-01-20 11:27:34,850 [websockets.py:on_close()] - Websocket Closed: ID: 140519389432976 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 11:28:32,828 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2025-01-20 11:32:57,240 [application.py:log_request()] - 101 GET /websocket?token=YVZKSPY5TDAJBQHDFTI35ZFIUCZAPNTS (192.168.1.153) [_TRUSTED_USER_] 0.90ms
+2025-01-20 11:32:57,240 [websockets.py:open()] - Websocket Opened: ID: 140519389668944, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:32:57,258 [websockets.py:_handle_identify()] - Websocket 140519389668944 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:32:57,258 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:33:27,945 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 11:33:28,036 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 11:33:28,106 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
