@@ -1444,3 +1444,8 @@ Properties:
 2025-01-19 19:40:46,258 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-19 19:40:46,513 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-19 19:40:47,010 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-19 19:42:00,330 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.38
+2025-01-19 19:42:02,419 [application.py:log_request()] - 101 GET /websocket?token=5DMW2EFLKSVDPEA33HPI3IG7H6CCT3AY (192.168.1.38) [_TRUSTED_USER_] 1.20ms
+2025-01-19 19:42:02,420 [websockets.py:open()] - Websocket Opened: ID: 139950892197072, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.1.38
+2025-01-19 19:42:02,562 [websockets.py:_handle_identify()] - Websocket 139950892197072 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-19 19:42:02,563 [file_manager.py:get_file_list()] - Updating File List <config>...
