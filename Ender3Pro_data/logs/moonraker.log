@@ -1249,3 +1249,14 @@ Content-Type: multipart/form-data; boundary=------------------------10364a8e415a
 2025-01-20 12:36:53,434 [websockets.py:_handle_identify()] - Websocket 140188904248208 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 12:36:53,434 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 12:36:58,815 [websockets.py:on_close()] - Websocket Closed: ID: 140188904248208 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.40
+2025-01-20 12:59:39,800 [application.py:log_request()] - 101 GET /websocket?token=F42XUW4AGUAKF3UASJ3MJCQPG6DFZPPT (192.168.1.153) [_TRUSTED_USER_] 0.97ms
+2025-01-20 12:59:39,800 [websockets.py:open()] - Websocket Opened: ID: 140188904289808, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:59:39,810 [websockets.py:_handle_identify()] - Websocket 140188904289808 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:59:39,810 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 13:00:06,300 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 13:00:06,312 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 13:00:06,312 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode, sliced by PrusaSlicer
+
+2025-01-20 13:00:06,536 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished

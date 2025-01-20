@@ -873,3 +873,8 @@ Properties:
 2025-01-20 12:36:59,005 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 12:37:29,233 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884447837264
 2025-01-20 12:37:33,996 [websockets.py:on_close()] - Websocket Closed: ID: 139884447837264 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-01-20 12:59:37,136 [application.py:log_request()] - 101 GET /websocket?token=MK4ZSJTV4FSUK2I3ROV5NTPBXML7YJNS (192.168.1.153) [_TRUSTED_USER_] 0.83ms
+2025-01-20 12:59:37,136 [websockets.py:open()] - Websocket Opened: ID: 139884457101712, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:59:37,166 [websockets.py:_handle_identify()] - Websocket 139884457101712 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:59:37,166 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:59:39,584 [websockets.py:on_close()] - Websocket Closed: ID: 139884457101712 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.45
