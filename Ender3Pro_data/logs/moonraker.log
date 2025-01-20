@@ -218,3 +218,5 @@ Content-Type:
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundarydBaCJiLAsftMWxOl
 2025-01-20 10:18:15,645 [application.py:post()] - Processing Uploaded File: sample-macros (2).cfg
 2025-01-20 10:18:15,647 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 6.05ms
+2025-01-20 10:18:26,442 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 10:18:26,478 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
