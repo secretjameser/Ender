@@ -1530,3 +1530,37 @@ Content-Type: multipart/form-data; boundary=------------------------5c784d200bb2
 2025-01-19 20:03:29,720 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
 2025-01-19 20:03:29,725 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 1171.93ms
 2025-01-19 20:03:29,818 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:09:16,969 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-19 20:09:16,973 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737335327.546411, Usage: 0.53%, Memory: 57008 kB
+System Time: 1737335328.547495, Usage: 0.52%, Memory: 57008 kB
+System Time: 1737335329.547846, Usage: 0.56%, Memory: 57008 kB
+System Time: 1737335330.548285, Usage: 0.53%, Memory: 57008 kB
+System Time: 1737335331.549188, Usage: 0.54%, Memory: 57008 kB
+System Time: 1737335332.549825, Usage: 0.78%, Memory: 57008 kB
+System Time: 1737335333.550185, Usage: 0.52%, Memory: 57008 kB
+System Time: 1737335334.550765, Usage: 0.5%, Memory: 57008 kB
+System Time: 1737335335.551172, Usage: 0.51%, Memory: 57008 kB
+System Time: 1737335336.551734, Usage: 0.49%, Memory: 57008 kB
+System Time: 1737335337.552113, Usage: 0.51%, Memory: 57008 kB
+System Time: 1737335338.552597, Usage: 0.55%, Memory: 57008 kB
+System Time: 1737335339.553047, Usage: 0.55%, Memory: 57008 kB
+System Time: 1737335340.553758, Usage: 0.54%, Memory: 57012 kB
+System Time: 1737335341.554105, Usage: 0.51%, Memory: 57012 kB
+System Time: 1737335342.555933, Usage: 0.79%, Memory: 57012 kB
+System Time: 1737335343.557159, Usage: 0.56%, Memory: 57012 kB
+System Time: 1737335344.558813, Usage: 0.48%, Memory: 57012 kB
+System Time: 1737335345.559509, Usage: 0.51%, Memory: 57012 kB
+System Time: 1737335346.560126, Usage: 0.53%, Memory: 57012 kB
+System Time: 1737335347.560505, Usage: 0.54%, Memory: 57012 kB
+System Time: 1737335348.560822, Usage: 0.53%, Memory: 57012 kB
+System Time: 1737335349.561892, Usage: 0.54%, Memory: 57012 kB
+System Time: 1737335350.563242, Usage: 0.57%, Memory: 57012 kB
+System Time: 1737335351.564498, Usage: 0.53%, Memory: 57012 kB
+System Time: 1737335352.565075, Usage: 0.79%, Memory: 57012 kB
+System Time: 1737335353.567357, Usage: 0.51%, Memory: 57012 kB
+System Time: 1737335354.568445, Usage: 0.51%, Memory: 57012 kB
+System Time: 1737335355.569567, Usage: 0.52%, Memory: 57012 kB
+System Time: 1737335356.569865, Usage: 0.48%, Memory: 57012 kB
+CPU Temperature: 48.0
