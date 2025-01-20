@@ -819,3 +819,11 @@ Properties:
 2025-01-20 11:59:48,711 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 11:59:49,183 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
 2025-01-20 11:59:49,208 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 12:00:15,185 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-20 12:00:15,185 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-20 12:00:43,631 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.153
+2025-01-20 12:00:43,720 [application.py:log_request()] - 101 GET /websocket?token=IIL7DUXWVB6KQWEG7QRXQT7YX3P6VI5H (192.168.1.153) [_TRUSTED_USER_] 1.24ms
+2025-01-20 12:00:43,720 [websockets.py:open()] - Websocket Opened: ID: 139884447872016, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:00:43,733 [websockets.py:_handle_identify()] - Websocket 139884447872016 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:00:43,733 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:00:56,135 [websockets.py:on_close()] - Websocket Closed: ID: 139884447872016 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.31
