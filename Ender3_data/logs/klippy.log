@@ -12678,3 +12678,16 @@ Index |  Tool Adjusted  |   Probe
   97  | (102.8, 218.9)  | (57.8, 214.9)
   98  | (83.9, 218.9)   | (38.9, 214.9)
   99  | (65.0, 218.9)   | (20.0, 214.9)
+Starting heater checks for extruder
+Write g-code response
+Traceback (most recent call last):
+  File "/home/secretjameser/klipper/klippy/gcode.py", line 459, in _respond_raw
+    os.write(self.fd, (msg+"\n").encode())
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Stats 2589.9: gcodein=0  mcu: mcu_awake=0.000 mcu_task_avg=0.000000 mcu_task_stddev=0.000000 bytes_write=1379 bytes_read=4436 bytes_retransmit=9 bytes_invalid=0 send_seq=132 receive_seq=129 retransmit_seq=2 srtt=0.003 rttvar=0.001 rto=0.025 ready_bytes=19 upcoming_bytes=2392 freq=72001980  heater_bed: target=0 temp=51.3 pwm=0.000 sysload=0.20 cputime=25.284 memavail=4504432 print_time=3.749 buffer_time=0.248 print_stall=0 extruder: target=0 temp=103.3 pwm=0.000
+webhooks: registering remote method 'shutdown_machine' for connection id: 140336958350672
+webhooks: registering remote method 'reboot_machine' for connection id: 140336958350672
+webhooks: registering remote method 'pause_job_queue' for connection id: 140336958350672
+webhooks: registering remote method 'start_job_queue' for connection id: 140336958350672
+Stats 2590.9: gcodein=0  mcu: mcu_awake=0.000 mcu_task_avg=0.000000 mcu_task_stddev=0.000000 bytes_write=4041 bytes_read=4802 bytes_retransmit=9 bytes_invalid=0 send_seq=182 receive_seq=182 retransmit_seq=2 srtt=0.004 rttvar=0.002 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001598  heater_bed: target=0 temp=51.2 pwm=0.000 sysload=0.20 cputime=25.301 memavail=4490212 print_time=3.749 buffer_time=0.000 print_stall=0 extruder: target=0 temp=102.6 pwm=0.000
+Stats 2591.9: gcodein=0  mcu: mcu_awake=0.070 mcu_task_avg=0.000247 mcu_task_stddev=0.000472 bytes_write=4047 bytes_read=4925 bytes_retransmit=9 bytes_invalid=0 send_seq=183 receive_seq=183 retransmit_seq=2 srtt=0.004 rttvar=0.002 rto=0.025 ready_bytes=0 upcoming_bytes=10 freq=72001400  heater_bed: target=0 temp=51.2 pwm=0.000 sysload=0.19 cputime=25.313 memavail=4509656 print_time=3.749 buffer_time=0.000 print_stall=0 extruder: target=0 temp=102.0 pwm=0.000
