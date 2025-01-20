@@ -214,3 +214,7 @@ Printer is halted
 
 2025-01-20 10:18:15,632 [application.py:prepare()] - Upload Request Received from 192.168.1.14
 Content-Type: 
+2025-01-20 10:18:15,641 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarydBaCJiLAsftMWxOl
+2025-01-20 10:18:15,645 [application.py:post()] - Processing Uploaded File: sample-macros (2).cfg
+2025-01-20 10:18:15,647 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 6.05ms
