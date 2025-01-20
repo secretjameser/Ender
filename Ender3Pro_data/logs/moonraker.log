@@ -1,0 +1,288 @@
+-------------------- Log Start | Mon Jan 20 00:18:27 2025 --------------------
+platform: Linux-6.1.0-29-amd64-x86_64-with-glibc2.36
+data_path: /home/secretjameser/Ender3Pro_data
+is_default_data_path: False
+config_file: /home/secretjameser/Ender3Pro_data/config/moonraker.conf
+backup_config: /home/secretjameser/Ender3Pro_data/config/.moonraker.conf.bkp
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: f5a595eb585d48de9e462abc9c33a19b
+unix_socket_path: /home/secretjameser/Ender3Pro_data/comms/moonraker.sock
+software_version: v0.9.3-1-g4e00a07
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/secretjameser/Ender3Pro_data/logs/moonraker.log
+python_version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+launch_args: /home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/moonraker.py -d /home/secretjameser/Ender3Pro_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/secretjameser/Ender3Pro_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/secretjameser/Ender3Pro_data/config/moonraker.conf
+#################################################################
+Loading Sqlite database provider. Sqlite Version: 3.40.1
+Unsafe Shutdown Count: 0
+
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 5859492
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.1.0-29-amd64
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker-Ender3Pro.service:
+unit_name: moonraker-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'network-online.target', '-.mount', 'sysinit.target']
+**After=['-.mount', 'system.slice', 'basic.target', 'sysinit.target', 'systemd-journald.socket', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3Pro.service
+**Description=API Server for Klipper SV1 Ender3Pro
+**User=secretjameser
+
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['network-online.target', 'system.slice', 'systemd-journald.socket', 'basic.target', '-.mount', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo fluidd-config: No warnings detected
+Klipper Version: v0.12.0-377-g9bd0d4757
+2025-01-19 19:18:27,090 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.39 seconds, total blocked count: 4
+2025-01-19 19:18:27,292 [proc_stats.py:log_last_stats()] - 
+System Time: 1737172684.559040, Usage: 0.46%, Memory: 53908 kB
+System Time: 1737172685.561360, Usage: 0.69%, Memory: 53908 kB
+System Time: 1737172686.562207, Usage: 0.66%, Memory: 53908 kB
+System Time: 1737172687.563700, Usage: 0.88%, Memory: 53908 kB
+System Time: 1737332307.112516, Usage: 0.07%, Memory: 53908 kB
+2025-01-19 19:19:33,405 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.38
+2025-01-19 19:19:33,523 [application.py:log_request()] - 101 GET /websocket?token=JSRTXUKWWWNMMIHJL6RCSDYP3URD5QFE (192.168.1.38) [_TRUSTED_USER_] 2.06ms
+2025-01-19 19:19:33,523 [websockets.py:open()] - Websocket Opened: ID: 139791149807760, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.1.38
+2025-01-19 19:19:33,541 [websockets.py:_handle_identify()] - Websocket 139791149807760 Client Identified - Name: fluidd, Version: 1.30.6-894aa23, Type: web
+2025-01-19 19:19:33,546 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 19:19:39,277 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/secretjameser/moonraker/moonraker/components/klippy_connection.py", line 802, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 995, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2025-01-19 19:19:39,278 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-19 19:19:39,278 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2025-01-19 19:19:39,278 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.objects.list, Code: 503, Message: Klippy Disconnected
+2025-01-19 19:19:39,515 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-19 19:19:39,530 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-19 19:19:39,550 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
+2025-01-19 19:20:17,933 [websockets.py:on_close()] - Websocket Closed: ID: 139791149807760 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.41
+2025-01-19 19:21:09,661 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-19 19:21:09,662 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-19 19:21:09,663 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2025-01-19 19:37:35,457 [server.py:_handle_term_signal()] - Exiting with signal SIGTERM
+2025-01-19 19:37:35,460 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-19 19:37:38,974 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Mon Jan 20 00:39:18 2025 --------------------
+platform: Linux-6.1.0-30-amd64-x86_64-with-glibc2.36
+data_path: /home/secretjameser/Ender3Pro_data
+is_default_data_path: False
+config_file: /home/secretjameser/Ender3Pro_data/config/moonraker.conf
+backup_config: /home/secretjameser/Ender3Pro_data/config/.moonraker.conf.bkp
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: f5a595eb585d48de9e462abc9c33a19b
+unix_socket_path: /home/secretjameser/Ender3Pro_data/comms/moonraker.sock
+software_version: v0.9.3-16-g72ed175
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/secretjameser/Ender3Pro_data/logs/moonraker.log
+python_version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+launch_args: /home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/moonraker.py -d /home/secretjameser/Ender3Pro_data
+msgspec_enabled: False
+uvloop_enabled: False
+2025-01-19 19:39:18,882 [confighelper.py:read_file()] - Configuration File '/home/secretjameser/Ender3Pro_data/config/moonraker.conf' parsed, total size: 725 B
+2025-01-19 19:39:18,882 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/secretjameser/Ender3Pro_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+#################################################################
+All Configuration Files:
+/home/secretjameser/Ender3Pro_data/config/moonraker.conf
+#################################################################
+2025-01-19 19:39:20,358 [server.py:load_component()] - Component (secrets) loaded
+2025-01-19 19:39:20,629 [server.py:load_component()] - Component (template) loaded
+2025-01-19 19:39:20,633 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-01-19 19:39:32,947 [server.py:load_component()] - Component (application) loaded
+2025-01-19 19:39:33,226 [server.py:load_component()] - Component (websockets) loaded
+2025-01-19 19:39:33,533 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2025-01-19 19:39:33,534 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 0
+2025-01-19 19:39:33,537 [server.py:load_component()] - Component (database) loaded
+2025-01-19 19:39:35,685 [server.py:load_component()] - Component (dbus_manager) loaded
+2025-01-19 19:39:36,018 [file_manager.py:__init__()] - Using File System Observer: inotify
