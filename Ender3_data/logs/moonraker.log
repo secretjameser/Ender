@@ -344,3 +344,5 @@ Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb2
 2025-01-20 11:05:58,824 [websockets.py:open()] - Websocket Opened: ID: 139950861813072, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
 2025-01-20 11:05:58,833 [websockets.py:_handle_identify()] - Websocket 139950861813072 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 11:05:58,833 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:08:48,636 [klippy_apis.py:start_print()] - Requesting Job Start, filename = black_31m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 11:08:48,887 [job_state.py:_status_update()] - Job Started: black_31m_0.28mm_205C_PLA_ENDER3.gcode
