@@ -1260,3 +1260,5 @@ Content-Type: multipart/form-data; boundary=------------------------10364a8e415a
 2025-01-20 13:00:06,312 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode, sliced by PrusaSlicer
 
 2025-01-20 13:00:06,536 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished
+2025-01-20 13:00:08,452 [klippy_apis.py:start_print()] - Requesting Job Start, filename = red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 13:00:08,702 [job_state.py:_status_update()] - Job Started: red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
