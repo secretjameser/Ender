@@ -524,3 +524,30 @@ All Configuration Files:
 2025-01-20 11:59:31,946 [server.py:load_component()] - Component (secrets) loaded
 2025-01-20 11:59:32,091 [server.py:load_component()] - Component (template) loaded
 2025-01-20 11:59:32,096 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-01-20 11:59:40,267 [server.py:load_component()] - Component (application) loaded
+2025-01-20 11:59:40,320 [server.py:load_component()] - Component (websockets) loaded
+2025-01-20 11:59:40,532 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2025-01-20 11:59:40,534 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 0
+2025-01-20 11:59:40,535 [server.py:load_component()] - Component (database) loaded
+2025-01-20 11:59:41,095 [server.py:load_component()] - Component (dbus_manager) loaded
+2025-01-20 11:59:41,305 [file_manager.py:__init__()] - Using File System Observer: inotify
+2025-01-20 11:59:41,413 [server.py:load_component()] - Component (file_manager) loaded
+2025-01-20 11:59:41,574 [database.py:register_table()] - Found registered table authorized_users
+2025-01-20 11:59:41,576 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2025-01-20 11:59:41,578 [server.py:load_component()] - Component (authorization) loaded
+2025-01-20 11:59:41,606 [server.py:load_component()] - Component (klippy_apis) loaded
