@@ -348,3 +348,8 @@ Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb2
 2025-01-20 11:08:48,887 [job_state.py:_status_update()] - Job Started: black_31m_0.28mm_205C_PLA_ENDER3.gcode
 2025-01-20 11:09:28,995 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950861813072
 2025-01-20 11:09:33,827 [websockets.py:on_close()] - Websocket Closed: ID: 139950861813072 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 11:12:59,271 [application.py:log_request()] - 101 GET /websocket?token=IBXIPOQOFIDSSBTBQRTNIG77NAJNKVSB (192.168.1.153) [_TRUSTED_USER_] 0.94ms
+2025-01-20 11:12:59,272 [websockets.py:open()] - Websocket Opened: ID: 139950864468048, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:12:59,294 [websockets.py:_handle_identify()] - Websocket 139950864468048 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:12:59,295 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:13:04,410 [websockets.py:on_close()] - Websocket Closed: ID: 139950864468048 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.14
