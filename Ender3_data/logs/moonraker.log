@@ -1439,3 +1439,8 @@ Properties:
 **Description=Klipper 3D Printer Firmware SV1
 **User=secretjameser
 2025-01-19 19:39:41,856 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-19 19:40:46,007 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-19 19:40:46,008 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-19 19:40:46,258 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-19 19:40:46,513 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-19 19:40:47,010 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
