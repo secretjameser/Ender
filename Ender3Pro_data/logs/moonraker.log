@@ -444,3 +444,118 @@ Properties:
 **Description=Klipper 3D Printer Firmware SV1
 **User=secretjameser
 2025-01-19 19:39:41,848 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-19 19:39:50,448 [base_deploy.py:log_info()] - PackageKit: Detected 0 package updates:
+
+2025-01-19 19:39:50,453 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker status --porcelain -b) successfully finished
+2025-01-19 19:39:50,457 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker branch --list --no-color) successfully finished
+2025-01-19 19:39:50,462 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker remote get-url origin) successfully finished
+2025-01-19 19:39:51,048 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
+2025-01-19 19:39:51,052 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:39:51,057 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse HEAD) successfully finished
+2025-01-19 19:39:51,062 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:39:51,066 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-parse origin/master) successfully finished
+2025-01-19 19:39:51,071 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:39:51,075 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker rev-list HEAD..72ed175c520e3b9e3054e9ad7d27157577300df1 --count) successfully finished
+2025-01-19 19:39:51,075 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Upstream Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Current Version: v0.9.3-16-g72ed175c
+Upstream Version: v0.9.3-16-g72ed175c
+Rollback Commit: 71f9e677b81afcc6b99dd5002f595025c38edc7b
+Rollback Branch: master
+Rollback Version: v0.9.3-0-g71f9e677
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:51,075 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2025-01-19 19:39:51,075 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2025-01-19 19:39:51,089 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper status --porcelain -b) successfully finished
+2025-01-19 19:39:51,092 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper branch --list --no-color) successfully finished
+2025-01-19 19:39:51,098 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper remote get-url origin) successfully finished
+2025-01-19 19:39:51,598 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper fetch origin --prune --progress) successfully finished
+2025-01-19 19:39:51,602 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:39:51,605 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse HEAD) successfully finished
+2025-01-19 19:39:51,665 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:39:51,670 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse origin/master) successfully finished
+2025-01-19 19:39:51,723 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:39:51,727 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-list HEAD..cf3b0475daa0d7154d2f986f94d8c184c7cf39c1 --count) successfully finished
+2025-01-19 19:39:51,727 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/secretjameser/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Upstream Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Current Version: v0.12.0-410-gcf3b0475
+Upstream Version: v0.12.0-410-gcf3b0475
+Rollback Commit: b89d552387da9734292a182c7040c418996ca350
+Rollback Branch: master
+Rollback Version: v0.12.0-317-gb89d5523
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:51,727 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2025-01-19 19:39:51,727 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2025-01-19 19:39:52,427 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config status --porcelain -b) successfully finished
+2025-01-19 19:39:52,430 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config branch --list --no-color) successfully finished
+2025-01-19 19:39:52,436 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config remote get-url origin) successfully finished
+2025-01-19 19:39:52,979 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config fetch origin --prune --progress) successfully finished
+2025-01-19 19:39:52,983 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:39:52,985 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse HEAD) successfully finished
+2025-01-19 19:39:52,989 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:39:52,992 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-parse origin/master) successfully finished
+2025-01-19 19:39:52,995 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:39:52,999 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/fluidd-config rev-list HEAD..807175d72e3a00cdc6b5e249444a4630e1e03a55 --count) successfully finished
+2025-01-19 19:39:52,999 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.1-0-g807175d7
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:52,999 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
+2025-01-19 19:39:52,999 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
+2025-01-19 19:39:53,229 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.31.4
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.5
+Rollback Repo: fluidd-core/fluidd
