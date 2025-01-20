@@ -1089,3 +1089,50 @@ Is Shallow: False
 Commits Behind Count: 0
 Diverged: False
 Pinned Commit: None
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.31.4
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.5
+Rollback Repo: fluidd-core/fluidd
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 7 Hours, 40 Minutes, 3 Seconds
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 7 Hours, 40 Minutes, 3 Seconds
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 7 Hours, 40 Minutes, 4 Seconds
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 7 Hours, 40 Minutes, 5 Seconds
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 7 Hours, 40 Minutes, 6 Seconds
+2025-01-20 11:59:47,646 [confighelper.py:create_backup()] - Backing up last working configuration to '/home/secretjameser/Ender3Pro_data/config/.moonraker.conf.bkp'
+2025-01-20 11:59:47,647 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3Pro_data/comms/moonraker.sock'
+2025-01-20 11:59:47,648 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: debian
+2025-01-20 11:59:47,648 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-01-20 11:59:47,899 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 11:59:47,917 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
+2025-01-20 11:59:47,925 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3Pro.service:
+unit_name: klipper-Ender3Pro.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', '-.mount', 'basic.target', 'network-online.target', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3Pro_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3Pro.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-20 11:59:48,177 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-20 11:59:48,189 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 11:59:48,190 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 11:59:48,440 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 11:59:48,695 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 11:59:49,193 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 11:59:49,194 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
