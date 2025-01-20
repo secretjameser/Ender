@@ -1672,3 +1672,5 @@ Content-Type: multipart/form-data; boundary=------------------------0ea25844ca48
 
 2025-01-20 15:28:41,619 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode, sliced by PrusaSlicer
 
+2025-01-20 15:28:43,994 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished
+2025-01-20 15:28:43,995 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 3529.37ms
