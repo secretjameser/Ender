@@ -479,3 +479,42 @@ CPU Temperature: 46.0
 2025-01-20 11:33:32,719 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-20 11:33:49,880 [klippy_apis.py:start_print()] - Requesting Job Start, filename = red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
 2025-01-20 11:33:50,023 [job_state.py:_status_update()] - Job Started: red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 11:34:11,572 [websockets.py:on_close()] - Websocket Closed: ID: 140519389668944 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.29
+2025-01-20 11:34:12,346 [application.py:log_request()] - 101 GET /websocket?token=DO6CCV4A6WJY2PJOH57ZOD6AMGP56U2O (192.168.1.153) [_TRUSTED_USER_] 0.80ms
+2025-01-20 11:34:12,346 [websockets.py:open()] - Websocket Opened: ID: 140519388461328, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:34:12,361 [websockets.py:_handle_identify()] - Websocket 140519388461328 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:34:12,361 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:34:30,376 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 11:34:30,380 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737390841.300287, Usage: 0.72%, Memory: 61168 kB
+System Time: 1737390842.301027, Usage: 0.82%, Memory: 61168 kB
+System Time: 1737390843.303345, Usage: 0.8%, Memory: 61168 kB
+System Time: 1737390844.304677, Usage: 0.94%, Memory: 61168 kB
+System Time: 1737390845.307837, Usage: 0.62%, Memory: 61168 kB
+System Time: 1737390846.309927, Usage: 0.85%, Memory: 61168 kB
+System Time: 1737390847.309830, Usage: 0.94%, Memory: 61168 kB
+System Time: 1737390848.310867, Usage: 0.75%, Memory: 61168 kB
+System Time: 1737390849.312010, Usage: 0.78%, Memory: 61168 kB
+System Time: 1737390850.312753, Usage: 0.82%, Memory: 61168 kB
+System Time: 1737390851.313159, Usage: 0.78%, Memory: 61168 kB
+System Time: 1737390852.316091, Usage: 1.05%, Memory: 61168 kB
+System Time: 1737390853.316115, Usage: 4.46%, Memory: 61168 kB
+System Time: 1737390854.317286, Usage: 2.92%, Memory: 61172 kB
+System Time: 1737390855.318189, Usage: 0.77%, Memory: 61172 kB
+System Time: 1737390856.318725, Usage: 0.82%, Memory: 61172 kB
+System Time: 1737390857.318928, Usage: 0.87%, Memory: 61172 kB
+System Time: 1737390858.320790, Usage: 0.75%, Memory: 61172 kB
+System Time: 1737390859.321512, Usage: 0.76%, Memory: 61172 kB
+System Time: 1737390860.322073, Usage: 0.8%, Memory: 61172 kB
+System Time: 1737390861.323451, Usage: 0.87%, Memory: 61172 kB
+System Time: 1737390862.324563, Usage: 0.77%, Memory: 61172 kB
+System Time: 1737390863.325339, Usage: 0.84%, Memory: 61172 kB
+System Time: 1737390864.325754, Usage: 1.03%, Memory: 61172 kB
+System Time: 1737390865.328206, Usage: 0.86%, Memory: 61172 kB
+System Time: 1737390866.330271, Usage: 0.8%, Memory: 61172 kB
+System Time: 1737390867.332379, Usage: 0.89%, Memory: 61172 kB
+System Time: 1737390868.334646, Usage: 0.85%, Memory: 61172 kB
+System Time: 1737390869.336358, Usage: 0.75%, Memory: 61172 kB
+System Time: 1737390870.338649, Usage: 1.04%, Memory: 61172 kB
+CPU Temperature: 47.0
