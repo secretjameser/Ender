@@ -1524,3 +1524,4 @@ mcu 'mcu': Starting serial connect
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
 webhooks client 140563073037776: New connection
 webhooks client 140563073037776: Client info {'program': 'Moonraker', 'version': 'v0.9.3-1-g4e00a07'}
+mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0: [Errno 2] No such file or directory: '/dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0'
