@@ -459,3 +459,88 @@ Diverged: False
 Pinned Commit: None
 2025-01-19 19:29:25,161 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
 2025-01-19 19:29:25,161 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
+2025-01-19 19:29:26,480 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.31.4
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.6
+Rollback Repo: fluidd-core/fluidd
+2025-01-19 19:29:27,065 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup fetch origin --prune --progress) successfully finished
+2025-01-19 19:29:27,069 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup merge-base --is-ancestor HEAD origin/main) successfully finished
+2025-01-19 19:29:27,490 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup pull --progress) successfully finished
+2025-01-19 19:29:27,503 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup status --porcelain -b) successfully finished
+2025-01-19 19:29:27,510 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup branch --list --no-color) successfully finished
+2025-01-19 19:29:27,526 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup remote get-url origin) successfully finished
+2025-01-19 19:29:27,532 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup merge-base --is-ancestor HEAD origin/main) successfully finished
+2025-01-19 19:29:27,546 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-parse HEAD) successfully finished
+2025-01-19 19:29:27,555 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:29:27,561 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-parse origin/main) successfully finished
+2025-01-19 19:29:27,568 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup describe origin/main --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:29:27,574 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper-backup rev-list HEAD..1ccd26ad624ce5e50b8554b7ac9ebbae3d922712 --count) successfully finished
+2025-01-19 19:29:27,574 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/secretjameser/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Upstream Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Current Version: v1.3.2-0-g1ccd26ad
+Upstream Version: v1.3.2-0-g1ccd26ad
+Rollback Commit: 95fb874ce69d11cf1df4b0209f89b4f1ce427553
+Rollback Branch: main
+Rollback Version: v1.3.1-19-g95fb874c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:29:27,575 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
+2025-01-19 19:29:27,575 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
+2025-01-19 19:29:28,104 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper fetch origin --prune --progress) successfully finished
+2025-01-19 19:29:28,111 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:29:29,273 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper pull --progress) successfully finished
+2025-01-19 19:29:29,536 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper status --porcelain -b) successfully finished
+2025-01-19 19:29:29,543 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper branch --list --no-color) successfully finished
+2025-01-19 19:29:29,557 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper remote get-url origin) successfully finished
+2025-01-19 19:29:29,565 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:29:29,574 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse HEAD) successfully finished
+2025-01-19 19:29:29,675 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2025-01-19 19:29:29,681 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-parse origin/master) successfully finished
+2025-01-19 19:29:29,766 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2025-01-19 19:29:29,772 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/klipper rev-list HEAD..cf3b0475daa0d7154d2f986f94d8c184c7cf39c1 --count) successfully finished
+2025-01-19 19:29:29,773 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/secretjameser/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Upstream Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Current Version: v0.12.0-410-gcf3b0475
+Upstream Version: v0.12.0-410-gcf3b0475
+Rollback Commit: 9bd0d4757696375e946a1410fcc8036d2670ae30
+Rollback Branch: master
+Rollback Version: v0.12.0-377-g9bd0d475
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:29:29,773 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2025-01-19 19:29:29,773 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2025-01-19 19:29:29,802 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
