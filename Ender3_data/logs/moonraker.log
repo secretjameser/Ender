@@ -978,3 +978,5 @@ Error configuring printer
 2025-01-20 14:11:22,578 [websockets.py:open()] - Websocket Opened: ID: 139884447720976, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
 2025-01-20 14:11:22,596 [websockets.py:_handle_identify()] - Websocket 139884447720976 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 14:11:22,596 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 14:12:08,644 [klippy_apis.py:start_print()] - Requesting Job Start, filename = yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 14:12:08,883 [job_state.py:_status_update()] - Job Started: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
