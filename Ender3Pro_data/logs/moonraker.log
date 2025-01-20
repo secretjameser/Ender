@@ -881,3 +881,8 @@ All Configuration Files:
 2025-01-20 11:59:31,946 [server.py:load_component()] - Component (secrets) loaded
 2025-01-20 11:59:32,092 [server.py:load_component()] - Component (template) loaded
 2025-01-20 11:59:32,096 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-01-20 11:59:40,267 [server.py:load_component()] - Component (application) loaded
+2025-01-20 11:59:40,320 [server.py:load_component()] - Component (websockets) loaded
+2025-01-20 11:59:40,532 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2025-01-20 11:59:40,534 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 0
+2025-01-20 11:59:40,535 [server.py:load_component()] - Component (database) loaded
