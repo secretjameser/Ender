@@ -1236,3 +1236,9 @@ Content-Type: multipart/form-data; boundary=------------------------10364a8e415a
 
 2025-01-20 12:17:54,080 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "Shape-Box_33m_0.28mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished
 2025-01-20 12:17:54,081 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 804.86ms
+2025-01-20 12:18:42,688 [application.py:log_request()] - 101 GET /websocket?token=EKRIFEDM4HRKG4X4WGVDBXC3EPFGR2FA (192.168.1.153) [_TRUSTED_USER_] 0.75ms
+2025-01-20 12:18:42,689 [websockets.py:open()] - Websocket Opened: ID: 140188904320848, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:18:42,697 [websockets.py:_handle_identify()] - Websocket 140188904320848 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:18:42,698 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:18:51,079 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Shape-Box_33m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 12:18:51,160 [job_state.py:_status_update()] - Job Started: Shape-Box_33m_0.28mm_205C_PLA_ENDER3PRO.gcode
