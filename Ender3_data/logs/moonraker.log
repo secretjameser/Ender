@@ -998,3 +998,4 @@ Pinned Commit: None
 2025-01-19 19:32:24,440 [websockets.py:open()] - Websocket Opened: ID: 139678232713424, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.1.38
 2025-01-19 19:32:24,452 [websockets.py:_handle_identify()] - Websocket 139678232713424 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-19 19:32:24,454 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 19:33:55,918 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Must home before probe
