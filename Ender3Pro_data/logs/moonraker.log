@@ -1646,3 +1646,18 @@ Error configuring printer
 2025-01-20 15:03:35,575 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 15:03:36,075 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-20 15:03:44,115 [websockets.py:on_close()] - Websocket Closed: ID: 140151178435728 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.56
+2025-01-20 15:12:49,348 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-20 15:12:49,529 [application.py:log_request()] - 101 GET /websocket?token=HCU6LWAVNVAEFHSTCSODO5H6QMRO4JVX (192.168.1.14) [_TRUSTED_USER_] 0.87ms
+2025-01-20 15:12:49,529 [websockets.py:open()] - Websocket Opened: ID: 140151178869456, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 15:12:49,537 [websockets.py:_handle_identify()] - Websocket 140151178869456 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:12:49,538 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:12:53,916 [websockets.py:on_close()] - Websocket Closed: ID: 140151178869456 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.39
+2025-01-20 15:25:57,645 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------5390a56accca12cb
+2025-01-20 15:25:58,663 [application.py:post()] - Processing Uploaded File: snake_test_3h9m_0.08mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 15:25:59,028 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 15:25:59,151 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 15:25:59,152 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: snake_test_3h9m_0.08mm_205C_PLA_ENDER3PRO.gcode, sliced by PrusaSlicer
+

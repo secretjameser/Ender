@@ -2121,3 +2121,10 @@ Error configuring printer
 2025-01-20 15:03:44,622 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 15:03:53,190 [klippy_apis.py:start_print()] - Requesting Job Start, filename = yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
 2025-01-20 15:03:53,366 [job_state.py:_status_update()] - Job Started: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 15:04:34,467 [websockets.py:write_to_socket()] - Websocket closed while writing: 140637724269008
+2025-01-20 15:04:39,374 [websockets.py:on_close()] - Websocket Closed: ID: 140637724269008 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 15:12:53,974 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-20 15:12:54,017 [application.py:log_request()] - 101 GET /websocket?token=P32NJ3AKOS3E35UYMXSUQAP6UKS2MFY7 (192.168.1.14) [_TRUSTED_USER_] 0.81ms
+2025-01-20 15:12:54,017 [websockets.py:open()] - Websocket Opened: ID: 140637724344144, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 15:12:54,107 [websockets.py:_handle_identify()] - Websocket 140637724344144 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:12:54,107 [file_manager.py:get_file_list()] - Updating File List <config>...
