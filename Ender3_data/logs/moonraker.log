@@ -944,3 +944,16 @@ CPU Temperature: 45.0
 2025-01-20 14:05:57,410 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
 2025-01-20 14:05:58,425 [klippy_connection.py:_do_connect()] - Klippy Connection Established
 2025-01-20 14:05:58,441 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 14:05:59,819 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 14:05:59,820 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 14:05:59,821 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2025-01-20 14:06:56,476 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 14:06:56,697 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 14:06:57,731 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 14:06:57,756 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
