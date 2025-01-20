@@ -335,3 +335,7 @@ Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb2
 2025-01-20 11:01:00,081 [websockets.py:_handle_identify()] - Websocket 139950890846480 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 11:01:00,082 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 11:03:20,489 [websockets.py:on_close()] - Websocket Closed: ID: 139950890846480 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.41
+2025-01-20 11:03:30,392 [application.py:log_request()] - 101 GET /websocket?token=VWGIGFDDZ62Q5YMY5NAZ6DA2P6J2BOCV (192.168.1.14) [_TRUSTED_USER_] 0.82ms
+2025-01-20 11:03:30,392 [websockets.py:open()] - Websocket Opened: ID: 139950861879312, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:03:30,400 [websockets.py:_handle_identify()] - Websocket 139950861879312 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:03:30,400 [file_manager.py:get_file_list()] - Updating File List <config>...

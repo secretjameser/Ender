@@ -371,3 +371,4 @@ Content-Type: multipart/form-data; boundary=------------------------1970ff7c8c7c
 2025-01-20 11:03:20,600 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 11:03:24,757 [klippy_apis.py:start_print()] - Requesting Job Start, filename = red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
 2025-01-20 11:03:24,886 [job_state.py:_status_update()] - Job Started: red_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 11:03:30,191 [websockets.py:on_close()] - Websocket Closed: ID: 140519388368464 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.61
