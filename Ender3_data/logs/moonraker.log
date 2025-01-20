@@ -1603,3 +1603,37 @@ Error configuring printer
 2025-01-19 20:16:07,674 [websockets.py:open()] - Websocket Opened: ID: 139950891766416, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
 2025-01-19 20:16:07,755 [websockets.py:_handle_identify()] - Websocket 139950891766416 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-19 20:16:07,756 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 20:19:18,369 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-19 20:19:18,373 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737335929.094663, Usage: 0.75%, Memory: 57996 kB
+System Time: 1737335930.095224, Usage: 0.78%, Memory: 57996 kB
+System Time: 1737335931.095798, Usage: 0.82%, Memory: 57996 kB
+System Time: 1737335932.095811, Usage: 0.83%, Memory: 57996 kB
+System Time: 1737335933.096828, Usage: 0.86%, Memory: 57996 kB
+System Time: 1737335934.098325, Usage: 0.74%, Memory: 57996 kB
+System Time: 1737335935.098291, Usage: 0.85%, Memory: 57996 kB
+System Time: 1737335936.099307, Usage: 0.71%, Memory: 57996 kB
+System Time: 1737335937.100096, Usage: 0.76%, Memory: 57996 kB
+System Time: 1737335938.101950, Usage: 0.82%, Memory: 57996 kB
+System Time: 1737335939.102632, Usage: 0.83%, Memory: 57996 kB
+System Time: 1737335940.102961, Usage: 0.69%, Memory: 57996 kB
+System Time: 1737335941.104927, Usage: 0.67%, Memory: 57996 kB
+System Time: 1737335942.104998, Usage: 0.78%, Memory: 57996 kB
+System Time: 1737335943.105417, Usage: 0.96%, Memory: 57996 kB
+System Time: 1737335944.105987, Usage: 0.72%, Memory: 57996 kB
+System Time: 1737335945.107170, Usage: 0.71%, Memory: 57996 kB
+System Time: 1737335946.107794, Usage: 0.75%, Memory: 57996 kB
+System Time: 1737335947.107954, Usage: 0.7%, Memory: 57996 kB
+System Time: 1737335948.108798, Usage: 0.83%, Memory: 57996 kB
+System Time: 1737335949.110326, Usage: 0.71%, Memory: 57996 kB
+System Time: 1737335950.109961, Usage: 0.8%, Memory: 57996 kB
+System Time: 1737335951.112227, Usage: 0.72%, Memory: 57996 kB
+System Time: 1737335952.113003, Usage: 0.8%, Memory: 57996 kB
+System Time: 1737335953.113520, Usage: 0.85%, Memory: 57996 kB
+System Time: 1737335954.114003, Usage: 0.64%, Memory: 57996 kB
+System Time: 1737335955.115603, Usage: 0.64%, Memory: 57996 kB
+System Time: 1737335956.116081, Usage: 0.69%, Memory: 57996 kB
+System Time: 1737335957.116998, Usage: 0.69%, Memory: 57996 kB
+System Time: 1737335958.117004, Usage: 0.84%, Memory: 57996 kB
+CPU Temperature: 50.0
