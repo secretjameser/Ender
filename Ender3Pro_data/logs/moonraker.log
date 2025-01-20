@@ -188,3 +188,12 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2025-01-19 19:19:39,530 [klippy_connection.py:_do_connect()] - Klippy Connection Established
 2025-01-19 19:19:39,550 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3Pro.service
 2025-01-19 19:20:17,933 [websockets.py:on_close()] - Websocket Closed: ID: 139791149807760 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.41
+2025-01-19 19:21:09,661 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-19 19:21:09,662 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-19 19:21:09,663 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
