@@ -1516,3 +1516,17 @@ Error configuring printer
 2025-01-19 19:50:05,364 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-19 19:50:05,862 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-19 19:50:10,482 [websockets.py:on_close()] - Websocket Closed: ID: 139950892197072 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.06
+2025-01-19 20:03:28,532 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-19 20:03:28,554 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------5c784d200bb2a2c0
+2025-01-19 20:03:28,762 [application.py:post()] - Processing Uploaded File: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:03:29,111 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-19 20:03:29,182 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-19 20:03:29,183 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-19 20:03:29,720 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode" --check-objects) successfully finished
+2025-01-19 20:03:29,720 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:03:29,725 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 1171.93ms
+2025-01-19 20:03:29,818 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
