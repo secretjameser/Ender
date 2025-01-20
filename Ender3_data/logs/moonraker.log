@@ -1667,3 +1667,5 @@ Content-Type: multipart/form-data; boundary=---------------------------333660592
 2025-01-19 20:21:19,623 [job_state.py:_handle_started()] - Job state initialized: standby
 2025-01-19 20:21:19,876 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-19 20:21:20,375 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-19 20:21:32,231 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:21:32,407 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
