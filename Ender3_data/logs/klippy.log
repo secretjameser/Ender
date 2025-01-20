@@ -2269,3 +2269,1035 @@ Stats 53374.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000028 mcu_task_st
 Stats 53375.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000030 mcu_task_stddev=0.000044 bytes_write=18246 bytes_read=192179 bytes_retransmit=9 bytes_invalid=0 send_seq=2061 receive_seq=2061 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.12 cputime=326.968 memavail=4468140 print_time=1637.247 buffer_time=0.000 print_stall=0 extruder: target=200 temp=127.3 pwm=1.000
 Stats 53376.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000030 mcu_task_stddev=0.000044 bytes_write=18280 bytes_read=192309 bytes_retransmit=9 bytes_invalid=0 send_seq=2064 receive_seq=2064 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.12 cputime=326.976 memavail=4467524 print_time=1638.247 buffer_time=0.000 print_stall=0 extruder: target=200 temp=128.9 pwm=1.000
 Stats 53377.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000030 mcu_task_stddev=0.000044 bytes_write=18316 bytes_read=192436 bytes_retransmit=9 bytes_invalid=0 send_seq=2067 receive_seq=2067 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=20.0 pwm=0.000 sysload=0.11 cputime=326.984 memavail=4459704 print_time=1639.248 buffer_time=0.000 print_stall=0 extruder: target=200 temp=131.0 pwm=1.000
+Stats 53378.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000030 mcu_task_stddev=0.000044 bytes_write=18352 bytes_read=192549 bytes_retransmit=9 bytes_invalid=0 send_seq=2070 receive_seq=2070 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.11 cputime=326.993 memavail=4471080 print_time=1640.249 buffer_time=0.000 print_stall=0 extruder: target=200 temp=132.6 pwm=1.000
+Stats 53379.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000030 mcu_task_stddev=0.000044 bytes_write=18386 bytes_read=192677 bytes_retransmit=9 bytes_invalid=0 send_seq=2073 receive_seq=2073 retransmit_seq=2 srtt=0.003 rttvar=0.001 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.11 cputime=327.002 memavail=4469984 print_time=1641.250 buffer_time=0.000 print_stall=0 extruder: target=200 temp=134.2 pwm=1.000
+Stats 53380.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000028 mcu_task_stddev=0.000040 bytes_write=18406 bytes_read=192814 bytes_retransmit=9 bytes_invalid=0 send_seq=2075 receive_seq=2075 retransmit_seq=2 srtt=0.003 rttvar=0.001 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.11 cputime=327.010 memavail=4479368 print_time=1642.250 buffer_time=0.000 print_stall=0 extruder: target=200 temp=136.2 pwm=1.000
+Transition to shutdown state: Shutdown due to webhooks request
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140336957377744
+Received 52502.399318: b'{"id": 139950864022608, "method": "info", "params": {}}'
+Received 52502.403052: b'{"id": 139950890363600, "method": "objects/list", "params": {}}'
+Received 52502.533838: b'{"id": 139950864544144, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro _CLIENT_LINEAR_MOVE": null, "gcode_macro START_PRINT": null, "gcode_macro END_PRINT": null, "output_pin BEEPER_pin": null, "gcode_macro M300": null, "gcode_macro M600": null, "gcode_macro QUERY_BME280": null, "gcode_macro QUERY_HTU21D": null, "gcode_macro M117": null, "gcode_macro M808": null, "exclude_object": null, "gcode_macro M486": null, "gcode_macro G130": null, "gcode_macro LINE_PURGE": null, "gcode_macro SMART_PARK": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "bed_mesh": null, "screws_tilt_adjust": null, "fan": null, "probe": null, "bltouch": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 52502.729536: b'{"id": 139950864479568, "method": "gcode/help", "params": {}}'
+Received 52586.626642: b'{"id": 139950891341456, "method": "info", "params": {}}'
+Received 52586.626947: b'{"id": 139950864482000, "method": "objects/list", "params": {}}'
+Received 52586.740290: b'{"id": 139950864392656, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro _CLIENT_LINEAR_MOVE": null, "gcode_macro START_PRINT": null, "gcode_macro END_PRINT": null, "output_pin BEEPER_pin": null, "gcode_macro M300": null, "gcode_macro M600": null, "gcode_macro QUERY_BME280": null, "gcode_macro QUERY_HTU21D": null, "gcode_macro M117": null, "gcode_macro M808": null, "exclude_object": null, "gcode_macro M486": null, "gcode_macro G130": null, "gcode_macro LINE_PURGE": null, "gcode_macro SMART_PARK": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "bed_mesh": null, "screws_tilt_adjust": null, "fan": null, "probe": null, "bltouch": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 52586.972473: b'{"id": 139950890847824, "method": "gcode/help", "params": {}}'
+Received 52587.446553: b'{"id": 139950864526608, "method": "info", "params": {}}'
+Received 52587.446870: b'{"id": 139950892276432, "method": "objects/list", "params": {}}'
+Received 52587.524151: b'{"id": 139950890315472, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro _CLIENT_LINEAR_MOVE": null, "gcode_macro START_PRINT": null, "gcode_macro END_PRINT": null, "output_pin BEEPER_pin": null, "gcode_macro M300": null, "gcode_macro M600": null, "gcode_macro QUERY_BME280": null, "gcode_macro QUERY_HTU21D": null, "gcode_macro M117": null, "gcode_macro M808": null, "exclude_object": null, "gcode_macro M486": null, "gcode_macro G130": null, "gcode_macro LINE_PURGE": null, "gcode_macro SMART_PARK": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "bed_mesh": null, "screws_tilt_adjust": null, "fan": null, "probe": null, "bltouch": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 52587.637951: b'{"id": 139950864463824, "method": "gcode/help", "params": {}}'
+Received 52856.778040: b'{"id": 139950890365840, "method": "gcode/script", "params": {"script": "SET_HEATER_TEMPERATURE HEATER=extruder TARGET=40"}}'
+Received 52979.740551: b'{"id": 139950864548560, "method": "info", "params": {}}'
+Received 52979.750690: b'{"id": 139950890345872, "method": "objects/list", "params": {}}'
+Received 52980.349601: b'{"id": 139950864530704, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro _CLIENT_LINEAR_MOVE": null, "gcode_macro START_PRINT": null, "gcode_macro END_PRINT": null, "output_pin BEEPER_pin": null, "gcode_macro M300": null, "gcode_macro M600": null, "gcode_macro QUERY_BME280": null, "gcode_macro QUERY_HTU21D": null, "gcode_macro M117": null, "gcode_macro M808": null, "exclude_object": null, "gcode_macro M486": null, "gcode_macro G130": null, "gcode_macro LINE_PURGE": null, "gcode_macro SMART_PARK": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "bed_mesh": null, "screws_tilt_adjust": null, "fan": null, "probe": null, "bltouch": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 52980.710824: b'{"id": 139950891342480, "method": "gcode/help", "params": {}}'
+Received 53330.524437: b'{"id": 139950864474256, "method": "gcode/script", "params": {"script": "PID_CALIBRATE HEATER=extruder TARGET=200"}}'
+Received 53373.325710: b'{"id": 139950864476304, "method": "gcode/script", "params": {"script": "PID_CALIBRATE HEATER=heater_bed TARGET=200"}}'
+Received 53381.655745: b'{"id": 139950864022096, "method": "emergency_stop", "params": {}}'
+gcode state: absolute_coord=True absolute_extrude=True base_position=[0.0, 0.0, 0.0, 0.0] last_position=[0.0, 0.0, 0.0, 0.0] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=25.0
+Reactor garbage collection: (52980.630030277, 0.0, 0.0)
+Shutdown due to webhooks request
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+MCU 'mcu' shutdown: Command request
+clocksync state: mcu_freq=72000000 last_clock=118266944780 clock_est=(53352.601 116211155953 72001060.990) min_half_rtt=0.000202 min_rtt_time=53349.648 time_avg=53352.601(843.398) clock_avg=116211155953.208(60725572812.912) pred_variance=1420170.175
+Dumping serial stats: bytes_write=18443 bytes_read=192910 bytes_retransmit=9 bytes_invalid=0 send_seq=2078 receive_seq=2078 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0
+Dumping send queue 100 messages
+Sent 0 53347.597531 53347.596891 16: seq: 1a, queue_digital_out oid=19 clock=4199586304 on_ticks=7200000
+Sent 1 53347.643526 53347.642966 14: seq: 1b, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 2 53347.679150 53347.678910 6: seq: 1c, get_clock
+Sent 3 53348.144545 53348.143985 14: seq: 1d, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 4 53348.645041 53348.644481 14: seq: 1e, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 5 53348.663926 53348.663686 6: seq: 1f, get_clock
+Sent 6 53349.146070 53349.145430 16: seq: 10, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b' 70\x1a'
+Sent 7 53349.646491 53349.645931 14: seq: 11, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'1\x1a'
+Sent 8 53349.648385 53349.648145 6: seq: 12, get_clock
+Sent 9 53350.147406 53350.146846 14: seq: 13, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 10 53350.633392 53350.633152 6: seq: 14, get_clock
+Sent 11 53350.648078 53350.647518 14: seq: 15, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'4\x1a'
+Sent 12 53351.617827 53351.617587 6: seq: 16, get_clock
+Sent 13 53351.649492 53351.648932 14: seq: 17, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 14 53351.797485 53351.796845 16: seq: 18, queue_digital_out oid=19 clock=207019008 on_ticks=7200000
+Sent 15 53352.150458 53352.149898 14: seq: 19, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 16 53352.602508 53352.602268 6: seq: 1a, get_clock
+Sent 17 53352.651392 53352.650832 14: seq: 1b, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'8\x1a'
+Sent 18 53353.152329 53353.151769 14: seq: 1c, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 19 53353.587278 53353.587038 6: seq: 1d, get_clock
+Sent 20 53353.653154 53353.652514 16: seq: 1e, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b' 81\x1a'
+Sent 21 53354.153935 53354.153375 14: seq: 1f, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 22 53354.571903 53354.571663 6: seq: 10, get_clock
+Sent 23 53354.654837 53354.654277 14: seq: 11, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'3\x1a'
+Sent 24 53355.155593 53355.155033 14: seq: 12, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'4\x1a'
+Sent 25 53355.556594 53355.556354 6: seq: 13, get_clock
+Sent 26 53355.656352 53355.655792 14: seq: 14, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 27 53355.997254 53355.996614 16: seq: 15, queue_digital_out oid=19 clock=509419008 on_ticks=7200000
+Sent 28 53356.157242 53356.156682 14: seq: 16, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 29 53356.540913 53356.540673 6: seq: 17, get_clock
+Sent 30 53356.658180 53356.657620 14: seq: 18, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 31 53357.159120 53357.158560 14: seq: 19, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 32 53357.525639 53357.525399 6: seq: 1a, get_clock
+Sent 33 53358.160949 53358.160309 16: seq: 1b, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b' 91\x1a'
+Sent 34 53358.510403 53358.510163 6: seq: 1c, get_clock
+Sent 35 53358.661616 53358.661056 14: seq: 1d, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 36 53359.162410 53359.161850 14: seq: 1e, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'3\x1a'
+Sent 37 53359.494895 53359.494655 6: seq: 1f, get_clock
+Sent 38 53359.663049 53359.662489 14: seq: 10, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'4\x1a'
+Sent 39 53360.164430 53360.163430 25: seq: 11, queue_digital_out oid=19 clock=811819008 on_ticks=7200000, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 40 53360.479463 53360.479223 6: seq: 12, get_clock
+Sent 41 53360.664660 53360.664100 14: seq: 13, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 42 53361.165543 53361.164983 14: seq: 14, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 43 53361.463538 53361.463298 6: seq: 15, get_clock
+Sent 44 53361.666730 53361.666170 14: seq: 16, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'8\x1a'
+Sent 45 53362.167589 53362.167029 14: seq: 17, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 46 53362.448462 53362.448222 6: seq: 18, get_clock
+Sent 47 53362.668196 53362.667556 16: seq: 19, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b'100\x1a'
+Sent 48 53363.168913 53363.168353 14: seq: 1a, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 49 53363.432739 53363.432499 6: seq: 1b, get_clock
+Sent 50 53364.170500 53364.169940 14: seq: 1c, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'3\x1a'
+Sent 51 53364.397258 53364.396618 16: seq: 1d, queue_digital_out oid=19 clock=1114219008 on_ticks=7200000
+Sent 52 53364.417372 53364.417132 6: seq: 1e, get_clock
+Sent 53 53364.671253 53364.670693 14: seq: 1f, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 54 53365.401764 53365.401524 6: seq: 10, get_clock
+Sent 55 53365.672813 53365.672253 14: seq: 11, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 56 53366.173607 53366.173047 14: seq: 12, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'8\x1a'
+Sent 57 53366.386398 53366.386158 6: seq: 13, get_clock
+Sent 58 53367.175278 53367.174638 16: seq: 14, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b'110\x1a'
+Sent 59 53367.370859 53367.370619 6: seq: 15, get_clock
+Sent 60 53367.675689 53367.675129 14: seq: 16, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'1\x1a'
+Sent 61 53368.355012 53368.354772 6: seq: 17, get_clock
+Sent 62 53368.597175 53368.596535 16: seq: 18, queue_digital_out oid=19 clock=1416619008 on_ticks=7200000
+Sent 63 53368.676884 53368.676324 14: seq: 19, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 64 53369.177956 53369.177396 14: seq: 1a, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'4\x1a'
+Sent 65 53369.339684 53369.339444 6: seq: 1b, get_clock
+Sent 66 53370.179402 53370.178842 14: seq: 1c, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 67 53370.324121 53370.323881 6: seq: 1d, get_clock
+Sent 68 53370.680042 53370.679482 14: seq: 1e, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 69 53371.308333 53371.308093 6: seq: 1f, get_clock
+Sent 70 53371.681370 53371.680810 14: seq: 10, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'8\x1a'
+Sent 71 53372.182134 53372.181574 14: seq: 11, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 72 53372.292658 53372.292418 6: seq: 12, get_clock
+Sent 73 53372.682908 53372.682268 16: seq: 13, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b'120\x1a'
+Sent 74 53372.797303 53372.796663 16: seq: 14, queue_digital_out oid=19 clock=1719019008 on_ticks=7200000
+Sent 75 53373.183714 53373.183154 14: seq: 15, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'1\x1a'
+Sent 76 53373.277239 53373.276999 6: seq: 16, get_clock
+Sent 77 53373.684171 53373.683611 14: seq: 17, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 78 53374.184847 53374.184287 14: seq: 18, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'3\x1a'
+Sent 79 53374.261589 53374.261349 6: seq: 19, get_clock
+Sent 80 53374.685077 53374.684517 14: seq: 1a, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'4\x1a'
+Sent 81 53375.186027 53375.185467 14: seq: 1b, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 82 53375.245697 53375.245457 6: seq: 1c, get_clock
+Sent 83 53376.186750 53376.186190 14: seq: 1d, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'7\x1a'
+Sent 84 53376.230594 53376.230354 6: seq: 1e, get_clock
+Sent 85 53376.687917 53376.687357 14: seq: 1f, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'8\x1a'
+Sent 86 53376.996973 53376.996333 16: seq: 10, queue_digital_out oid=19 clock=2021419008 on_ticks=7200000
+Sent 87 53377.214748 53377.214508 6: seq: 11, get_clock
+Sent 88 53377.689159 53377.688599 14: seq: 12, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'9\x1a'
+Sent 89 53378.189973 53378.189333 16: seq: 13, st7920_send_cmds oid=2 cmds=b'\x81', st7920_send_data oid=2 data=b'130\x1a'
+Sent 90 53378.198856 53378.198616 6: seq: 14, get_clock
+Sent 91 53378.691044 53378.690484 14: seq: 15, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'1\x1a'
+Sent 92 53379.183790 53379.183550 6: seq: 16, get_clock
+Sent 93 53379.191282 53379.190722 14: seq: 17, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'2\x1a'
+Sent 94 53379.692673 53379.692113 14: seq: 18, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'3\x1a'
+Sent 95 53380.168306 53380.168066 6: seq: 19, get_clock
+Sent 96 53380.693747 53380.693187 14: seq: 1a, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'5\x1a'
+Sent 97 53381.153431 53381.152751 17: seq: 1b, get_clock, queue_digital_out oid=19 clock=2323819008 on_ticks=7200000
+Sent 98 53381.194667 53381.194107 14: seq: 1c, st7920_send_cmds oid=2 cmds=b'\x82', st7920_send_data oid=2 data=b'6\x1a'
+Sent 99 53381.656753 53381.656513 6: seq: 1d, emergency_stop
+Dumping receive queue 100 messages
+Receive: 0 53369.146578 53368.676884 15: seq: 1a, analog_in_state oid=18 next_clock=1459243008 value=15249
+Receive: 1 53369.342305 53369.339684 11: seq: 1c, clock clock=1452229839
+Receive: 2 53369.386642 53369.339684 15: seq: 1c, analog_in_state oid=12 next_clock=1476523008 value=31580
+Receive: 3 53369.446765 53369.339684 15: seq: 1c, analog_in_state oid=18 next_clock=1480843008 value=15116
+Receive: 4 53369.686646 53369.339684 15: seq: 1c, analog_in_state oid=12 next_clock=1498123008 value=31578
+Receive: 5 53369.746769 53369.339684 15: seq: 1c, analog_in_state oid=18 next_clock=1502443008 value=14985
+Receive: 6 53369.986651 53369.339684 15: seq: 1c, analog_in_state oid=12 next_clock=1519723008 value=31583
+Receive: 7 53370.046642 53369.339684 15: seq: 1c, analog_in_state oid=18 next_clock=1524043008 value=14853
+Receive: 8 53370.182160 53370.179402 15: seq: 1d, stats count=98 sum=194586 sumsq=4707813
+Receive: 9 53370.286734 53370.179402 15: seq: 1d, analog_in_state oid=12 next_clock=1541323008 value=31580
+Receive: 10 53370.326697 53370.324121 11: seq: 1e, clock clock=1523104893
+Receive: 11 53370.346640 53370.324121 15: seq: 1e, analog_in_state oid=18 next_clock=1545643008 value=14725
+Receive: 12 53370.586731 53370.324121 15: seq: 1e, analog_in_state oid=12 next_clock=1562923008 value=31580
+Receive: 13 53370.646652 53370.324121 15: seq: 1e, analog_in_state oid=18 next_clock=1567243008 value=14598
+Receive: 14 53370.886609 53370.680042 15: seq: 1f, analog_in_state oid=12 next_clock=1584523008 value=31577
+Receive: 15 53370.946646 53370.680042 15: seq: 1f, analog_in_state oid=18 next_clock=1588843008 value=14470
+Receive: 16 53371.186649 53370.680042 15: seq: 1f, analog_in_state oid=12 next_clock=1606123008 value=31578
+Receive: 17 53371.246667 53370.680042 15: seq: 1f, analog_in_state oid=18 next_clock=1610443008 value=14342
+Receive: 18 53371.310821 53371.308333 11: seq: 10, clock clock=1593969309
+Receive: 19 53371.486645 53371.308333 15: seq: 10, analog_in_state oid=12 next_clock=1627723008 value=31578
+Receive: 20 53371.546519 53371.308333 15: seq: 10, analog_in_state oid=18 next_clock=1632043008 value=14214
+Receive: 21 53371.786541 53371.681370 15: seq: 11, analog_in_state oid=12 next_clock=1649323008 value=31580
+Receive: 22 53371.846613 53371.681370 15: seq: 11, analog_in_state oid=18 next_clock=1653643008 value=14089
+Receive: 23 53372.086742 53371.681370 15: seq: 11, analog_in_state oid=12 next_clock=1670923008 value=31579
+Receive: 24 53372.146609 53371.681370 15: seq: 11, analog_in_state oid=18 next_clock=1675243008 value=13965
+Receive: 25 53372.295190 53372.292658 11: seq: 13, clock clock=1664841771
+Receive: 26 53372.386432 53372.292658 15: seq: 13, analog_in_state oid=12 next_clock=1692523008 value=31580
+Receive: 27 53372.446647 53372.292658 15: seq: 13, analog_in_state oid=18 next_clock=1696843008 value=13845
+Receive: 28 53372.686610 53372.682908 15: seq: 14, analog_in_state oid=12 next_clock=1714123008 value=31580
+Receive: 29 53372.746650 53372.682908 15: seq: 14, analog_in_state oid=18 next_clock=1718443008 value=13721
+Receive: 30 53372.986642 53372.797303 15: seq: 15, analog_in_state oid=12 next_clock=1735723008 value=31583
+Receive: 31 53373.046616 53372.797303 15: seq: 15, analog_in_state oid=18 next_clock=1740043008 value=13601
+Receive: 32 53373.279769 53373.277239 11: seq: 17, clock clock=1735732665
+Receive: 33 53373.286609 53373.277239 15: seq: 17, analog_in_state oid=12 next_clock=1757323008 value=31578
+Receive: 34 53373.346524 53373.277239 15: seq: 17, analog_in_state oid=18 next_clock=1761643008 value=13480
+Receive: 35 53373.586628 53373.277239 15: seq: 17, analog_in_state oid=12 next_clock=1778923008 value=31580
+Receive: 36 53373.646538 53373.277239 15: seq: 17, analog_in_state oid=18 next_clock=1783243008 value=13360
+Receive: 37 53373.886599 53373.684171 15: seq: 18, analog_in_state oid=12 next_clock=1800523008 value=31580
+Receive: 38 53373.946595 53373.684171 15: seq: 18, analog_in_state oid=18 next_clock=1804843008 value=13242
+Receive: 39 53374.186923 53373.684171 15: seq: 18, analog_in_state oid=12 next_clock=1822123008 value=31579
+Receive: 40 53374.246596 53374.184847 15: seq: 19, analog_in_state oid=18 next_clock=1826443008 value=13125
+Receive: 41 53374.264067 53374.261589 11: seq: 1a, clock clock=1806607143
+Receive: 42 53374.486515 53374.261589 15: seq: 1a, analog_in_state oid=12 next_clock=1843723008 value=31579
+Receive: 43 53374.546629 53374.261589 15: seq: 1a, analog_in_state oid=18 next_clock=1848043008 value=13009
+Receive: 44 53374.786538 53374.685077 15: seq: 1b, analog_in_state oid=12 next_clock=1865323008 value=31575
+Receive: 45 53374.846618 53374.685077 15: seq: 1b, analog_in_state oid=18 next_clock=1869643008 value=12895
+Receive: 46 53375.086619 53374.685077 15: seq: 1b, analog_in_state oid=12 next_clock=1886923008 value=31579
+Receive: 47 53375.146504 53374.685077 15: seq: 1b, analog_in_state oid=18 next_clock=1891243008 value=12779
+Receive: 48 53375.188742 53375.186027 15: seq: 1c, stats count=99 sum=216343 sumsq=5724915
+Receive: 49 53375.248218 53375.245697 11: seq: 1d, clock clock=1877468085
+Receive: 50 53375.386639 53375.245697 15: seq: 1d, analog_in_state oid=12 next_clock=1908523008 value=31581
+Receive: 51 53375.446501 53375.245697 15: seq: 1d, analog_in_state oid=18 next_clock=1912843008 value=12669
+Receive: 52 53375.686425 53375.245697 15: seq: 1d, analog_in_state oid=12 next_clock=1930123008 value=31582
+Receive: 53 53375.746443 53375.245697 15: seq: 1d, analog_in_state oid=18 next_clock=1934443008 value=12556
+Receive: 54 53375.986456 53375.245697 15: seq: 1d, analog_in_state oid=12 next_clock=1951723008 value=31579
+Receive: 55 53376.046618 53375.245697 15: seq: 1d, analog_in_state oid=18 next_clock=1956043008 value=12446
+Receive: 56 53376.233067 53376.230594 11: seq: 1f, clock clock=1948377411
+Receive: 57 53376.286444 53376.230594 15: seq: 1f, analog_in_state oid=12 next_clock=1973323008 value=31581
+Receive: 58 53376.346616 53376.230594 15: seq: 1f, analog_in_state oid=18 next_clock=1977643008 value=12335
+Receive: 59 53376.586491 53376.230594 15: seq: 1f, analog_in_state oid=12 next_clock=1994923008 value=31579
+Receive: 60 53376.646524 53376.230594 14: seq: 1f, analog_in_state oid=18 next_clock=1999243008 value=12224
+Receive: 61 53376.886587 53376.687917 15: seq: 10, analog_in_state oid=12 next_clock=2016523008 value=31580
+Receive: 62 53376.946476 53376.687917 14: seq: 10, analog_in_state oid=18 next_clock=2020843008 value=12119
+Receive: 63 53377.186545 53376.996973 15: seq: 11, analog_in_state oid=12 next_clock=2038123008 value=31578
+Receive: 64 53377.217376 53377.214748 11: seq: 12, clock clock=2019238353
+Receive: 65 53377.246506 53377.214748 14: seq: 12, analog_in_state oid=18 next_clock=2042443008 value=12011
+Receive: 66 53377.486489 53377.214748 15: seq: 12, analog_in_state oid=12 next_clock=2059723008 value=31581
+Receive: 67 53377.546540 53377.214748 14: seq: 12, analog_in_state oid=18 next_clock=2064043008 value=11905
+Receive: 68 53377.786494 53377.689159 15: seq: 13, analog_in_state oid=12 next_clock=2081323008 value=31578
+Receive: 69 53377.846459 53377.689159 14: seq: 13, analog_in_state oid=18 next_clock=2085643008 value=11800
+Receive: 70 53378.086414 53377.689159 15: seq: 13, analog_in_state oid=12 next_clock=2102923008 value=31582
+Receive: 71 53378.146413 53377.689159 14: seq: 13, analog_in_state oid=18 next_clock=2107243008 value=11696
+Receive: 72 53378.201357 53378.198856 11: seq: 15, clock clock=2090095263
+Receive: 73 53378.386392 53378.198856 15: seq: 15, analog_in_state oid=12 next_clock=2124523008 value=31577
+Receive: 74 53378.446490 53378.198856 14: seq: 15, analog_in_state oid=18 next_clock=2128843008 value=11591
+Receive: 75 53378.686519 53378.198856 15: seq: 15, analog_in_state oid=12 next_clock=2146123008 value=31579
+Receive: 76 53378.746550 53378.691044 14: seq: 16, analog_in_state oid=18 next_clock=2150443008 value=11490
+Receive: 77 53378.986663 53378.691044 15: seq: 16, analog_in_state oid=12 next_clock=2167723008 value=31581
+Receive: 78 53379.046532 53378.691044 14: seq: 16, analog_in_state oid=18 next_clock=2172043008 value=11388
+Receive: 79 53379.186188 53379.183790 11: seq: 17, clock clock=2161011231
+Receive: 80 53379.286477 53379.191282 15: seq: 18, analog_in_state oid=12 next_clock=2189323008 value=31579
+Receive: 81 53379.346489 53379.191282 14: seq: 18, analog_in_state oid=18 next_clock=2193643008 value=11287
+Receive: 82 53379.586490 53379.191282 15: seq: 18, analog_in_state oid=12 next_clock=2210923008 value=31581
+Receive: 83 53379.646557 53379.191282 14: seq: 18, analog_in_state oid=18 next_clock=2215243008 value=11188
+Receive: 84 53379.886534 53379.692673 15: seq: 19, analog_in_state oid=12 next_clock=2232523008 value=31582
+Receive: 85 53379.946439 53379.692673 14: seq: 19, analog_in_state oid=18 next_clock=2236843008 value=11089
+Receive: 86 53380.170768 53380.168306 11: seq: 1a, clock clock=2231897229
+Receive: 87 53380.186442 53380.168306 15: seq: 1a, analog_in_state oid=12 next_clock=2254123008 value=31582
+Receive: 88 53380.247143 53380.168306 14: seq: 1a, analog_in_state oid=18 next_clock=2258443008 value=10995
+Receive: 89 53380.247109 53380.168306 15: seq: 1a, stats count=98 sum=194212 sumsq=4674476
+Receive: 90 53380.486500 53380.168306 15: seq: 1a, analog_in_state oid=12 next_clock=2275723008 value=31578
+Receive: 91 53380.546537 53380.168306 14: seq: 1a, analog_in_state oid=18 next_clock=2280043008 value=10896
+Receive: 92 53380.786591 53380.693747 15: seq: 1b, analog_in_state oid=12 next_clock=2297323008 value=31580
+Receive: 93 53380.846484 53380.693747 14: seq: 1b, analog_in_state oid=18 next_clock=2301643008 value=10800
+Receive: 94 53381.086377 53380.693747 15: seq: 1b, analog_in_state oid=12 next_clock=2318923008 value=31580
+Receive: 95 53381.146503 53380.693747 14: seq: 1b, analog_in_state oid=18 next_clock=2323243008 value=10704
+Receive: 96 53381.156024 53381.153431 11: seq: 1c, clock clock=2302827788
+Receive: 97 53381.386478 53381.194667 15: seq: 1d, analog_in_state oid=12 next_clock=2340523008 value=31580
+Receive: 98 53381.446498 53381.194667 14: seq: 1d, analog_in_state oid=18 next_clock=2344843008 value=10612
+Receive: 99 53381.659519 53381.656753 12: seq: 1e, shutdown clock=2339067221 static_string_id=Command request
+Stats 53381.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000028 mcu_task_stddev=0.000040 bytes_write=18443 bytes_read=192910 bytes_retransmit=9 bytes_invalid=0 send_seq=2078 receive_seq=2078 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.11 cputime=327.024 memavail=4478644 print_time=1643.251 buffer_time=0.000 print_stall=0 extruder: target=200 temp=137.3 pwm=1.000
+pid_calibrate interrupted
+Shutdown due to webhooks request
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+Stats 53382.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000028 mcu_task_stddev=0.000040 bytes_write=18556 bytes_read=193139 bytes_retransmit=9 bytes_invalid=0 send_seq=2083 receive_seq=2083 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001060  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.10 cputime=327.034 memavail=4478644 print_time=1643.251 buffer_time=0.000 print_stall=0 extruder: target=0 temp=139.3 pwm=0.000
+Stats 53383.9: gcodein=0  mcu: mcu_awake=0.003 mcu_task_avg=0.000028 mcu_task_stddev=0.000040 bytes_write=18593 bytes_read=193294 bytes_retransmit=9 bytes_invalid=0 send_seq=2086 receive_seq=2086 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=72001059  heater_bed: target=0 temp=19.9 pwm=0.000 sysload=0.10 cputime=327.041 memavail=4478644 print_time=1643.251 buffer_time=0.000 print_stall=0 extruder: target=0 temp=141.0 pwm=0.000
+Attempting MCU 'mcu' reset command
+webhooks client 140336957377744: Disconnected
+Restarting printer
+Start printer at Mon Jan 20 10:27:54 2025 (1737386874.4 53385.4)
+===== Config file =====
+[virtual_sdcard]
+path = /home/secretjameser/Ender3_data/gcodes
+on_error_gcode = CANCEL_PRINT
+
+[pause_resume]
+
+[display_status]
+
+[respond]
+
+[gcode_macro CANCEL_PRINT]
+description = Cancel the actual running print
+rename_existing = CANCEL_PRINT_BASE
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set allow_park = client.park_at_cancel | default(false) | lower == 'true' %}
+	{% set retract = client.cancel_retract | default(5.0) | abs %}
+	
+	{% set park_x = "" if (client.park_at_cancel_x | default(none) is none)
+	else "X=" ~ client.park_at_cancel_x %}
+	{% set park_y = "" if (client.park_at_cancel_y | default(none) is none)
+	else "Y=" ~ client.park_at_cancel_y %}
+	{% set custom_park = park_x | length > 0 or park_y | length > 0 %}
+	
+	
+	{% if printer['gcode_macro RESUME'].restore_idle_timeout > 0 %}
+	SET_IDLE_TIMEOUT TIMEOUT={printer['gcode_macro RESUME'].restore_idle_timeout}
+	{% endif %}
+	{% if (custom_park or not printer.pause_resume.is_paused) and allow_park %} _TOOLHEAD_PARK_PAUSE_CANCEL {park_x} {park_y} {% endif %}
+	_CLIENT_RETRACT LENGTH={retract}
+	TURN_OFF_HEATERS
+	M106 S0
+	{client.user_cancel_macro | default("")}
+	SET_GCODE_VARIABLE MACRO=RESUME VARIABLE=idle_state VALUE=False
+	
+	SET_PAUSE_NEXT_LAYER ENABLE=0
+	SET_PAUSE_AT_LAYER ENABLE=0 LAYER=0
+	CANCEL_PRINT_BASE
+
+[gcode_macro PAUSE]
+description = Pause the actual running print
+rename_existing = PAUSE_BASE
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set idle_timeout = client.idle_timeout | default(0) %}
+	{% set temp = printer[printer.toolhead.extruder].target if printer.toolhead.extruder != '' else 0 %}
+	{% set restore = False if printer.toolhead.extruder == ''
+	else True  if params.RESTORE | default(1) | int == 1 else False %}
+	
+	SET_GCODE_VARIABLE MACRO=RESUME VARIABLE=last_extruder_temp VALUE="{{'restore': restore, 'temp': temp}}"
+	
+	{% if idle_timeout > 0 %}
+	SET_GCODE_VARIABLE MACRO=RESUME VARIABLE=restore_idle_timeout VALUE={printer.configfile.settings.idle_timeout.timeout}
+	SET_IDLE_TIMEOUT TIMEOUT={idle_timeout}
+	{% endif %}
+	PAUSE_BASE
+	{client.user_pause_macro | default("")}
+	_TOOLHEAD_PARK_PAUSE_CANCEL {rawparams}
+
+[gcode_macro RESUME]
+description = Resume the actual running print
+rename_existing = RESUME_BASE
+variable_last_extruder_temp = {'restore': False, 'temp': 0}
+variable_restore_idle_timeout = 0
+variable_idle_state = False
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set velocity = printer.configfile.settings.pause_resume.recover_velocity %}
+	{% set sp_move = client.speed_move | default(velocity) %}
+	{% set runout_resume = True if client.runout_sensor | default("") == ""
+	else True if not printer[client.runout_sensor].enabled
+	else printer[client.runout_sensor].filament_detected %}
+	{% set can_extrude = True if printer.toolhead.extruder == ''
+	else printer[printer.toolhead.extruder].can_extrude %}
+	{% set do_resume = False %}
+	{% set prompt_txt = [] %}
+	
+	
+	{% if printer.idle_timeout.state | upper == "IDLE" or idle_state %}
+	SET_GCODE_VARIABLE MACRO=RESUME VARIABLE=idle_state VALUE=False
+	{% if last_extruder_temp.restore %}
+	
+	RESPOND TYPE=echo MSG='{"Restoring \"%s\" temperature to %3.1f\u00B0C, this may take some time" % (printer.toolhead.extruder, last_extruder_temp.temp) }'
+	M109 S{last_extruder_temp.temp}
+	{% set do_resume = True %}
+	{% elif can_extrude %}
+	{% set do_resume = True %}
+	{% else %}
+	RESPOND TYPE=error MSG='{"Resume aborted !!! \"%s\" not hot enough, please heat up again and press RESUME" % printer.toolhead.extruder}'
+	{% set _d = prompt_txt.append("\"%s\" not hot enough, please heat up again and press RESUME" % printer.toolhead.extruder) %}
+	{% endif %}
+	
+	{% elif can_extrude %}
+	{% set do_resume = True %}
+	{% else %}
+	RESPOND TYPE=error MSG='{"Resume aborted !!! \"%s\" not hot enough, please heat up again and press RESUME" % printer.toolhead.extruder}'
+	{% set _d = prompt_txt.append("\"%s\" not hot enough, please heat up again and press RESUME" % printer.toolhead.extruder) %}
+	{% endif %}
+	{% if runout_resume %}
+	{% if do_resume %}
+	{% if restore_idle_timeout > 0 %} SET_IDLE_TIMEOUT TIMEOUT={restore_idle_timeout} {% endif %}
+	{client.user_resume_macro | default("")}
+	_CLIENT_EXTRUDE
+	RESUME_BASE VELOCITY={params.VELOCITY | default(sp_move)}
+	{% endif %}
+	{% else %}
+	RESPOND TYPE=error MSG='{"Resume aborted !!! \"%s\" detects no filament, please load filament and press RESUME" % (client.runout_sensor.split(" "))[1]}'
+	{% set _d = prompt_txt.append("\"%s\" detects no filament, please load filament and press RESUME" % (client.runout_sensor.split(" "))[1]) %}
+	{% endif %}
+	
+	{% if not (runout_resume and do_resume) %}
+	RESPOND TYPE=command MSG="action:prompt_begin RESUME aborted !!!"
+	{% for element in prompt_txt %}
+	RESPOND TYPE=command MSG='{"action:prompt_text %s" % element}'
+	{% endfor %}
+	RESPOND TYPE=command MSG="action:prompt_footer_button Ok|RESPOND TYPE=command MSG=action:prompt_end|info"
+	RESPOND TYPE=command MSG="action:prompt_show"
+	{% endif %}
+
+[gcode_macro SET_PAUSE_NEXT_LAYER]
+description = Enable a pause if the next layer is reached
+gcode = 
+	{% set pause_next_layer = printer['gcode_macro SET_PRINT_STATS_INFO'].pause_next_layer %}
+	{% set ENABLE = params.ENABLE | default(1)|int != 0 %}
+	{% set MACRO = params.MACRO | default(pause_next_layer.call, True) %}
+	SET_GCODE_VARIABLE MACRO=SET_PRINT_STATS_INFO VARIABLE=pause_next_layer VALUE="{{ 'enable': ENABLE, 'call': MACRO }}"
+
+[gcode_macro SET_PAUSE_AT_LAYER]
+description = Enable/disable a pause if a given layer number is reached
+gcode = 
+	{% set pause_at_layer = printer['gcode_macro SET_PRINT_STATS_INFO'].pause_at_layer %}
+	{% set ENABLE = params.ENABLE | int != 0 if params.ENABLE is defined
+	else params.LAYER is defined %}
+	{% set LAYER = params.LAYER | default(pause_at_layer.layer) | int %}
+	{% set MACRO = params.MACRO | default(pause_at_layer.call, True) %}
+	SET_GCODE_VARIABLE MACRO=SET_PRINT_STATS_INFO VARIABLE=pause_at_layer VALUE="{{ 'enable': ENABLE, 'layer': LAYER, 'call': MACRO }}"
+
+[gcode_macro SET_PRINT_STATS_INFO]
+rename_existing = SET_PRINT_STATS_INFO_BASE
+description = Overwrite, to get pause_next_layer and pause_at_layer feature
+variable_pause_next_layer = { 'enable': False, 'call': "PAUSE" }
+variable_pause_at_layer = { 'enable': False, 'layer': 0, 'call': "PAUSE" }
+gcode = 
+	{% if pause_next_layer.enable %}
+	RESPOND TYPE=echo MSG='{"%s, forced by pause_next_layer" % pause_next_layer.call}'
+	{pause_next_layer.call}
+	SET_PAUSE_NEXT_LAYER ENABLE=0
+	{% elif pause_at_layer.enable and params.CURRENT_LAYER is defined and params.CURRENT_LAYER | int == pause_at_layer.layer %}
+	RESPOND TYPE=echo MSG='{"%s, forced by pause_at_layer [%d]" % (pause_at_layer.call, pause_at_layer.layer)}'
+	{pause_at_layer.call}
+	SET_PAUSE_AT_LAYER ENABLE=0
+	{% endif %}
+	SET_PRINT_STATS_INFO_BASE {rawparams}
+
+[gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL]
+description = Helper: park toolhead used in PAUSE and CANCEL_PRINT
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set velocity = printer.configfile.settings.pause_resume.recover_velocity %}
+	{% set use_custom     = client.use_custom_pos | default(false) | lower == 'true' %}
+	{% set custom_park_x  = client.custom_park_x | default(0.0) %}
+	{% set custom_park_y  = client.custom_park_y | default(0.0) %}
+	{% set park_dz        = client.custom_park_dz | default(2.0) | abs %}
+	{% set sp_hop         = client.speed_hop | default(15) * 60 %}
+	{% set sp_move        = client.speed_move | default(velocity) * 60 %}
+	
+	{% set origin    = printer.gcode_move.homing_origin %}
+	{% set act       = printer.gcode_move.gcode_position %}
+	{% set max       = printer.toolhead.axis_maximum %}
+	{% set cone      = printer.toolhead.cone_start_z | default(max.z) %}
+	{% set round_bed = True if printer.configfile.settings.printer.kinematics is in ['delta','polar','rotary_delta','winch']
+	else False %}
+	
+	{% set z_min = params.Z_MIN | default(0) | float %}
+	{% set z_park = [[(act.z + park_dz), z_min]|max, (max.z - origin.z)] | min %}
+	{% set x_park = params.X       if params.X is defined
+	else custom_park_x  if use_custom
+	else 0.0            if round_bed
+	else (max.x - 5.0) %}
+	{% set y_park = params.Y       if params.Y is defined
+	else custom_park_y  if use_custom
+	else (max.y - 5.0)  if round_bed and z_park < cone
+	else 0.0            if round_bed
+	else (max.y - 5.0) %}
+	
+	_CLIENT_RETRACT
+	{% if "xyz" in printer.toolhead.homed_axes %}
+	G90
+	G1 Z{z_park} F{sp_hop}
+	G1 X{x_park} Y{y_park} F{sp_move}
+	{% if not printer.gcode_move.absolute_coordinates %} G91 {% endif %}
+	{% else %}
+	RESPOND TYPE=echo MSG='Printer not homed'
+	{% endif %}
+
+[gcode_macro _CLIENT_EXTRUDE]
+description = Extrudes, if the extruder is hot enough
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set use_fw_retract = (client.use_fw_retract | default(false) | lower == 'true') and (printer.firmware_retraction is defined) %}
+	{% set length = params.LENGTH | default(client.unretract) | default(1.0) | float %}
+	{% set speed = params.SPEED | default(client.speed_unretract) | default(35) %}
+	{% set absolute_extrude = printer.gcode_move.absolute_extrude %}
+	
+	{% if printer.toolhead.extruder != '' %}
+	{% if printer[printer.toolhead.extruder].can_extrude %}
+	{% if use_fw_retract %}
+	{% if length < 0 %}
+	G10
+	{% else %}
+	G11
+	{% endif %}
+	{% else %}
+	M83
+	G1 E{length} F{(speed | float | abs) * 60}
+	{% if absolute_extrude %}
+	M82
+	{% endif %}
+	{% endif %}
+	{% else %}
+	RESPOND TYPE=echo MSG='{"\"%s\" not hot enough" % printer.toolhead.extruder}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro _CLIENT_RETRACT]
+description = Retracts, if the extruder is hot enough
+gcode = 
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set length = params.LENGTH | default(client.retract) | default(1.0) | float %}
+	{% set speed = params.SPEED | default(client.speed_retract) | default(35) %}
+	
+	_CLIENT_EXTRUDE LENGTH=-{length | float | abs} SPEED={speed | float | abs}
+
+[gcode_macro _CLIENT_LINEAR_MOVE]
+description = Linear move with save and restore of the gcode state
+gcode = 
+	{% set x_move = "X" ~ params.X if params.X is defined else "" %}
+	{% set y_move = "Y" ~ params.Y if params.Y is defined else "" %}
+	{% set z_move = "Z" ~ params.Z if params.Z is defined else "" %}
+	{% set e_move = "E" ~ params.E if params.E is defined else "" %}
+	{% set rate = "F" ~ params.F if params.F is defined else "" %}
+	{% set ABSOLUTE = params.ABSOLUTE | default(0) | int != 0 %}
+	{% set ABSOLUTE_E = params.ABSOLUTE_E | default(0) | int != 0 %}
+	SAVE_GCODE_STATE NAME=_client_movement
+	{% if x_move or y_move or z_move %}
+	G9{ 0 if ABSOLUTE else 1 }
+	{% endif %}
+	{% if e_move %}
+	M8{ 2 if ABSOLUTE_E else 3 }
+	{% endif %}
+	G1 { x_move } { y_move } { z_move } { e_move } { rate }
+	RESTORE_GCODE_STATE NAME=_client_movement
+
+[gcode_macro START_PRINT]
+gcode = 
+	{% set BED_TEMP = params.BED_TEMP|default(50)|float %}
+	{% set EXTRUDER_TEMP = params.EXTRUDER_TEMP|default(200)|float %}
+	
+	M140 S{BED_TEMP}
+	
+	G90
+	
+	SET_GCODE_OFFSET Z=0.0
+	
+	G28
+	
+	BED_MESH_CALIBRATE ADAPTIVE=1
+	
+	SMART_PARK
+	
+	M109 S{EXTRUDER_TEMP}
+	
+	M190 S{BED_TEMP}
+	
+	LINE_PURGE
+
+[gcode_macro END_PRINT]
+gcode = 
+	
+	M140 S0
+	M104 S0
+	M106 S0
+	
+	G91
+	G1 X-2 Y-2 E-10 F300
+	
+	G1 Z10 F3000
+	G90
+	
+	M84
+
+[output_pin BEEPER_pin]
+pin = PC6
+pwm = True
+value = 0
+shutdown_value = 0
+cycle_time = 0.001
+
+[gcode_macro M300]
+gcode = 
+	
+	{% set S = params.S|default(1000)|int %}
+	
+	{% set P = params.P|default(100)|int %}
+	SET_PIN PIN=BEEPER_pin VALUE=0.5 CYCLE_TIME={ 1.0/S if S > 0 else 1 }
+	G4 P{P}
+	SET_PIN PIN=BEEPER_pin VALUE=0
+
+[gcode_macro M600]
+gcode = 
+	{% set X = params.X|default(50)|float %}
+	{% set Y = params.Y|default(0)|float %}
+	{% set Z = params.Z|default(10)|float %}
+	SAVE_GCODE_STATE NAME=M600_state
+	PAUSE
+	G91
+	G1 E-.8 F2700
+	G1 Z{Z}
+	G90
+	G1 X{X} Y{Y} F3000
+	G91
+	G1 E-50 F1000
+	RESTORE_GCODE_STATE NAME=M600_state
+
+[gcode_macro QUERY_BME280]
+gcode = 
+	{% set sensor = printer["bme280 my_sensor"] %}
+	{action_respond_info(
+	"Temperature: %.2f C\n"
+	"Pressure: %.2f hPa\n"
+	"Humidity: %.2f%%" % (
+	sensor.temperature,
+	sensor.pressure,
+	sensor.humidity))}
+
+[gcode_macro QUERY_HTU21D]
+gcode = 
+	{% set sensor = printer["htu21d my_sensor"] %}
+	{action_respond_info(
+	"Temperature: %.2f C\n"
+	"Humidity: %.2f%%" % (
+	sensor.temperature,
+	sensor.humidity))}
+
+[gcode_macro M117]
+rename_existing = M117.1
+gcode = 
+	{% if rawparams %}
+	{% set escaped_msg = rawparams.split(';', 1)[0].split('\x23', 1)[0]|replace('"', '\\"') %}
+	SET_DISPLAY_TEXT MSG="{escaped_msg}"
+	RESPOND TYPE=command MSG="{escaped_msg}"
+	{% else %}
+	SET_DISPLAY_TEXT
+	{% endif %}
+
+[sdcard_loop]
+
+[gcode_macro M808]
+gcode = 
+	{% if params.K is not defined and params.L is defined %}SDCARD_LOOP_BEGIN COUNT={params.L|int}{% endif %}
+	{% if params.K is not defined and params.L is not defined %}SDCARD_LOOP_END{% endif %}
+	{% if params.K is defined and params.L is not defined %}SDCARD_LOOP_DESIST{% endif %}
+
+[exclude_object]
+
+[gcode_macro M486]
+gcode = 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{% if 'exclude_object' not in printer %}
+	{action_raise_error("[exclude_object] is not enabled")}
+	{% endif %}
+	
+	{% if 'T' in params %}
+	EXCLUDE_OBJECT RESET=1
+	
+	{% for i in range(params.T | int) %}
+	EXCLUDE_OBJECT_DEFINE NAME={i}
+	{% endfor %}
+	{% endif %}
+	
+	{% if 'C' in params %}
+	EXCLUDE_OBJECT CURRENT=1
+	{% endif %}
+	
+	{% if 'P' in params %}
+	EXCLUDE_OBJECT NAME={params.P}
+	{% endif %}
+	
+	{% if 'S' in params %}
+	{% if params.S == '-1' %}
+	{% if printer.exclude_object.current_object %}
+	EXCLUDE_OBJECT_END NAME={printer.exclude_object.current_object}
+	{% endif %}
+	{% else %}
+	EXCLUDE_OBJECT_START NAME={params.S}
+	{% endif %}
+	{% endif %}
+	
+	{% if 'U' in params %}
+	EXCLUDE_OBJECT RESET=1 NAME={params.U}
+	{% endif %}
+
+[gcode_macro G130]
+gcode = 
+	M400
+	{% if ('X' in params) and ('mcp4018 x_axis_pot' in printer.configfile.config) %}
+	{% set x_value = params['X']|float %}
+	{% set x_axis_pot_scale = printer.configfile.config["mcp4018 x_axis_pot"].scale|float %}
+	SET_DIGIPOT DIGIPOT=x_axis_pot WIPER={ x_axis_pot_scale * (x_value / 127.0)}
+	{% endif %}
+	{% if ('Y' in params) and ('mcp4018 y_axis_pot' in printer.configfile.config) %}
+	{% set y_value = params['Y']|float %}
+	{% set y_axis_pot_scale = printer.configfile.config["mcp4018 y_axis_pot"].scale|float %}
+	SET_DIGIPOT DIGIPOT=y_axis_pot WIPER={ y_axis_pot_scale * (y_value / 127.0)}
+	{% endif %}
+	{% if ('Z' in params) and ('mcp4018 z_axis_pot' in printer.configfile.config) %}
+	{% set z_value = params['Z']|float %}
+	{% set z_axis_pot_scale = printer.configfile.config["mcp4018 z_axis_pot"].scale|float %}
+	SET_DIGIPOT DIGIPOT=z_axis_pot WIPER={ z_axis_pot_scale * (z_value / 127.0)}
+	{% endif %}
+	{% if ('A' in params) and ('mcp4018 a_axis_pot' in printer.configfile.config) %}
+	{% set a_value = params['A']|float %}
+	{% set a_axis_pot_scale = printer.configfile.config["mcp4018 a_axis_pot"].scale|float %}
+	SET_DIGIPOT DIGIPOT=a_axis_pot WIPER={ a_axis_pot_scale * (a_value / 127.0)}
+	{% endif %}
+	{% if ('B' in params) and ('mcp4018 b_axis_pot' in printer.configfile.config) %}
+	{% set b_value = params['B']|float %}
+	{% set b_axis_pot_scale = printer.configfile.config["mcp4018 b_axis_pot"].scale|float %}
+	SET_DIGIPOT DIGIPOT=b_axis_pot WIPER={ b_axis_pot_scale * (b_value / 127.0)}
+	{% endif %}
+
+[gcode_macro LINE_PURGE]
+description = A purge macro that adapts to be near your actual printed objects
+gcode = 
+	
+	{% set travel_speed = (printer.toolhead.max_velocity) * 60 | float %}
+	{% set cross_section = printer.configfile.settings.extruder.max_extrude_cross_section | float %}
+	
+	
+	{% if printer.firmware_retraction is defined %}
+	{% set RETRACT = G10 | string %}
+	{% set UNRETRACT = G11 | string %}
+	{% else %}
+	{% set RETRACT = 'G1 E-.5 F2100' | string %}
+	{% set UNRETRACT = 'G1 E.5 F2100' | string %}
+	{% endif %}
+	
+	
+	{% set verbose_enable = printer["gcode_macro _KAMP_Settings"].verbose_enable | abs %}
+	{% set purge_height = printer["gcode_macro _KAMP_Settings"].purge_height | float %}
+	{% set tip_distance = printer["gcode_macro _KAMP_Settings"].tip_distance | float %}
+	{% set purge_margin = printer["gcode_macro _KAMP_Settings"].purge_margin | float %}
+	{% set purge_amount = printer["gcode_macro _KAMP_Settings"].purge_amount | float %}
+	{% set flow_rate = printer["gcode_macro _KAMP_Settings"].flow_rate | float %}
+	
+	
+	
+	{% set all_points = printer.exclude_object.objects | map(attribute='polygon') | sum(start=[]) %}
+	{% set purge_x_min = (all_points | map(attribute=0) | min | default(0)) %}
+	{% set purge_x_max = (all_points | map(attribute=0) | max | default(0)) %}
+	{% set purge_y_min = (all_points | map(attribute=1) | min | default(0)) %}
+	{% set purge_y_max = (all_points | map(attribute=1) | max | default(0)) %}
+	
+	{% set purge_x_center = ([((purge_x_max + purge_x_min) / 2) - (purge_amount / 2), 0] | max) %}
+	{% set purge_y_center = ([((purge_y_max + purge_y_min) / 2) - (purge_amount / 2), 0] | max) %}
+	
+	{% set purge_x_origin = ([purge_x_min - purge_margin, 0] | max) %}
+	{% set purge_y_origin = ([purge_y_min - purge_margin, 0] | max) %}
+	
+	
+	{% set purge_move_speed = (flow_rate / 5.0) * 60 | float %}
+	
+	{% if cross_section < 5 %}
+	
+	{action_respond_info("[Extruder] max_extrude_cross_section is insufficient for purge, please set it to 5 or greater. Purge skipped.")}
+	
+	{% else %}
+	
+	{% if verbose_enable == True %}
+	
+	{action_respond_info("Moving filament tip {}mms".format(
+	(tip_distance),
+	)) }
+	{% endif %}
+	
+	{% if printer.firmware_retraction is defined %}
+	{action_respond_info("KAMP purge is using firmware retraction.")}
+	{% else %}
+	{action_respond_info("KAMP purge is not using firmware retraction, it is recommended to configure it.")}
+	{% endif %}
+	
+	{% if purge_y_origin > 0 %}
+	
+	{action_respond_info("KAMP purge starting at {}, {} and purging {}mm of filament, requested flow rate is {}mm3/s.".format(
+	(purge_x_center),
+	(purge_y_origin),
+	(purge_amount),
+	(flow_rate),
+	)) }
+	
+	{% else %}
+	
+	{action_respond_info("KAMP purge starting at {}, {} and purging {}mm of filament, requested flow rate is {}mm3/s.".format(
+	(purge_x_origin),
+	(purge_y_center),
+	(purge_amount),
+	(flow_rate),
+	)) }
+	
+	{% endif %}
+	
+	SAVE_GCODE_STATE NAME=Prepurge_State
+	
+	{% if purge_y_origin > 0 %}
+	
+	G92 E0
+	G0 F{travel_speed}
+	G90
+	G0 X{purge_x_center} Y{purge_y_origin}
+	G0 Z{purge_height}
+	M83
+	G1 E{tip_distance} F{purge_move_speed}
+	G1 X{purge_x_center + purge_amount} E{purge_amount} F{purge_move_speed}
+	{RETRACT}
+	G0 X{purge_x_center + purge_amount + 10} F{travel_speed}
+	G92 E0
+	M82
+	G0 Z{purge_height * 2} F{travel_speed}
+	
+	{% else %}
+	
+	G92 E0
+	G0 F{travel_speed}
+	G90
+	G0 X{purge_x_origin} Y{purge_y_center}
+	G0 Z{purge_height}
+	M83
+	G1 E{tip_distance} F{purge_move_speed}
+	G1 Y{purge_y_center + purge_amount} E{purge_amount} F{purge_move_speed}
+	{RETRACT}
+	G0 Y{purge_y_center + purge_amount + 10} F{travel_speed}
+	G92 E0
+	M82
+	G0 Z{purge_height * 2} F{travel_speed}
+	
+	{% endif %}
+	
+	RESTORE_GCODE_STATE NAME=Prepurge_State
+	
+	{% endif %}
+
+[gcode_macro SMART_PARK]
+description = Parks your printhead near the print area for pre-print hotend heating.
+gcode = 
+	
+	{% set kamp_settings = printer["gcode_macro _KAMP_Settings"] %}
+	{% set z_height = kamp_settings.smart_park_height | float %}
+	{% set purge_margin = kamp_settings.purge_margin | float %}
+	{% set verbose_enable = kamp_settings.verbose_enable | abs %}
+	{% set center_x = printer.toolhead.axis_maximum.x / 2 | float %}
+	{% set center_y = printer.toolhead.axis_maximum.y / 2 | float %}
+	{% set axis_minimum_x = printer.toolhead.axis_minimum.x | float %}
+	{% set axis_minimum_y = printer.toolhead.axis_minimum.y | float %}
+	{% set all_points = printer.exclude_object.objects | map(attribute='polygon') | sum(start=[]) %}
+	{% set x_min = all_points | map(attribute=0) | min | default(center_x) %}
+	{% set y_min = all_points | map(attribute=1) | min | default(center_y) %}
+	{% set travel_speed = (printer.toolhead.max_velocity) * 60 | float %}
+	
+	{% if purge_margin > 0 and x_min != center_x and y_min != center_y %}
+	{% set x_min = [ x_min - purge_margin , x_min ] | min %}
+	{% set y_min = [ y_min - purge_margin , y_min ] | min %}
+	{% set x_min = [ x_min , axis_minimum_x ] | max %}
+	{% set y_min = [ y_min , axis_minimum_y ] | max %}
+	{% endif %}
+	
+	
+	{% if verbose_enable == True %}
+	
+	{ action_respond_info("Smart Park location: {},{}.".format(
+	(x_min),
+	(y_min),
+	)) }
+	
+	{% endif %}
+	
+	SAVE_GCODE_STATE NAME=Presmartpark_State
+	
+	G90
+	{% if printer.toolhead.position.z < z_height %}
+	G0 Z{z_height}
+	{% endif %}
+	G0 X{x_min} Y{y_min} F{travel_speed}
+	G0 Z{z_height}
+	
+	RESTORE_GCODE_STATE NAME=Presmartpark_State
+
+[gcode_macro _KAMP_Settings]
+description = This macro contains all adjustable settings for KAMP
+variable_verbose_enable = True
+variable_mesh_margin = 0
+variable_fuzz_amount = 0
+variable_probe_dock_enable = False
+variable_attach_macro = 'Attach_Probe'
+variable_detach_macro = 'Dock_Probe'
+variable_purge_height = 0.8
+variable_tip_distance = 10
+variable_purge_margin = 10
+variable_purge_amount = 30
+variable_flow_rate = 12
+variable_smart_park_height = 10
+gcode = 
+	
+	{action_respond_info(" Running the KAMP_Settings macro does nothing, it is only used for storing KAMP settings. ")}
+
+[stepper_x]
+step_pin = PC2
+dir_pin = PB9
+enable_pin = !PC3
+microsteps = 16
+rotation_distance = 40
+endstop_pin = ^PA5
+position_endstop = 0
+position_max = 235
+homing_speed = 50
+
+[stepper_y]
+step_pin = PB8
+dir_pin = PB7
+enable_pin = !PC3
+microsteps = 16
+rotation_distance = 40
+endstop_pin = ^PA6
+position_endstop = 0
+position_max = 235
+homing_speed = 50
+
+[stepper_z]
+step_pin = PB6
+dir_pin = !PB5
+enable_pin = !PC3
+microsteps = 16
+rotation_distance = 8
+endstop_pin = probe:z_virtual_endstop
+position_max = 250
+position_min = -10
+
+[extruder]
+max_extrude_only_distance = 100.0
+max_extrude_cross_section = 5
+step_pin = PB4
+dir_pin = PB3
+enable_pin = !PC3
+microsteps = 16
+rotation_distance = 34.406
+nozzle_diameter = 0.400
+filament_diameter = 1.750
+heater_pin = PA1
+sensor_type = EPCOS 100K B57560G104F
+sensor_pin = PC5
+control = pid
+pid_kp = 21.527
+pid_ki = 1.063
+pid_kd = 108.982
+min_temp = 0
+max_temp = 260
+
+[heater_bed]
+heater_pin = PA2
+sensor_type = EPCOS 100K B57560G104F
+sensor_pin = PC4
+control = pid
+pid_kp = 54.027
+pid_ki = 0.770
+pid_kd = 948.182
+min_temp = 0
+max_temp = 130
+
+[bed_mesh]
+mesh_min = 20, 20
+mesh_max = 190, 215
+probe_count = 10, 10
+algorithm = bicubic
+
+[safe_z_home]
+home_xy_position = 162.5, 121.5
+z_hop = 5
+
+[gcode_arcs]
+resolution = 0.2
+
+[input_shaper]
+shaper_freq_x = 40
+shaper_freq_y = 40
+shaper_type = mzv
+
+[screws_tilt_adjust]
+screw1 = 76.7, 35.7
+screw1_name = Front_Left
+screw2 = 235, 35.7
+screw2_name = Front_Right
+screw3 = 76.7, 207.3
+screw3_name = Back_left
+screw4 = 235, 207.3
+screw4_name = Back_Right
+screw_thread = CW-M3
+
+[fan]
+pin = PA0
+
+[mcu]
+serial = /dev/serial/by-path/pci-0000:00:1a.0-usb-0:1.1:1.0-port0
+restart_method = command
+
+[printer]
+kinematics = cartesian
+max_velocity = 150
+max_accel = 1500
+max_z_velocity = 2.5
+max_z_accel = 50
+
+[bltouch]
+sensor_pin = ^PB1
+control_pin = PB0
+x_offset = -45
+y_offset = -4
+z_offset = 1.225
+
+[display]
+lcd_type = st7920
+cs_pin = PB12
+sclk_pin = PB13
+sid_pin = PB15
+encoder_pins = ^PB14, ^PB10
+click_pin = ^!PB2
+
+[bed_mesh default]
+version = 1
+points = 
+	-0.060000, -0.077500, -0.082500, -0.057500, -0.040000, -0.037500, -0.050000, 0.002500, 0.017500, 0.050000
+	-0.110000, -0.122500, -0.100000, -0.070000, -0.032500, -0.035000, -0.027500, 0.030000, 0.060000, 0.092500
+	-0.077500, -0.090000, -0.077500, -0.035000, -0.002500, 0.007500, 0.005000, 0.065000, 0.100000, 0.132500
+	-0.060000, -0.060000, -0.055000, -0.022500, -0.005000, -0.007500, -0.010000, 0.035000, 0.075000, 0.117500
+	-0.100000, -0.110000, -0.087500, -0.055000, -0.022500, -0.017500, 0.002500, 0.067500, 0.122500, 0.130000
+	-0.102500, -0.102500, -0.085000, -0.057500, -0.022500, -0.015000, 0.005000, 0.070000, 0.107500, 0.157500
+	-0.035000, -0.067500, -0.060000, -0.035000, -0.010000, -0.017500, 0.002500, 0.072500, 0.127500, 0.122500
+	0.000000, -0.037500, -0.050000, -0.035000, -0.020000, -0.045000, -0.040000, 0.015000, 0.055000, 0.072500
+	0.005000, -0.025000, -0.057500, -0.040000, -0.027500, -0.025000, -0.012500, 0.057500, 0.125000, 0.125000
+	0.052500, 0.012500, -0.022500, -0.035000, -0.020000, -0.032500, -0.045000, 0.017500, 0.050000, 0.085000
+x_count = 10
+y_count = 10
+mesh_x_pps = 2
+mesh_y_pps = 2
+algo = bicubic
+tension = 0.2
+min_x = 20.0
+max_x = 189.92
+min_y = 20.0
+max_y = 214.93999999999997
+=======================
+Extruder max_extrude_ratio=2.078758
+mcu 'mcu': Starting serial connect
+webhooks client 140336967955408: New connection
+webhooks client 140336967955408: Client info {'program': 'Moonraker', 'version': 'v0.9.3-16-g72ed175'}
