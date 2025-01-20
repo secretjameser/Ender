@@ -1680,3 +1680,9 @@ Content-Type: multipart/form-data; boundary=------------------------0ea25844ca48
 2025-01-20 15:28:58,046 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 15:29:04,006 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode
 2025-01-20 15:29:04,071 [job_state.py:_status_update()] - Job Started: Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 15:35:23,778 [application.py:log_request()] - 101 GET /websocket?token=ABST36DDIFN6DAPVLYW3VTF2LOZPMU7Z (192.168.1.153) [_TRUSTED_USER_] 0.96ms
+2025-01-20 15:35:23,778 [websockets.py:open()] - Websocket Opened: ID: 140151179879248, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:35:23,787 [websockets.py:_handle_identify()] - Websocket 140151179879248 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:35:23,788 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:36:48,780 [websockets.py:on_close()] - Websocket Closed: ID: 140151179879248 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.82
+2025-01-20 15:36:48,780 [websockets.py:write_to_socket()] - Websocket closed while writing: 140151179879248
