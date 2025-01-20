@@ -308,3 +308,14 @@ Content-Type: multipart/form-data; boundary=------------------------52a9fc0cf269
 
 2025-01-20 10:56:41,092 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "green_1h8m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
 2025-01-20 10:56:41,094 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 387.64ms
+2025-01-20 10:57:17,208 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------1a1c96b24c06b0de
+2025-01-20 10:57:17,257 [application.py:post()] - Processing Uploaded File: black_31m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:57:17,369 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:57:17,377 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:57:17,378 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: black_31m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:57:17,467 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "black_31m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:57:17,468 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 261.30ms
