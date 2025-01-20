@@ -879,3 +879,68 @@ Properties:
 2025-01-20 12:59:37,166 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 12:59:39,584 [websockets.py:on_close()] - Websocket Closed: ID: 139884457101712 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.45
 2025-01-20 13:14:44,697 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.14
+2025-01-20 13:48:56,856 [application.py:log_request()] - 101 GET /websocket?token=QGTKK3NGJDVFNH3ZGPPEVRJFJQPYVZUW (192.168.1.153) [_TRUSTED_USER_] 0.77ms
+2025-01-20 13:48:56,856 [websockets.py:open()] - Websocket Opened: ID: 139884447527056, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 13:48:56,866 [websockets.py:_handle_identify()] - Websocket 139884447527056 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 13:48:56,866 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 13:49:27,008 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884447527056
+2025-01-20 13:49:31,858 [websockets.py:on_close()] - Websocket Closed: ID: 139884447527056 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-01-20 13:50:54,023 [application.py:log_request()] - 101 GET /websocket?token=AQNXT5KBTTVZAMAVBGN2QXCGCB6DBEIF (192.168.1.153) [_TRUSTED_USER_] 0.86ms
+2025-01-20 13:50:54,023 [websockets.py:open()] - Websocket Opened: ID: 139884457187152, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 13:50:54,038 [websockets.py:_handle_identify()] - Websocket 139884457187152 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 13:50:54,038 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 13:51:24,105 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884457187152
+2025-01-20 13:51:29,025 [websockets.py:on_close()] - Websocket Closed: ID: 139884457187152 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-01-20 13:52:15,435 [application.py:log_request()] - 101 GET /websocket?token=TS5RJZLCX5NKELRHPYMN22TR2LAB3ZPY (192.168.1.153) [_TRUSTED_USER_] 0.81ms
+2025-01-20 13:52:15,435 [websockets.py:open()] - Websocket Opened: ID: 139884447801488, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 13:52:15,486 [websockets.py:_handle_identify()] - Websocket 139884447801488 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 13:52:15,489 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 13:53:05,443 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884447801488
+2025-01-20 13:53:10,437 [websockets.py:on_close()] - Websocket Closed: ID: 139884447801488 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 14:04:33,914 [application.py:log_request()] - 101 GET /websocket?token=NBLHH3LYS56GHGIBBM6DAEU7EC4ZVI3Q (192.168.1.153) [_TRUSTED_USER_] 0.84ms
+2025-01-20 14:04:33,914 [websockets.py:open()] - Websocket Opened: ID: 139884445822288, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 14:04:33,938 [websockets.py:_handle_identify()] - Websocket 139884445822288 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 14:04:33,941 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 14:05:22,084 [websockets.py:on_close()] - Websocket Closed: ID: 139884445822288 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.06
+2025-01-20 14:05:31,422 [application.py:log_request()] - 101 GET /websocket?token=QRF3UPKIQYRIN4VEJAXSD24Z4BDQNYY3 (192.168.1.153) [_TRUSTED_USER_] 0.82ms
+2025-01-20 14:05:31,422 [websockets.py:open()] - Websocket Opened: ID: 139884457194768, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 14:05:31,433 [websockets.py:_handle_identify()] - Websocket 139884457194768 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 14:05:31,433 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 14:05:43,706 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 14:05:43,709 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737399914.585028, Usage: 0.64%, Memory: 58016 kB
+System Time: 1737399915.586783, Usage: 0.65%, Memory: 58016 kB
+System Time: 1737399916.588648, Usage: 0.6%, Memory: 58016 kB
+System Time: 1737399917.590270, Usage: 0.66%, Memory: 58016 kB
+System Time: 1737399918.590764, Usage: 0.8%, Memory: 58016 kB
+System Time: 1737399919.591431, Usage: 0.65%, Memory: 58016 kB
+System Time: 1737399920.592710, Usage: 0.7%, Memory: 58016 kB
+System Time: 1737399921.594377, Usage: 0.66%, Memory: 58016 kB
+System Time: 1737399922.595117, Usage: 0.72%, Memory: 58016 kB
+System Time: 1737399923.595681, Usage: 0.75%, Memory: 58016 kB
+System Time: 1737399924.596226, Usage: 0.52%, Memory: 58016 kB
+System Time: 1737399925.597420, Usage: 0.53%, Memory: 58016 kB
+System Time: 1737399926.598107, Usage: 0.53%, Memory: 58016 kB
+System Time: 1737399927.599561, Usage: 0.5%, Memory: 58016 kB
+System Time: 1737399928.600142, Usage: 0.53%, Memory: 58016 kB
+System Time: 1737399929.600790, Usage: 0.51%, Memory: 58016 kB
+System Time: 1737399930.601359, Usage: 0.5%, Memory: 58016 kB
+System Time: 1737399931.600822, Usage: 2.92%, Memory: 58016 kB
+System Time: 1737399932.602346, Usage: 4.06%, Memory: 58020 kB
+System Time: 1737399933.602514, Usage: 1.02%, Memory: 58020 kB
+System Time: 1737399934.603679, Usage: 0.62%, Memory: 58020 kB
+System Time: 1737399935.604224, Usage: 0.67%, Memory: 58020 kB
+System Time: 1737399936.604846, Usage: 0.64%, Memory: 58020 kB
+System Time: 1737399937.605876, Usage: 0.66%, Memory: 58020 kB
+System Time: 1737399938.605745, Usage: 0.7%, Memory: 58020 kB
+System Time: 1737399939.607644, Usage: 0.65%, Memory: 58020 kB
+System Time: 1737399940.608302, Usage: 0.65%, Memory: 58020 kB
+System Time: 1737399941.608628, Usage: 0.69%, Memory: 58020 kB
+System Time: 1737399942.609336, Usage: 0.67%, Memory: 58020 kB
+System Time: 1737399943.610626, Usage: 0.96%, Memory: 58020 kB
+CPU Temperature: 45.0
+2025-01-20 14:05:57,170 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 14:05:57,410 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 14:05:58,425 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 14:05:58,441 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
