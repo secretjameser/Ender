@@ -351,3 +351,10 @@ Content-Type: multipart/form-data; boundary=------------------------d1b2cd9520ff
 
 2025-01-20 10:59:04,400 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "green_1h8m_0.28mm_205C_PLA_ENDER3PRO.gcode") successfully finished
 2025-01-20 10:59:04,403 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 206.48ms
+2025-01-20 10:59:17,609 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------54b479bcc9bf65ad
+2025-01-20 10:59:17,660 [application.py:post()] - Processing Uploaded File: black_31m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 10:59:17,771 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2025-01-20 10:59:17,799 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "black_31m_0.28mm_205C_PLA_ENDER3PRO.gcode") successfully finished
+2025-01-20 10:59:17,801 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 192.38ms
