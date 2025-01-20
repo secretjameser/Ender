@@ -1,0 +1,821 @@
+-------------------- Log Start | Mon Jan 20 15:01:26 2025 --------------------
+platform: Linux-6.1.0-30-amd64-x86_64-with-glibc2.36
+data_path: /home/secretjameser/Ender3_data
+is_default_data_path: False
+config_file: /home/secretjameser/Ender3_data/config/moonraker.conf
+backup_config: /home/secretjameser/Ender3_data/config/.moonraker.conf.bkp
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: f48e99d6eb394be794d7d750ca9f2811
+unix_socket_path: /home/secretjameser/Ender3_data/comms/moonraker.sock
+software_version: v0.9.3-16-g72ed175
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/secretjameser/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+launch_args: /home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/moonraker.py -d /home/secretjameser/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/secretjameser/Ender3_data/comms/klippy.sock
+
+[file_manager]
+enable_object_processing = True
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+#################################################################
+All Configuration Files:
+/home/secretjameser/Ender3_data/config/moonraker.conf
+#################################################################
+Loading Sqlite database provider. Sqlite Version: 3.40.1
+Unsafe Shutdown Count: 0
+
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 5859492
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.1.0-30-amd64
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', 'network-online.target', '-.mount']
+**After=['network-online.target', 'sysinit.target', 'systemd-journald.socket', '-.mount', 'basic.target', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=secretjameser
+
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'basic.target', 'network-online.target', '-.mount', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo fluidd-config: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo klipper-backup: No warnings detected
+Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-20 10:01:26,686 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.153
+2025-01-20 10:01:26,803 [application.py:log_request()] - 101 GET /websocket?token=337U37Y25NMT7I2SJQHJPSP4K32XVCD7 (192.168.1.153) [_TRUSTED_USER_] 1.12ms
+2025-01-20 10:01:26,804 [websockets.py:open()] - Websocket Opened: ID: 139950901710928, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 10:01:26,813 [websockets.py:_handle_identify()] - Websocket 139950901710928 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 10:01:26,813 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 10:01:29,381 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 10:01:29,540 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 10:01:30,639 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 10:01:30,658 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 10:01:32,974 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 10:01:32,975 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 10:01:33,227 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 10:01:33,478 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 10:01:33,978 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 10:01:57,046 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950901710928
+2025-01-20 10:02:01,806 [websockets.py:on_close()] - Websocket Closed: ID: 139950901710928 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-01-20 10:13:10,974 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.1.14
+2025-01-20 10:13:11,179 [application.py:log_request()] - 101 GET /websocket?token=7M2W4B5EF7T6PRFZOEZPL7NZBVFOBXHO (192.168.1.14) [_TRUSTED_USER_] 1.01ms
+2025-01-20 10:13:11,179 [websockets.py:open()] - Websocket Opened: ID: 139950863198736, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 10:13:11,188 [websockets.py:_handle_identify()] - Websocket 139950863198736 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 10:13:11,188 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 10:13:20,794 [websockets.py:on_close()] - Websocket Closed: ID: 139950863198736 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.62
+2025-01-20 10:14:35,481 [application.py:log_request()] - 101 GET /websocket?token=DDFPPHWDMATAE5SZFTGOY66PHMUKRNGB (192.168.1.14) [_TRUSTED_USER_] 0.82ms
+2025-01-20 10:14:35,481 [websockets.py:open()] - Websocket Opened: ID: 139950890855760, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 10:14:35,493 [websockets.py:_handle_identify()] - Websocket 139950890855760 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 10:14:35,493 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 10:21:07,695 [application.py:log_request()] - 101 GET /websocket?token=QYX25ZDVDVEP6IOCAIFCKBB2S6QUND2S (192.168.1.153) [_TRUSTED_USER_] 0.89ms
+2025-01-20 10:21:07,696 [websockets.py:open()] - Websocket Opened: ID: 139950891864080, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 10:21:07,709 [websockets.py:_handle_identify()] - Websocket 139950891864080 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 10:21:07,709 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 10:21:16,510 [websockets.py:on_close()] - Websocket Closed: ID: 139950891864080 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.82
+2025-01-20 10:27:50,762 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 10:27:50,765 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737386841.614791, Usage: 0.95%, Memory: 61136 kB
+System Time: 1737386842.614629, Usage: 0.71%, Memory: 61136 kB
+System Time: 1737386843.616180, Usage: 0.63%, Memory: 61136 kB
+System Time: 1737386844.615823, Usage: 0.72%, Memory: 61136 kB
+System Time: 1737386845.617384, Usage: 0.71%, Memory: 61136 kB
+System Time: 1737386846.618343, Usage: 0.68%, Memory: 61136 kB
+System Time: 1737386847.618953, Usage: 0.73%, Memory: 61136 kB
+System Time: 1737386848.619673, Usage: 0.64%, Memory: 61136 kB
+System Time: 1737386849.620301, Usage: 0.73%, Memory: 61136 kB
+System Time: 1737386850.620955, Usage: 0.72%, Memory: 61136 kB
+System Time: 1737386851.621826, Usage: 0.9%, Memory: 61136 kB
+System Time: 1737386852.621952, Usage: 0.68%, Memory: 61136 kB
+System Time: 1737386853.622660, Usage: 0.72%, Memory: 61136 kB
+System Time: 1737386854.622925, Usage: 0.62%, Memory: 61136 kB
+System Time: 1737386855.623781, Usage: 0.75%, Memory: 61136 kB
+System Time: 1737386856.624168, Usage: 0.66%, Memory: 61136 kB
+System Time: 1737386857.625378, Usage: 0.71%, Memory: 61136 kB
+System Time: 1737386858.625889, Usage: 0.69%, Memory: 61136 kB
+System Time: 1737386859.626508, Usage: 0.67%, Memory: 61136 kB
+System Time: 1737386860.628779, Usage: 0.69%, Memory: 61136 kB
+System Time: 1737386861.629461, Usage: 0.96%, Memory: 61136 kB
+System Time: 1737386862.629553, Usage: 1.02%, Memory: 61136 kB
+System Time: 1737386863.630352, Usage: 0.78%, Memory: 61136 kB
+System Time: 1737386864.631060, Usage: 0.73%, Memory: 61136 kB
+System Time: 1737386865.632342, Usage: 0.81%, Memory: 61136 kB
+System Time: 1737386866.633186, Usage: 0.76%, Memory: 61136 kB
+System Time: 1737386867.633540, Usage: 0.8%, Memory: 61136 kB
+System Time: 1737386868.634001, Usage: 0.78%, Memory: 61136 kB
+System Time: 1737386869.635286, Usage: 0.72%, Memory: 61136 kB
+System Time: 1737386870.635686, Usage: 0.73%, Memory: 61136 kB
+CPU Temperature: 46.0
+2025-01-20 10:27:51,570 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: pid_calibrate interrupted
+2025-01-20 10:27:51,571 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Shutdown due to webhooks request
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2025-01-20 10:27:53,391 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 10:27:53,537 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 10:27:54,646 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 10:27:54,661 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 10:27:57,148 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 10:27:57,149 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 10:27:57,399 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 10:27:57,652 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 10:27:58,152 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 10:29:04,836 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-01-20 10:29:10,381 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-01-20 10:30:04,837 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2025-01-20 10:30:10,382 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2025-01-20 10:31:04,840 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2025-01-20 10:31:10,384 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2025-01-20 10:32:10,385 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2025-01-20 10:33:10,386 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2025-01-20 10:34:10,387 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2025-01-20 10:35:10,388 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2025-01-20 10:36:10,389 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2025-01-20 10:37:10,392 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.01 seconds
+2025-01-20 10:38:10,392 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.01 seconds
+2025-01-20 10:39:10,393 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.01 seconds
+2025-01-20 10:40:10,394 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.01 seconds
+2025-01-20 10:41:10,395 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.01 seconds
+2025-01-20 10:43:23,861 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 10:43:24,001 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-01-20 10:43:25,116 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 10:43:25,130 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 10:43:27,562 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 10:43:27,563 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 10:43:27,813 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 10:43:28,065 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 10:43:28,563 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-20 10:47:57,795 [websockets.py:on_close()] - Websocket Closed: ID: 139950890855760 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.31
+2025-01-20 10:56:13,618 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------b1ab39828c2ca223
+2025-01-20 10:56:13,752 [application.py:post()] - Processing Uploaded File: red_1h36m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:56:13,860 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:56:13,872 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:56:13,872 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: red_1h36m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:56:14,095 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "red_1h36m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:56:14,097 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 479.12ms
+2025-01-20 10:56:40,707 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------52a9fc0cf2692fcb
+2025-01-20 10:56:40,850 [application.py:post()] - Processing Uploaded File: green_1h8m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:56:40,960 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:56:40,969 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:56:40,970 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: green_1h8m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:56:41,092 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "green_1h8m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:56:41,094 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 387.64ms
+2025-01-20 10:57:17,208 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------1a1c96b24c06b0de
+2025-01-20 10:57:17,257 [application.py:post()] - Processing Uploaded File: black_31m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:57:17,369 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:57:17,377 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:57:17,378 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: black_31m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:57:17,467 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "black_31m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:57:17,468 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 261.30ms
+2025-01-20 10:57:33,124 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb26645
+2025-01-20 10:57:33,214 [application.py:post()] - Processing Uploaded File: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:57:33,325 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:57:33,333 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:57:33,333 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: yellow_33m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:57:33,423 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "yellow_33m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:57:33,426 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 302.09ms
+2025-01-20 11:01:00,071 [application.py:log_request()] - 101 GET /websocket?token=EOT6BGJEQJ647XCC77A4EE33ABG43YES (192.168.1.14) [_TRUSTED_USER_] 0.73ms
+2025-01-20 11:01:00,071 [websockets.py:open()] - Websocket Opened: ID: 139950890846480, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:01:00,081 [websockets.py:_handle_identify()] - Websocket 139950890846480 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:01:00,082 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:03:20,489 [websockets.py:on_close()] - Websocket Closed: ID: 139950890846480 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.41
+2025-01-20 11:03:30,392 [application.py:log_request()] - 101 GET /websocket?token=VWGIGFDDZ62Q5YMY5NAZ6DA2P6J2BOCV (192.168.1.14) [_TRUSTED_USER_] 0.82ms
+2025-01-20 11:03:30,392 [websockets.py:open()] - Websocket Opened: ID: 139950861879312, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:03:30,400 [websockets.py:_handle_identify()] - Websocket 139950861879312 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:03:30,400 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:03:45,368 [websockets.py:on_close()] - Websocket Closed: ID: 139950861879312 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.97
+2025-01-20 11:05:58,824 [application.py:log_request()] - 101 GET /websocket?token=33NUQSIK2BZSTU4FDWDVR2PTL4GPMZU4 (192.168.1.153) [_TRUSTED_USER_] 0.84ms
+2025-01-20 11:05:58,824 [websockets.py:open()] - Websocket Opened: ID: 139950861813072, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:05:58,833 [websockets.py:_handle_identify()] - Websocket 139950861813072 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:05:58,833 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:08:48,636 [klippy_apis.py:start_print()] - Requesting Job Start, filename = black_31m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 11:08:48,887 [job_state.py:_status_update()] - Job Started: black_31m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 11:09:28,995 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950861813072
+2025-01-20 11:09:33,827 [websockets.py:on_close()] - Websocket Closed: ID: 139950861813072 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 11:12:59,271 [application.py:log_request()] - 101 GET /websocket?token=IBXIPOQOFIDSSBTBQRTNIG77NAJNKVSB (192.168.1.153) [_TRUSTED_USER_] 0.94ms
+2025-01-20 11:12:59,272 [websockets.py:open()] - Websocket Opened: ID: 139950864468048, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:12:59,294 [websockets.py:_handle_identify()] - Websocket 139950864468048 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:12:59,295 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:13:04,410 [websockets.py:on_close()] - Websocket Closed: ID: 139950864468048 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.14
+2025-01-20 11:14:41,074 [application.py:log_request()] - 101 GET /websocket?token=3CXOFCFWISB23CYJR3RVNPB4TRUQG3VG (192.168.1.14) [_TRUSTED_USER_] 0.80ms
+2025-01-20 11:14:41,074 [websockets.py:open()] - Websocket Opened: ID: 139950861818448, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:14:41,084 [websockets.py:_handle_identify()] - Websocket 139950861818448 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:14:41,084 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:14:46,488 [websockets.py:on_close()] - Websocket Closed: ID: 139950861818448 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.41
+2025-01-20 11:21:06,029 [application.py:log_request()] - 101 GET /websocket?token=N5OBJYNU37QUJRZIDHS3CARVEWDZQW55 (192.168.1.14) [_TRUSTED_USER_] 0.91ms
+2025-01-20 11:21:06,029 [websockets.py:open()] - Websocket Opened: ID: 139950861958544, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:21:06,041 [websockets.py:_handle_identify()] - Websocket 139950861958544 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:21:06,041 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:21:21,846 [websockets.py:on_close()] - Websocket Closed: ID: 139950861958544 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.81
+2025-01-20 11:37:18,334 [application.py:log_request()] - 101 GET /websocket?token=EX6WVP3LHJ32ZOXSOUFTNFCY5N23HBRG (192.168.1.153) [_TRUSTED_USER_] 0.76ms
+2025-01-20 11:37:18,334 [websockets.py:open()] - Websocket Opened: ID: 139950861847696, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:37:18,341 [websockets.py:_handle_identify()] - Websocket 139950861847696 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:37:18,353 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:37:24,618 [application.py:log_request()] - 101 GET /websocket?token=HS4LYO6IPDA7AXMFRM3W57CK2VHHIPLQ (192.168.1.153) [_TRUSTED_USER_] 0.79ms
+2025-01-20 11:37:24,618 [websockets.py:open()] - Websocket Opened: ID: 139950861858896, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:37:24,632 [websockets.py:_handle_identify()] - Websocket 139950861858896 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:37:24,632 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:38:18,340 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950861847696
+2025-01-20 11:38:23,336 [websockets.py:on_close()] - Websocket Closed: ID: 139950861847696 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
+2025-01-20 11:38:29,620 [websockets.py:on_close()] - Websocket Closed: ID: 139950861858896 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 11:38:29,621 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950861858896
+2025-01-20 11:45:57,623 [application.py:log_request()] - 101 GET /websocket?token=S3SWS2TCSTUINO7CEXSSLXA347MODBNJ (192.168.1.14) [_TRUSTED_USER_] 0.84ms
+2025-01-20 11:45:57,623 [websockets.py:open()] - Websocket Opened: ID: 139950863657616, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:45:57,631 [websockets.py:_handle_identify()] - Websocket 139950863657616 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:45:57,631 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:46:03,379 [websockets.py:on_close()] - Websocket Closed: ID: 139950863657616 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.76
+2025-01-20 11:56:19,380 [application.py:log_request()] - 101 GET /websocket?token=PRBURZWDS4HJZWN5QL5QFXI364MFDSZ3 (192.168.1.153) [_TRUSTED_USER_] 0.81ms
+2025-01-20 11:56:19,380 [websockets.py:open()] - Websocket Opened: ID: 139950861848720, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:56:19,412 [application.py:log_request()] - 101 GET /websocket?token=HICBFF56NVU5KQU2X7IY2HVTN2EHK7LV (192.168.1.153) [_TRUSTED_USER_] 0.86ms
+2025-01-20 11:56:19,412 [websockets.py:open()] - Websocket Opened: ID: 139950861852880, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 11:56:20,175 [websockets.py:_handle_identify()] - Websocket 139950861852880 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:56:20,175 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:56:23,909 [websockets.py:on_close()] - Websocket Closed: ID: 139950861852880 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.50
+2025-01-20 11:56:47,539 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-20 11:56:47,542 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1737392177.833434, Usage: 0.43%, Memory: 62060 kB
+System Time: 1737392178.833889, Usage: 0.51%, Memory: 62060 kB
+System Time: 1737392179.835108, Usage: 1.27%, Memory: 62060 kB
+System Time: 1737392180.836066, Usage: 3.66%, Memory: 62060 kB
+System Time: 1737392181.836414, Usage: 2.69%, Memory: 62060 kB
+System Time: 1737392182.836722, Usage: 0.69%, Memory: 62060 kB
+System Time: 1737392183.837424, Usage: 0.67%, Memory: 62060 kB
+System Time: 1737392184.838072, Usage: 0.7%, Memory: 62060 kB
+System Time: 1737392185.838575, Usage: 0.5%, Memory: 62060 kB
+System Time: 1737392186.840193, Usage: 0.77%, Memory: 62060 kB
+System Time: 1737392187.840923, Usage: 0.58%, Memory: 62060 kB
+System Time: 1737392188.841569, Usage: 0.56%, Memory: 62060 kB
+System Time: 1737392189.842852, Usage: 0.6%, Memory: 62060 kB
+System Time: 1737392190.842621, Usage: 0.54%, Memory: 62060 kB
+System Time: 1737392191.844240, Usage: 0.47%, Memory: 62060 kB
+System Time: 1737392192.844733, Usage: 0.58%, Memory: 62060 kB
+System Time: 1737392193.845501, Usage: 0.59%, Memory: 62060 kB
+System Time: 1737392194.845479, Usage: 0.56%, Memory: 62060 kB
+System Time: 1737392195.846756, Usage: 0.56%, Memory: 62060 kB
+System Time: 1737392196.847490, Usage: 0.78%, Memory: 62060 kB
+System Time: 1737392197.848158, Usage: 0.58%, Memory: 62060 kB
+System Time: 1737392198.849087, Usage: 0.56%, Memory: 62060 kB
+System Time: 1737392199.848880, Usage: 0.65%, Memory: 62060 kB
+System Time: 1737392200.850023, Usage: 0.47%, Memory: 62060 kB
+System Time: 1737392201.850465, Usage: 0.55%, Memory: 62060 kB
+System Time: 1737392202.853076, Usage: 0.48%, Memory: 62060 kB
+System Time: 1737392203.853983, Usage: 0.67%, Memory: 62060 kB
+System Time: 1737392204.854453, Usage: 0.64%, Memory: 62060 kB
+System Time: 1737392205.855318, Usage: 0.56%, Memory: 62060 kB
+System Time: 1737392206.856002, Usage: 0.79%, Memory: 62060 kB
+CPU Temperature: 45.0
+2025-01-20 11:57:46,803 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-01-20 11:57:46,812 [server.py:_handle_term_signal()] - Exiting with signal SIGTERM
+2025-01-20 11:57:46,949 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950861848720
+2025-01-20 11:57:50,162 [filelock.py:acquire()] - File lock /tmp/.moonraker_instance_ids.lock is currently acquired by another process, waiting for release.
+2025-01-20 11:57:50,162 [update_manager.py:close()] - Attempt to acquire lock '/tmp/.moonraker_instance_ids.lock' timed out
+2025-01-20 11:57:50,167 [server.py:main()] - Server Shutdown
+-------------------- Log Start | Mon Jan 20 16:59:30 2025 --------------------
+platform: Linux-6.1.0-30-amd64-x86_64-with-glibc2.36
+data_path: /home/secretjameser/Ender3_data
+is_default_data_path: False
+config_file: /home/secretjameser/Ender3_data/config/moonraker.conf
+backup_config: /home/secretjameser/Ender3_data/config/.moonraker.conf.bkp
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: f48e99d6eb394be794d7d750ca9f2811
+unix_socket_path: /home/secretjameser/Ender3_data/comms/moonraker.sock
+software_version: v0.9.3-16-g72ed175
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/secretjameser/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+launch_args: /home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/moonraker.py -d /home/secretjameser/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+2025-01-20 11:59:30,756 [confighelper.py:read_file()] - Configuration File '/home/secretjameser/Ender3_data/config/moonraker.conf' parsed, total size: 1189 B
+2025-01-20 11:59:30,757 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/secretjameser/Ender3_data/comms/klippy.sock
+
+[file_manager]
+enable_object_processing = True
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+#################################################################
+All Configuration Files:
+/home/secretjameser/Ender3_data/config/moonraker.conf
+#################################################################
+2025-01-20 11:59:31,946 [server.py:load_component()] - Component (secrets) loaded
+2025-01-20 11:59:32,091 [server.py:load_component()] - Component (template) loaded
+2025-01-20 11:59:32,096 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-01-20 11:59:40,267 [server.py:load_component()] - Component (application) loaded
+2025-01-20 11:59:40,320 [server.py:load_component()] - Component (websockets) loaded
+2025-01-20 11:59:40,532 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2025-01-20 11:59:40,534 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 0
+2025-01-20 11:59:40,535 [server.py:load_component()] - Component (database) loaded
+2025-01-20 11:59:41,095 [server.py:load_component()] - Component (dbus_manager) loaded
+2025-01-20 11:59:41,305 [file_manager.py:__init__()] - Using File System Observer: inotify
+2025-01-20 11:59:41,413 [server.py:load_component()] - Component (file_manager) loaded
+2025-01-20 11:59:41,574 [database.py:register_table()] - Found registered table authorized_users
+2025-01-20 11:59:41,576 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2025-01-20 11:59:41,578 [server.py:load_component()] - Component (authorization) loaded
+2025-01-20 11:59:41,606 [server.py:load_component()] - Component (klippy_apis) loaded
+2025-01-20 11:59:42,547 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Nov 30 2024, 21:22:50) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 5859488
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.1.0-30-amd64
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2025-01-20 11:59:42,586 [server.py:load_component()] - Component (shell_command) loaded
+2025-01-20 11:59:42,586 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2025-01-20 11:59:42,622 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2025-01-20 11:59:42,622 [server.py:load_component()] - Component (machine) loaded
+2025-01-20 11:59:42,668 [server.py:load_component()] - Component (data_store) loaded
+2025-01-20 11:59:42,697 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2025-01-20 11:59:42,698 [server.py:load_component()] - Component (proc_stats) loaded
+2025-01-20 11:59:42,730 [server.py:load_component()] - Component (job_state) loaded
+2025-01-20 11:59:42,754 [server.py:load_component()] - Component (job_queue) loaded
+2025-01-20 11:59:42,782 [database.py:register_table()] - Found registered table job_history
+2025-01-20 11:59:42,782 [database.py:register_table()] - Found registered table job_totals
+2025-01-20 11:59:42,783 [server.py:load_component()] - Component (history) loaded
+2025-01-20 11:59:42,896 [server.py:load_component()] - Component (http_client) loaded
+2025-01-20 11:59:42,921 [server.py:load_component()] - Component (announcements) loaded
+2025-01-20 11:59:42,953 [server.py:load_component()] - Component (webcam) loaded
+2025-01-20 11:59:42,976 [server.py:load_component()] - Component (extensions) loaded
+2025-01-20 11:59:42,983 [server.py:load_component()] - Component (octoprint_compat) loaded
+2025-01-20 11:59:43,723 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/secretjameser/moonraker-env
+2025-01-20 11:59:43,726 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/secretjameser/klippy-env
+2025-01-20 11:59:43,735 [server.py:load_component()] - Component (update_manager) loaded
+2025-01-20 11:59:43,736 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2025-01-20 11:59:44,587 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-01-20 11:59:44,679 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2025-01-20 11:59:44,683 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-01-20 11:59:44,684 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-01-20 11:59:44,685 [machine.py:validation_init()] - Installation version in database up to date
+2025-01-20 11:59:44,826 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-01-20 11:59:45,144 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3.service
+2025-01-20 11:59:45,151 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', 'network-online.target', '-.mount']
+**After=['system.slice', '-.mount', 'sysinit.target', 'systemd-journald.socket', 'basic.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=secretjameser
+2025-01-20 11:59:45,151 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-01-20 11:59:45,151 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-01-20 11:59:45,154 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-01-20 11:59:45,156 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-01-20 11:59:45,158 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-01-20 11:59:45,158 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'basic.target', 'network-online.target', '-.mount', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-20 11:59:45,158 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-01-20 11:59:47,174 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2025-01-20 11:59:47,541 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-01-20 11:59:47,542 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Upstream Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Current Version: v0.9.3-16-g72ed175c
+Upstream Version: v0.9.3-16-g72ed175c
+Rollback Commit: 4e00a0760e756872b2fbb23a82b88dbceb383cf4
+Rollback Branch: master
+Rollback Version: v0.9.3-1-g4e00a076
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-20 11:59:47,542 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/secretjameser/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Upstream Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Current Version: v0.12.0-410-gcf3b0475
+Upstream Version: v0.12.0-410-gcf3b0475
+Rollback Commit: 9bd0d4757696375e946a1410fcc8036d2670ae30
+Rollback Branch: master
+Rollback Version: v0.12.0-377-g9bd0d475
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-20 11:59:47,586 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.1-0-g807175d7
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-20 11:59:47,645 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.31.4
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.6
+Rollback Repo: fluidd-core/fluidd
+2025-01-20 11:59:47,663 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/secretjameser/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Upstream Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Current Version: v1.1.2-13-gb0dad8ec
+Upstream Version: v1.1.2-13-gb0dad8ec
+Rollback Commit: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Rollback Branch: main
+Rollback Version: v1.1.2-13-gb0dad8ec
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-20 11:59:47,664 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/secretjameser/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Upstream Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Current Version: v1.3.2-0-g1ccd26ad
+Upstream Version: v1.3.2-0-g1ccd26ad
+Rollback Commit: 95fb874ce69d11cf1df4b0209f89b4f1ce427553
+Rollback Branch: main
+Rollback Version: v1.3.1-19-g95fb874c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-20 11:59:47,664 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 36 Seconds
+2025-01-20 11:59:47,664 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 58 Seconds
+2025-01-20 11:59:47,664 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 42 Seconds
+2025-01-20 11:59:47,665 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 37 Seconds
+2025-01-20 11:59:47,665 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 39 Seconds
+2025-01-20 11:59:47,665 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Next refresh in: 6 Days, 7 Hours, 21 Minutes, 16 Seconds
+2025-01-20 11:59:47,665 [base_deploy.py:log_info()] - Git Repo klipper-backup: Next refresh in: 6 Days, 7 Hours, 29 Minutes, 40 Seconds
+2025-01-20 11:59:47,666 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3_data/comms/moonraker.sock'
+2025-01-20 11:59:47,667 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7126), Hostname: debian
+2025-01-20 11:59:47,667 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-01-20 11:59:47,918 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-20 11:59:47,938 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-20 11:59:47,941 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['systemd-journald.socket', 'sysinit.target', 'basic.target', '-.mount', 'network-online.target', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-20 11:59:48,194 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
+2025-01-20 11:59:48,205 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-20 11:59:48,206 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-20 11:59:48,456 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-20 11:59:48,711 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-20 11:59:49,183 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2025-01-20 11:59:49,208 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
