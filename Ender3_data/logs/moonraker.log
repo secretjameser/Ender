@@ -1449,3 +1449,4 @@ Properties:
 2025-01-19 19:42:02,420 [websockets.py:open()] - Websocket Opened: ID: 139950892197072, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.1.38
 2025-01-19 19:42:02,562 [websockets.py:_handle_identify()] - Websocket 139950892197072 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-19 19:42:02,563 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-19 19:44:56,351 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
