@@ -307,3 +307,19 @@ Error configuring printer
 2025-01-20 10:24:32,355 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-20 10:25:31,046 [websockets.py:write_to_socket()] - Websocket closed while writing: 140519401641872
 2025-01-20 10:25:35,976 [websockets.py:on_close()] - Websocket Closed: ID: 140519401641872 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 10:29:37,932 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-01-20 10:29:52,311 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-01-20 10:30:37,933 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2025-01-20 10:30:52,312 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2025-01-20 10:31:37,934 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2025-01-20 10:31:52,313 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2025-01-20 10:32:37,935 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2025-01-20 10:32:52,314 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2025-01-20 10:33:52,315 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2025-01-20 10:34:52,316 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2025-01-20 10:35:52,316 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2025-01-20 10:36:52,317 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2025-01-20 10:37:52,318 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.01 seconds
+2025-01-20 10:38:52,319 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.01 seconds
+2025-01-20 10:39:52,320 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.01 seconds
+2025-01-20 10:40:52,322 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.01 seconds
