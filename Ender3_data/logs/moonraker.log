@@ -1586,3 +1586,10 @@ Error configuring printer
 2025-01-19 20:12:42,111 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
 2025-01-19 20:12:43,263 [klippy_connection.py:_do_connect()] - Klippy Connection Established
 2025-01-19 20:12:43,285 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-19 20:12:45,778 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-19 20:12:45,780 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-19 20:12:46,028 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-19 20:12:46,280 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-19 20:12:46,781 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-19 20:13:32,250 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:13:32,405 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
