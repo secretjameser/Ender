@@ -1678,3 +1678,5 @@ Content-Type: multipart/form-data; boundary=------------------------0ea25844ca48
 2025-01-20 15:28:58,038 [websockets.py:open()] - Websocket Opened: ID: 140151180157520, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
 2025-01-20 15:28:58,046 [websockets.py:_handle_identify()] - Websocket 140151180157520 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 15:28:58,046 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:29:04,006 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 15:29:04,071 [job_state.py:_status_update()] - Job Started: Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode
