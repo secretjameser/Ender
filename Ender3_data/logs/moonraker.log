@@ -286,3 +286,14 @@ Printer is shutdown
 2025-01-20 10:43:28,065 [klippy_connection.py:_check_ready()] - Klippy ready
 2025-01-20 10:43:28,563 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-20 10:47:57,795 [websockets.py:on_close()] - Websocket Closed: ID: 139950890855760 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.31
+2025-01-20 10:56:13,618 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------b1ab39828c2ca223
+2025-01-20 10:56:13,752 [application.py:post()] - Processing Uploaded File: red_1h36m_0.28mm_205C_PLA_ENDER3.gcode
+2025-01-20 10:56:13,860 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 10:56:13,872 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 10:56:13,872 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: red_1h36m_0.28mm_205C_PLA_ENDER3.gcode, sliced by PrusaSlicer
+
+2025-01-20 10:56:14,095 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3_data/gcodes -f "red_1h36m_0.28mm_205C_PLA_ENDER3.gcode" --check-objects) successfully finished
+2025-01-20 10:56:14,097 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 479.12ms
