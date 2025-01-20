@@ -1262,3 +1262,6 @@ Content-Type: multipart/form-data; boundary=------------------------10364a8e415a
 2025-01-20 13:00:06,536 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished
 2025-01-20 13:00:08,452 [klippy_apis.py:start_print()] - Requesting Job Start, filename = red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
 2025-01-20 13:00:08,702 [job_state.py:_status_update()] - Job Started: red2_1h36m_0.28mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 13:00:54,802 [websockets.py:on_close()] - Websocket Closed: ID: 140188904289808 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2025-01-20 13:00:54,803 [websockets.py:write_to_socket()] - Websocket closed while writing: 140188904289808
+2025-01-20 13:19:44,874 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.14
