@@ -563,3 +563,11 @@ Properties:
 **User=secretjameser
 2025-01-19 19:29:34,835 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
 2025-01-19 19:29:35,391 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker fetch origin --prune --progress) successfully finished
+2025-01-19 19:29:35,403 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2025-01-19 19:29:36,017 [shell_command.py:_check_proc_success()] - Command (git -C /home/secretjameser/moonraker pull --progress) successfully finished
+2025-01-19 19:29:37,126 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-01-19 19:29:37,129 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-01-19 19:29:37,378 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-01-19 19:29:37,637 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-01-19 19:29:38,133 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-01-19 19:29:38,409 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python -m pip --version) successfully finished
