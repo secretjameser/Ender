@@ -827,3 +827,14 @@ Properties:
 2025-01-20 12:00:43,733 [websockets.py:_handle_identify()] - Websocket 139884447872016 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 12:00:43,733 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 12:00:56,135 [websockets.py:on_close()] - Websocket Closed: ID: 139884447872016 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.31
+2025-01-20 12:02:17,998 [application.py:log_request()] - 101 GET /websocket?token=WQMAI37CRXQAHUH2NVELUGR3VOPHJVII (192.168.1.153) [_TRUSTED_USER_] 0.90ms
+2025-01-20 12:02:17,999 [websockets.py:open()] - Websocket Opened: ID: 139884447838032, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:02:18,007 [websockets.py:_handle_identify()] - Websocket 139884447838032 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:02:18,007 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:03:08,078 [websockets.py:write_to_socket()] - Websocket closed while writing: 139884447838032
+2025-01-20 12:03:13,001 [websockets.py:on_close()] - Websocket Closed: ID: 139884447838032 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.84
+2025-01-20 12:03:55,005 [application.py:log_request()] - 101 GET /websocket?token=YKBYD6RDFZEPDSJP4WC6LXHR6TKL2AWM (192.168.1.153) [_TRUSTED_USER_] 0.85ms
+2025-01-20 12:03:55,005 [websockets.py:open()] - Websocket Opened: ID: 139884447753552, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 12:03:55,014 [websockets.py:_handle_identify()] - Websocket 139884447753552 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 12:03:55,015 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 12:06:42,252 [websockets.py:on_close()] - Websocket Closed: ID: 139884447753552 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.23
