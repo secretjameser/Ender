@@ -1663,3 +1663,12 @@ Content-Type: multipart/form-data; boundary=------------------------5390a56accca
 
 2025-01-20 15:26:01,783 [shell_command.py:_check_proc_success()] - Command (/home/secretjameser/moonraker-env/bin/python /home/secretjameser/moonraker/moonraker/components/file_manager/metadata.py -p /home/secretjameser/Ender3Pro_data/gcodes -f "snake_test_3h9m_0.08mm_205C_PLA_ENDER3PRO.gcode" --check-objects) successfully finished
 2025-01-20 15:26:01,785 [application.py:log_request()] - 201 POST /server/files/upload (192.168.1.14) [_TRUSTED_USER_] 4140.63ms
+2025-01-20 15:28:40,466 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: multipart/form-data; boundary=------------------------0ea25844ca480ab9
+2025-01-20 15:28:41,495 [application.py:post()] - Processing Uploaded File: Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode
+2025-01-20 15:28:41,603 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-01-20 15:28:41,618 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-01-20 15:28:41,619 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Merged_Snake_3h5m_0.08mm_205C_PLA_ENDER3PRO.gcode, sliced by PrusaSlicer
+
