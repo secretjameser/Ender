@@ -610,3 +610,4 @@ Error configuring printer
 2025-01-19 20:14:48,471 [websockets.py:_handle_identify()] - Websocket 140519400350160 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-19 20:14:48,471 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-19 20:14:50,506 [websockets.py:on_close()] - Websocket Closed: ID: 140519400350160 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.12
+2025-01-19 21:19:39,902 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.153

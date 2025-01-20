@@ -1669,3 +1669,8 @@ Content-Type: multipart/form-data; boundary=---------------------------333660592
 2025-01-19 20:21:20,375 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2025-01-19 20:21:32,231 [klippy_apis.py:start_print()] - Requesting Job Start, filename = CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
 2025-01-19 20:21:32,407 [job_state.py:_status_update()] - Job Started: CAMEL_1h44m_0.28mm_240C_TPU_ENDER3.gcode
+2025-01-19 20:22:07,750 [websockets.py:write_to_socket()] - Websocket closed while writing: 139950891766416
+2025-01-19 20:22:12,677 [websockets.py:on_close()] - Websocket Closed: ID: 139950891766416 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.88
+2025-01-19 20:54:39,894 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.38
+2025-01-19 21:04:39,897 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.14
+2025-01-19 21:24:39,899 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.1.153
