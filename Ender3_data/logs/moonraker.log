@@ -1244,3 +1244,198 @@ System Info:
 2025-01-19 19:39:39,364 [server.py:load_component()] - Component (octoprint_compat) loaded
 2025-01-19 19:39:39,364 [server.py:_initialize_component()] - Performing Component Post Init: [database]
 2025-01-19 19:39:39,793 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-01-19 19:39:39,874 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2025-01-19 19:39:39,876 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-01-19 19:39:39,877 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-01-19 19:39:39,878 [machine.py:validation_init()] - Installation version in database up to date
+2025-01-19 19:39:40,050 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-01-19 19:39:40,066 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.1.38
+2025-01-19 19:39:40,066 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-19 19:39:40,088 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3.service
+2025-01-19 19:39:40,092 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', 'network-online.target', '-.mount']
+**After=['network-online.target', 'sysinit.target', 'systemd-journald.socket', '-.mount', 'basic.target', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/secretjameser/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/secretjameser/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=secretjameser
+2025-01-19 19:39:40,092 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-01-19 19:39:40,092 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-01-19 19:39:40,096 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-01-19 19:39:40,100 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-01-19 19:39:40,101 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.1.38
+2025-01-19 19:39:40,108 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-01-19 19:39:40,108 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['network-online.target', 'basic.target', 'system.slice', 'sysinit.target', 'systemd-journald.socket', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-19 19:39:40,108 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-01-19 19:39:40,362 [filelock.py:acquire()] - File lock /tmp/.moonraker_instance_ids.lock is currently acquired by another process, waiting for release.
+2025-01-19 19:39:40,362 [update_manager.py:set_instance_id()] - Attempt to acquire lock '/tmp/.moonraker_instance_ids.lock' timed out
+2025-01-19 19:39:41,222 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-01-19 19:39:41,223 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/secretjameser/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Upstream Commit SHA: 72ed175c520e3b9e3054e9ad7d27157577300df1
+Current Version: v0.9.3-16-g72ed175c
+Upstream Version: v0.9.3-16-g72ed175c
+Rollback Commit: 4e00a0760e756872b2fbb23a82b88dbceb383cf4
+Rollback Branch: master
+Rollback Version: v0.9.3-1-g4e00a076
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:41,224 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/secretjameser/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Upstream Commit SHA: cf3b0475daa0d7154d2f986f94d8c184c7cf39c1
+Current Version: v0.12.0-410-gcf3b0475
+Upstream Version: v0.12.0-410-gcf3b0475
+Rollback Commit: 9bd0d4757696375e946a1410fcc8036d2670ae30
+Rollback Branch: master
+Rollback Version: v0.12.0-377-g9bd0d475
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:41,274 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/secretjameser/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Upstream Commit SHA: 807175d72e3a00cdc6b5e249444a4630e1e03a55
+Current Version: v1.2.1-0-g807175d7
+Upstream Version: v1.2.1-0-g807175d7
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:41,310 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/secretjameser/fluidd
+Local Version: v1.31.4
+Remote Version: v1.31.4
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.31.4/fluidd.zip
+Download Size: 3857394
+Content Type: application/zip
+Rollback Version: v1.30.6
+Rollback Repo: fluidd-core/fluidd
+2025-01-19 19:39:41,318 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/secretjameser/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Upstream Commit SHA: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Current Version: v1.1.2-13-gb0dad8ec
+Upstream Version: v1.1.2-13-gb0dad8ec
+Rollback Commit: b0dad8ec9ee31cb644b94e39d4b8a8fb9d6c9ba0
+Rollback Branch: main
+Rollback Version: v1.1.2-13-gb0dad8ec
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:41,319 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/secretjameser/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Upstream Commit SHA: 1ccd26ad624ce5e50b8554b7ac9ebbae3d922712
+Current Version: v1.3.2-0-g1ccd26ad
+Upstream Version: v1.3.2-0-g1ccd26ad
+Rollback Commit: 95fb874ce69d11cf1df4b0209f89b4f1ce427553
+Rollback Branch: main
+Rollback Version: v1.3.1-19-g95fb874c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 6 Days, 23 Hours, 49 Minutes, 42 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 6 Days, 23 Hours, 50 Minutes, 5 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 23 Hours, 49 Minutes, 48 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 6 Days, 23 Hours, 49 Minutes, 44 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 6 Days, 23 Hours, 49 Minutes, 45 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Next refresh in: 6 Days, 23 Hours, 41 Minutes, 22 Seconds
+2025-01-19 19:39:41,319 [base_deploy.py:log_info()] - Git Repo klipper-backup: Next refresh in: 6 Days, 23 Hours, 49 Minutes, 46 Seconds
+2025-01-19 19:39:41,321 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/secretjameser/Ender3_data/comms/moonraker.sock'
+2025-01-19 19:39:41,322 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7126), Hostname: debian
+2025-01-19 19:39:41,322 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-01-19 19:39:41,573 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-01-19 19:39:41,600 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2025-01-19 19:39:41,604 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'basic.target', 'network-online.target', '-.mount', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/secretjameser/Ender3_data/systemd/klipper.env
+**ExecStart=/home/secretjameser/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/secretjameser/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=secretjameser
+2025-01-19 19:39:41,856 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-410-gcf3b0475d
