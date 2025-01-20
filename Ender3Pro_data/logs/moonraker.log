@@ -212,3 +212,5 @@ Once the underlying issue is corrected, use the "RESTART"
 command to reload the config and restart the host software.
 Printer is halted
 
+2025-01-20 10:18:15,632 [application.py:prepare()] - Upload Request Received from 192.168.1.14
+Content-Type: 
