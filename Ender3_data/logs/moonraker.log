@@ -353,3 +353,13 @@ Content-Type: multipart/form-data; boundary=------------------------c0be7bc1ccb2
 2025-01-20 11:12:59,294 [websockets.py:_handle_identify()] - Websocket 139950864468048 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
 2025-01-20 11:12:59,295 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 11:13:04,410 [websockets.py:on_close()] - Websocket Closed: ID: 139950864468048 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.14
+2025-01-20 11:14:41,074 [application.py:log_request()] - 101 GET /websocket?token=3CXOFCFWISB23CYJR3RVNPB4TRUQG3VG (192.168.1.14) [_TRUSTED_USER_] 0.80ms
+2025-01-20 11:14:41,074 [websockets.py:open()] - Websocket Opened: ID: 139950861818448, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:14:41,084 [websockets.py:_handle_identify()] - Websocket 139950861818448 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:14:41,084 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:14:46,488 [websockets.py:on_close()] - Websocket Closed: ID: 139950861818448 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.41
+2025-01-20 11:21:06,029 [application.py:log_request()] - 101 GET /websocket?token=N5OBJYNU37QUJRZIDHS3CARVEWDZQW55 (192.168.1.14) [_TRUSTED_USER_] 0.91ms
+2025-01-20 11:21:06,029 [websockets.py:open()] - Websocket Opened: ID: 139950861958544, Proxied: False, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0 (Edition std-1), Host Name: 192.168.1.38
+2025-01-20 11:21:06,041 [websockets.py:_handle_identify()] - Websocket 139950861958544 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 11:21:06,041 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 11:21:21,846 [websockets.py:on_close()] - Websocket Closed: ID: 139950861958544 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.81
