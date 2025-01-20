@@ -1686,3 +1686,12 @@ Content-Type: multipart/form-data; boundary=------------------------0ea25844ca48
 2025-01-20 15:35:23,788 [file_manager.py:get_file_list()] - Updating File List <config>...
 2025-01-20 15:36:48,780 [websockets.py:on_close()] - Websocket Closed: ID: 140151179879248 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.82
 2025-01-20 15:36:48,780 [websockets.py:write_to_socket()] - Websocket closed while writing: 140151179879248
+2025-01-20 15:44:55,066 [application.py:log_request()] - 101 GET /websocket?token=5S6ECSMDA6E2WDETXXTQKANCOM5UVDEX (192.168.1.153) [_TRUSTED_USER_] 1.02ms
+2025-01-20 15:44:55,066 [websockets.py:open()] - Websocket Opened: ID: 140151180013136, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:44:55,086 [websockets.py:_handle_identify()] - Websocket 140151180013136 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:44:55,088 [file_manager.py:get_file_list()] - Updating File List <config>...
+2025-01-20 15:44:58,361 [websockets.py:on_close()] - Websocket Closed: ID: 140151180013136 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.30
+2025-01-20 15:48:10,241 [application.py:log_request()] - 101 GET /websocket?token=CYPFMX2BITNZ5P7IGA5NKO5ENKKYS467 (192.168.1.153) [_TRUSTED_USER_] 0.84ms
+2025-01-20 15:48:10,241 [websockets.py:open()] - Websocket Opened: ID: 140151180255696, Proxied: False, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.1.38
+2025-01-20 15:48:10,253 [websockets.py:_handle_identify()] - Websocket 140151180255696 Client Identified - Name: fluidd, Version: 1.31.4-f283a37, Type: web
+2025-01-20 15:48:10,254 [file_manager.py:get_file_list()] - Updating File List <config>...
